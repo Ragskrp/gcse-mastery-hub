@@ -23,7 +23,8 @@ export const SEED_QUIZZES_FRENCH_EXTENDED: Quiz[] = [
         explanation:
           "Francophonie refers to both the geographic/cultural community of French speakers and the formal international organization (OIF) promoting French language and cooperation.",
         marks: 2,
-        difficulty: "foundation"
+        difficulty: "foundation",
+        topic_reference: "aqa_french_culture_francophone_world"
       },
       {
         id: "q2",
@@ -34,10 +35,11 @@ export const SEED_QUIZZES_FRENCH_EXTENDED: Quiz[] = [
         explanation:
           "Shows understanding of global reach of francophone world. Africa represents majority of current and future French speakers.",
         marks: 2,
-        difficulty: "foundation"
+        difficulty: "foundation",
+        topic_reference: "aqa_french_culture_francophone_world"
       },
       {
-        id: " q3",
+        id: "q3",
         question: "What does 'code-switching' mean in multilingual contexts?",
         type: "mcq",
         options: [
@@ -50,7 +52,8 @@ export const SEED_QUIZZES_FRENCH_EXTENDED: Quiz[] = [
         explanation:
           "Code-switching reflects multilingual reality in many francophone communities, showing how language use varies by context and audience.",
         marks: 2,
-        difficulty: "higher"
+        difficulty: "higher",
+        topic_reference: "aqa_french_culture_francophone_world"
       },
       {
         id: "q4",
@@ -62,7 +65,8 @@ export const SEED_QUIZZES_FRENCH_EXTENDED: Quiz[] = [
         explanation:
           "Shows understanding of how contemporary artists are reshaping what francophone culture means globally.",
         marks: 3,
-        difficulty: "higher"
+        difficulty: "higher",
+        topic_reference: "aqa_french_culture_francophone_world"
       },
       {
         id: "q5",
@@ -74,17 +78,18 @@ export const SEED_QUIZZES_FRENCH_EXTENDED: Quiz[] = [
         explanation:
           "Tests nuanced understanding of how historical trauma and contemporary opportunity coexist in francophone communities.",
         marks: 3,
-        difficulty: "higher"
+        difficulty: "higher",
+        topic_reference: "aqa_french_culture_francophone_world"
       }
     ],
-    time_limit: 20,
+    time_limit: 25,
     passing_score: 60,
     total_marks: 12,
     difficulty: "mixed"
   },
 
   {
-    id: "quiz_french_digital_society_1",
+    id: "quiz_french_tech_1",
     title: "Technology & Digital Society in French-Speaking World",
     topic_reference: "aqa_french_tech_digital_society",
     subject: "french",
@@ -100,12 +105,12 @@ export const SEED_QUIZZES_FRENCH_EXTENDED: Quiz[] = [
         explanation:
           "Key concept understanding technology's role in perpetuating or reducing social inequality.",
         marks: 2,
-        difficulty: "foundation"
+        difficulty: "foundation",
+        topic_reference: "aqa_french_tech_digital_society"
       },
       {
         id: "q2",
-        question:
-          "Name three social media platforms commonly used by French youth and their primary purpose.",
+        question: "Which social media platforms are most popular with French teenagers?",
         type: "short_answer",
         options: [],
         correct_answer:
@@ -113,11 +118,12 @@ export const SEED_QUIZZES_FRENCH_EXTENDED: Quiz[] = [
         explanation:
           "Tests knowledge of contemporary platforms and how young people use them for communication and self-presentation.",
         marks: 2,
-        difficulty: "foundation"
+        difficulty: "foundation",
+        topic_reference: "aqa_french_tech_digital_society"
       },
       {
         id: "q3",
-        question: "How does digital language differ from traditional written French? Give two examples.",
+        question: "Describe how language evolves in digital and text contexts among young French speakers.",
         type: "short_answer",
         options: [],
         correct_answer:
@@ -125,11 +131,12 @@ export const SEED_QUIZZES_FRENCH_EXTENDED: Quiz[] = [
         explanation:
           "Shows understanding of language evolution in digital contexts and challenges this poses to traditional French language guardians.",
         marks: 2,
-        difficulty: "foundation"
+        difficulty: "foundation",
+        topic_reference: "aqa_french_tech_digital_society"
       },
       {
         id: "q4",
-        question: "What privacy concerns are raised by social media use?",
+        question: "What are the main privacy and security concerns related to social media?",
         type: "mcq",
         options: [
           "Only problem is wasting time on social media",
@@ -142,30 +149,31 @@ export const SEED_QUIZZES_FRENCH_EXTENDED: Quiz[] = [
         explanation:
           "Contemporary issue affecting all social media users - data collection, surveillance, long-term vulnerability.",
         marks: 2,
-        difficulty: "higher"
+        difficulty: "higher",
+        topic_reference: "aqa_french_tech_digital_society"
       },
       {
         id: "q5",
-        question:
-          "Analyze tensions between digital innovation and traditional French language preservation. How do younger generations navigate this?",
+        question: "Analyze the tension between protecting French language and acknowledging digital linguistic evolution.",
         type: "short_answer",
         options: [],
         correct_answer:
-          "Académie française wants to preserve 'pure' French; youth creating new digital forms (abbreviations, English borrowings). Youth language challenges traditional rules but keeps French living/evolving. Creates generation gap in language attitudes.",
+          "Academie francaise wants to preserve 'pure' French; youth creating new digital forms (abbreviations, English borrowings). Youth language challenges traditional rules but keeps French living/evolving. Creates generation gap in language attitudes.",
         explanation:
           "Tests understanding of cultural conservatism vs inevitable language change in digital age.",
         marks: 3,
-        difficulty: "higher"
+        difficulty: "higher",
+        topic_reference: "aqa_french_tech_digital_society"
       }
     ],
-    time_limit: 20,
+    time_limit: 25,
     passing_score: 60,
     total_marks: 11,
     difficulty: "mixed"
   },
 
   {
-    id: "quiz_french_social_issues_1",
+    id: "quiz_french_social_1",
     title: "Contemporary Social Issues in French Society",
     topic_reference: "aqa_french_social_issues_contemporary",
     subject: "french",
@@ -181,22 +189,24 @@ export const SEED_QUIZZES_FRENCH_EXTENDED: Quiz[] = [
         explanation:
           "Understanding geographic dimension of integration debates and social inequality.",
         marks: 2,
-        difficulty: "foundation"
+        difficulty: "foundation",
+        topic_reference: "aqa_french_social_issues_contemporary"
       },
       {
         id: "q2",
-        question: "Name two environmental concerns facing France.",
+        question: "Name two environmental challenges currently facing France.",
         type: "short_answer",
         options: [],
         correct_answer:
           "Climate change, pollution, resource depletion, extreme weather, rising temperatures. Any two acceptable.",
         explanation: "Tests knowledge of contemporary environmental challenges in France.",
         marks: 2,
-        difficulty: "foundation"
+        difficulty: "foundation",
+        topic_reference: "aqa_french_social_issues_contemporary"
       },
       {
         id: "q3",
-        question: "What is 'laïcité' and why is it controversial in immigration debates?",
+        question: "Explain the concept of 'laicite' and why it's controversial in contemporary France.",
         type: "short_answer",
         options: [],
         correct_answer:
@@ -204,12 +214,12 @@ export const SEED_QUIZZES_FRENCH_EXTENDED: Quiz[] = [
         explanation:
           "Central to French political culture and understanding integration/religious diversity tensions.",
         marks: 3,
-        difficulty: "higher"
+        difficulty: "higher",
+        topic_reference: "aqa_french_social_issues_contemporary"
       },
       {
         id: "q4",
-        question:
-          "What sparked the Yellow Vest (Gilets Jaunes) movement, and what were the broader concerns?",
+        question: "What sparked the Yellow Vests (Gilets Jaunes) protests, and what broader issues did they represent?",
         type: "short_answer",
         options: [],
         correct_answer:
@@ -217,12 +227,12 @@ export const SEED_QUIZZES_FRENCH_EXTENDED: Quiz[] = [
         explanation:
           "Major contemporary event showing intersection of economic, environmental and class concerns.",
         marks: 3,
-        difficulty: "higher"
+        difficulty: "higher",
+        topic_reference: "aqa_french_social_issues_contemporary"
       },
       {
         id: "q5",
-        question:
-          "Discuss the conflict between environmental protection policies and economic interests. Use the Yellow Vests as an example.",
+        question: "Discuss the tension between environmental policy goals and economic impacts on working-class communities.",
         type: "short_answer",
         options: [],
         correct_answer:
@@ -230,7 +240,8 @@ export const SEED_QUIZZES_FRENCH_EXTENDED: Quiz[] = [
         explanation:
           "Tests ability to analyze how policy goals conflict and whose interests are prioritized - class analysis.",
         marks: 3,
-        difficulty: "higher"
+        difficulty: "higher",
+        topic_reference: "aqa_french_social_issues_contemporary"
       }
     ],
     time_limit: 25,

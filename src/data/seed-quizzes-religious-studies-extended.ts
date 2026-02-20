@@ -16,7 +16,8 @@ export const SEED_QUIZZES_RELIGIOUS_STUDIES_EXTENDED: Quiz[] = [
         correct_answer: "Humans as caretakers of creation with responsibility to care for and preserve the environment.",
         explanation: "Core concept across faith traditions; foundational to religious environmental ethics.",
         marks: 2,
-        difficulty: "foundation"
+        difficulty: "foundation",
+        topic_reference: "aqa_religious_studies_applied_ethics"
       },
       {
         id: "q2",
@@ -27,7 +28,8 @@ export const SEED_QUIZZES_RELIGIOUS_STUDIES_EXTENDED: Quiz[] = [
           "Christianity (Catholic generally opposed, Protestant varied), Judaism (support through pikuach nefesh), Islam (cautious support if removing illness)",
         explanation: "Tests knowledge of different theological approaches to bioethical modern dilemmas.",
         marks: 3,
-        difficulty: "foundation"
+        difficulty: "foundation",
+        topic_reference: "aqa_religious_studies_applied_ethics"
       },
       {
         id: "q3",
@@ -39,7 +41,8 @@ export const SEED_QUIZZES_RELIGIOUS_STUDIES_EXTENDED: Quiz[] = [
           "Violation of privacy, reduction of persons to data/profit, lack of meaningful consent and control, power imbalances favoring corporations",
         explanation: "Shows understanding of how religious human dignity concepts apply to tech ethics.",
         marks: 3,
-        difficulty: "higher"
+        difficulty: "higher",
+        topic_reference: "aqa_religious_studies_applied_ethics"
       },
       {
         id: "q4",
@@ -52,7 +55,8 @@ export const SEED_QUIZZES_RELIGIOUS_STUDIES_EXTENDED: Quiz[] = [
         explanation:
           "Tests critical evaluation balancing respect for religious contributions with honest limitations.",
         marks: 4,
-        difficulty: "higher"
+        difficulty: "higher",
+        topic_reference: "aqa_religious_studies_applied_ethics"
       }
     ],
     time_limit: 20,
@@ -78,7 +82,8 @@ export const SEED_QUIZZES_RELIGIOUS_STUDIES_EXTENDED: Quiz[] = [
           "Exclusivism: only one tradition has truth. Pluralism: multiple traditions equally valid paths to truth.",
         explanation: "Fundamental theological positions shaping interfaith relations.",
         marks: 2,
-        difficulty: "foundation"
+        difficulty: "foundation",
+        topic_reference: "aqa_religious_studies_interfaith_dialogue"
       },
       {
         id: "q2",
@@ -90,7 +95,8 @@ export const SEED_QUIZZES_RELIGIOUS_STUDIES_EXTENDED: Quiz[] = [
           "Parliament of World's Religions, local interfaith councils, joint service projects, educational programs, shared celebrations",
         explanation: "Tests knowledge of practical interfaith efforts.",
         marks: 2,
-        difficulty: "foundation"
+        difficulty: "foundation",
+        topic_reference: "aqa_religious_studies_interfaith_dialogue"
       },
       {
         id: "q3",
@@ -101,7 +107,8 @@ export const SEED_QUIZZES_RELIGIOUS_STUDIES_EXTENDED: Quiz[] = [
           "Competition for resources, historical grievances, conversion conflicts, education tensions, identity politics, extremism",
         explanation: "Demonstrates understanding of real-world obstacles to interfaith harmony.",
         marks: 3,
-        difficulty: "higher"
+        difficulty: "higher",
+        topic_reference: "aqa_religious_studies_interfaith_dialogue"
       },
       {
         id: "q4",
@@ -114,7 +121,8 @@ export const SEED_QUIZZES_RELIGIOUS_STUDIES_EXTENDED: Quiz[] = [
         explanation:
           "Tests critical thinking about complex theological and practical tensions.",
         marks: 4,
-        difficulty: "higher"
+        difficulty: "higher",
+        topic_reference: "aqa_religious_studies_interfaith_dialogue"
       }
     ],
     time_limit: 20,
