@@ -84,7 +84,6 @@ export default function LoginPage() {
                                         }`}
                                         style={{
                                             background: selectedAvatar === avatar.emoji ? "var(--primary)" : "var(--bg)",
-                                            ringColor: "var(--primary)",
                                             color: "var(--text)"
                                         }}
                                         title={avatar.name}
