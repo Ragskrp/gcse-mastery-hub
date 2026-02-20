@@ -1,0 +1,88 @@
+{
+  "id": "edexcel_maths_statistics",
+  "exam_board": "edexcel",
+  "subject": "maths",
+  "topic_title": "Statistics",
+  "topic_number": "6.1",
+  "tier_level": "both",
+  "section_1_key_concepts": {
+    "overview": "Statistics involves collecting, analysing and interpreting data. Averages (mean, median, mode) and range are fundamental tools.",
+    "learning_objectives": [
+      "Calculate mean, median, mode and range",
+      "Interpret simple charts and graphs",
+      "Understand correlation and lines of best fit"
+    ],
+    "key_terms": [
+      {
+        "term": "Mean",
+        "definition": "Average (sum / count)",
+        "importance": "Central tendency"
+      },
+      {
+        "term": "Median",
+        "definition": "Middle value when ordered",
+        "importance": "Middle"
+      },
+      {
+        "term": "Mode",
+        "definition": "Most common value",
+        "importance": "Common"
+      }
+    ]
+  },
+  "section_2_detailed_explanations": [
+    {
+      "heading": "Averages",
+      "content": "Mean: Add all numbers, divide by how many. Median: Order numbers, find middle. Mode: Most frequent. Range: Highest - Lowest (measure of spread).",
+      "key_points": [
+        "Order data first for median",
+        "Range is NOT an average"
+      ]
+    }
+  ],
+  "section_3_worked_examples": [
+    {
+      "question": "Find the median of 3, 1, 4, 1, 5",
+      "step_by_step": [
+        "Order them: 1, 1, 3, 4, 5",
+        "Middle number is 3"
+      ],
+      "answer": "3",
+      "common_mistakes": [
+        "Not ordering the numbers first"
+      ]
+    }
+  ],
+  "section_4_practice_questions": {
+    "foundation": [
+      {
+        "id": "q1",
+        "question": "The mode of 2, 2, 3, 5?",
+        "marks": 1,
+        "options": [
+          "2",
+          "3",
+          "5"
+        ],
+        "correct_answer": "2",
+        "explanation": "Most common.",
+        "difficulty": "foundation"
+      }
+    ],
+    "higher": []
+  },
+  "section_5_exam_guidance": {
+    "common_mistakes": [],
+    "exam_tips": [],
+    "command_words": [],
+    "time_allocation": "15 mins"
+  },
+  "section_6_additional_resources": {
+    "resources": [],
+    "revision_checklist": []
+  },
+  "section_7_assessment_answers": {
+    "answers": [],
+    "grade_boundaries": {}
+  }
+}

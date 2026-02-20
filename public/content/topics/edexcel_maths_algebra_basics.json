@@ -1,0 +1,226 @@
+{
+  "id": "edexcel_maths_algebra_basics",
+  "exam_board": "edexcel",
+  "subject": "maths",
+  "topic_title": "Algebraic Expressions",
+  "topic_number": "A1",
+  "tier_level": "both",
+  "section_1_key_concepts": {
+    "overview": "Algebra uses letters to represent numbers. This topic covers simplifying expressions, expanding brackets, and factorising — essential skills for solving equations.",
+    "key_terms": [
+      {
+        "term": "Variable",
+        "definition": "A letter representing an unknown number (e.g., x, y)",
+        "importance": "The basis of algebra"
+      },
+      {
+        "term": "Term",
+        "definition": "A single part of an expression (e.g., 3x)",
+        "importance": "Building block of expressions"
+      },
+      {
+        "term": "Expression",
+        "definition": "A collection of terms with no equals sign (e.g., 2x + 5)",
+        "importance": "Distinct from an equation"
+      },
+      {
+        "term": "Coefficient",
+        "definition": "The number in front of a variable (e.g., 5 in 5x)",
+        "importance": "Determines the value of the term"
+      },
+      {
+        "term": "Like terms",
+        "definition": "Terms with the same variable and power (e.g., 2x and 5x)",
+        "importance": "Only like terms can be added/subtracted"
+      }
+    ],
+    "learning_objectives": [
+      "Simplify expressions by collecting like terms",
+      "Multiply terms using laws of indices",
+      "Expand single and double brackets",
+      "Factorise linear and quadratic expressions",
+      "Substitute values into expressions"
+    ]
+  },
+  "section_2_detailed_explanations": [
+    {
+      "heading": "Collecting Like Terms",
+      "content": "You can only add or subtract terms that have exactly the same variables with the same powers. For example, 2x + 3x = 5x, but 2x + 3y cannot be simplified. Watch out for signs! 5x - 2x = 3x.",
+      "key_points": [
+        "x + x = 2x",
+        "x × x = x²",
+        "Only add terms with matching letters/powers",
+        "Sign belongs to the term it proceeds"
+      ]
+    },
+    {
+      "heading": "Expanding Brackets",
+      "content": "To expand a single bracket, multiply the term outside by everything inside: 3(x + 4) = 3x + 12. For double brackets (FOIL method): (x + 2)(x + 3) = x² + 3x + 2x + 6 = x² + 5x + 6.",
+      "key_points": [
+        "Single bracket: Multiply outside term by ALL inside terms",
+        "Double bracket: FOIL (First, Outside, Inside, Last)",
+        "Simplify after expanding double brackets"
+      ]
+    },
+    {
+      "heading": "Factorising",
+      "content": "Factorising is the opposite of expanding — putting into brackets. Find the highest common factor (HCF) of numbers and letters. Example: 6x + 9 = 3(2x + 3). For quadratics like x² + 5x + 6, find two numbers that multiply to 6 and add to 5 (2 and 3) → (x + 2)(x + 3).",
+      "key_points": [
+        "Look for HCF of numbers first",
+        "Check for common letters",
+        "Quadratics: Multiply to end number, add to middle number",
+        "Always check by expanding"
+      ]
+    }
+  ],
+  "section_3_worked_examples": [
+    {
+      "question": "Expand and simplify: 3(2x - 1) - 2(x + 4)",
+      "step_by_step": [
+        "Expand first bracket: 3 × 2x = 6x, 3 × -1 = -3 → 6x - 3",
+        "Expand second bracket: -2 × x = -2x, -2 × 4 = -8 → -2x - 8",
+        "Combine: 6x - 3 - 2x - 8",
+        "Collect like terms: (6x - 2x) + (-3 - 8)",
+        "Result: 4x - 11"
+      ],
+      "answer": "4x - 11",
+      "common_mistakes": [
+        "Multiplying -2 × 4 incorrectly as +8 (sign error)",
+        "Forgetting to multiply the second term inside the bracket"
+      ]
+    },
+    {
+      "question": "Factorise fully: 12x²y + 8xy",
+      "step_by_step": [
+        "HCF of 12 and 8 is 4",
+        "Common letters: x and y are in both",
+        "Factor out 4xy",
+        "Inside bracket: 12x²y ÷ 4xy = 3x",
+        "Inside bracket: 8xy ÷ 4xy = 2",
+        "Result: 4xy(3x + 2)"
+      ],
+      "answer": "4xy(3x + 2)"
+    }
+  ],
+  "section_4_practice_questions": {
+    "foundation": [
+      {
+        "id": "ma1f1",
+        "question": "Simplify 3x + 4y - x + 2y",
+        "type": "short_answer",
+        "correct_answer": "2x + 6y",
+        "explanation": "3x - x = 2x, 4y + 2y = 6y",
+        "marks": 2,
+        "difficulty": "foundation"
+      },
+      {
+        "id": "ma1f2",
+        "question": "Expand 5(x - 3)",
+        "type": "short_answer",
+        "correct_answer": "5x - 15",
+        "explanation": "5 × x = 5x, 5 × -3 = -15",
+        "marks": 1,
+        "difficulty": "foundation"
+      }
+    ],
+    "higher": [
+      {
+        "id": "ma1h1",
+        "question": "Factorise x² - 9",
+        "type": "short_answer",
+        "correct_answer": "(x + 3)(x - 3)",
+        "explanation": "Difference of two squares",
+        "marks": 1,
+        "difficulty": "higher"
+      },
+      {
+        "id": "ma1h2",
+        "question": "Expand and simplify (2x + 3)(x - 5)",
+        "type": "short_answer",
+        "correct_answer": "2x² - 7x - 15",
+        "explanation": "2x² - 10x + 3x - 15 = 2x² - 7x - 15",
+        "marks": 3,
+        "difficulty": "higher"
+      }
+    ]
+  },
+  "section_5_exam_guidance": {
+    "command_words": [
+      {
+        "word": "Simplify",
+        "meaning": "Collect like terms or cancel down fractions"
+      },
+      {
+        "word": "Expand",
+        "meaning": "Multiply out brackets"
+      },
+      {
+        "word": "Factorise",
+        "meaning": "Put into brackets"
+      }
+    ],
+    "exam_tips": [
+      "Check signs carefully when expanding negatives",
+      "For quadratics, check signs of factors",
+      "Difference of squares: a² - b² = (a+b)(a-b)"
+    ],
+    "common_mistakes": [
+      "Thinking (x+3)² = x² + 9 (it is x² + 6x + 9)",
+      "Sign errors with negative numbers",
+      "Not factorising fully (e.g. 2(2x+4) instead of 4(x+2))"
+    ],
+    "mark_scheme_notes": [
+      "M1 for expansion method",
+      "A1 for correct simplified final answer",
+      "Factorisation must be full for full marks"
+    ],
+    "time_allocation": "1 minute per mark"
+  },
+  "section_6_additional_resources": {
+    "resources": [
+      {
+        "title": "Algebra Tiles Interactive",
+        "type": "interactive",
+        "description": "Visualise expanding and factorising"
+      },
+      {
+        "title": "Quadratic Factorisation Video",
+        "type": "video",
+        "description": "Guide to splitting the middle term"
+      }
+    ],
+    "further_reading": [
+      "Edexcel GCSE Maths Higher - Chapter 2"
+    ],
+    "revision_checklist": [
+      "I can expand double brackets",
+      "I can factorise quadratics",
+      "I can simplify algebraic fractions",
+      "I know the difference of two squares"
+    ]
+  },
+  "section_7_assessment_answers": {
+    "answers": [
+      {
+        "question_id": "ma1f1",
+        "model_answer": "2x + 6y",
+        "mark_breakdown": [
+          "1 mark for 2x",
+          "1 mark for 6y"
+        ],
+        "examiner_tip": "underline like terms to avoid missing them"
+      }
+    ],
+    "grade_boundaries": {
+      "grade_9": 90,
+      "grade_7": 75,
+      "grade_5": 55,
+      "grade_4": 45
+    }
+  },
+  "view_count": 0,
+  "avg_score": 0,
+  "completion_rate": 0,
+  "created_at": "2026-02-14T20:27:35.692Z",
+  "updated_at": "2026-02-14T20:27:35.692Z"
+}

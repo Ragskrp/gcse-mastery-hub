@@ -1,0 +1,188 @@
+{
+  "id": "aqa_history_medicine",
+  "exam_board": "aqa",
+  "subject": "history",
+  "topic_title": "Medicine Through Time — Medieval Medicine",
+  "topic_number": "1.1",
+  "tier_level": "both",
+  "section_1_key_concepts": {
+    "overview": "Medieval medicine (c.1250-1500) was dominated by the Church, Galen's ideas, and supernatural beliefs. Understanding why progress was limited is key to exam success.",
+    "key_terms": [
+      {
+        "term": "Theory of the Four Humours",
+        "definition": "Ancient belief that the body contained four liquids (blood, phlegm, yellow bile, black bile) that needed to be balanced",
+        "importance": "Dominated medical thinking for over 1000 years"
+      },
+      {
+        "term": "Miasma",
+        "definition": "The belief that disease was caused by bad air or smells",
+        "importance": "Led to some useful public health measures but was wrong"
+      },
+      {
+        "term": "Galen",
+        "definition": "Ancient Roman physician whose ideas about anatomy were followed for centuries",
+        "importance": "His work was promoted by the Church and rarely questioned"
+      },
+      {
+        "term": "Barber-surgeon",
+        "definition": "A person who performed minor surgeries and bloodletting as well as cutting hair",
+        "importance": "Shows the limited training of medieval 'surgeons'"
+      },
+      {
+        "term": "The Black Death",
+        "definition": "A plague pandemic (1348-1349) that killed 30-60% of Europe's population",
+        "importance": "Key event showing limitations of medieval medicine"
+      }
+    ],
+    "learning_objectives": [
+      "Explain medieval beliefs about the cause of disease",
+      "Describe common medieval treatments",
+      "Assess the role of the Church in medical progress",
+      "Evaluate why there was limited progress in medieval medicine",
+      "Analyse the impact of the Black Death"
+    ]
+  },
+  "section_2_detailed_explanations": [
+    {
+      "heading": "Medieval Beliefs About Disease",
+      "content": "Medieval people believed disease was caused by: 1) An imbalance of the Four Humours (from Hippocrates and Galen), 2) Miasma — bad smells and corrupt air, 3) God's punishment for sin, 4) Alignment of planets and stars. Because they didn't know about germs, treatments were often ineffective. The Church controlled education and promoted Galen's ideas, discouraging new thinking.",
+      "key_points": [
+        "Four Humours: blood, phlegm, yellow bile, black bile",
+        "Church promoted Galen = limited challenge to old ideas",
+        "Supernatural beliefs (God, astrology) were common",
+        "No understanding of germs until 19th century"
+      ]
+    },
+    {
+      "heading": "Medieval Treatments",
+      "content": "Common treatments included: bloodletting (removing blood to 'rebalance humours'), purging (vomiting/laxatives), herbal remedies, prayer and pilgrimage, and flagellation (whipping to seek God's forgiveness). While some herbal remedies had genuine medicinal properties, most treatments were based on flawed theories.",
+      "key_points": [
+        "Bloodletting — most common treatment",
+        "Herbal remedies — some actually worked!",
+        "Prayer/pilgrimage — reflects supernatural beliefs",
+        "Leeches used to remove 'excess blood'"
+      ]
+    }
+  ],
+  "section_3_worked_examples": [
+    {
+      "question": "Explain why there was limited progress in medieval medicine (8 marks)",
+      "step_by_step": [
+        "Factor 1 — The Church: The Church controlled education and promoted Galen's ideas as they matched the belief in God's design. Anyone who challenged Galen could be accused of heresy. This meant new ideas were suppressed.",
+        "Factor 2 — Communication: With no printing press until 1440, new ideas spread slowly. Most people were illiterate, so knowledge stayed with a small elite.",
+        "Factor 3 — War and Instability: Constant wars meant resources went to fighting, not medical research. Libraries and manuscripts were destroyed.",
+        "Link: These factors combined to create an environment where old ideas were preserved rather than challenged."
+      ],
+      "answer": "Multi-factor explanation showing how the Church, communication, and social conditions limited progress"
+    }
+  ],
+  "section_4_practice_questions": {
+    "foundation": [
+      {
+        "id": "hm1f1",
+        "question": "What were the Four Humours?",
+        "type": "short_answer",
+        "correct_answer": "Blood, phlegm, yellow bile, and black bile",
+        "explanation": "The Four Humours were believed to be four liquids in the body that needed to be balanced for good health",
+        "marks": 2,
+        "difficulty": "foundation"
+      },
+      {
+        "id": "hm1f2",
+        "question": "What was miasma?",
+        "type": "mcq",
+        "options": [
+          "A type of medicine",
+          "Bad air believed to cause disease",
+          "A medieval hospital",
+          "A type of surgery"
+        ],
+        "correct_answer": "Bad air believed to cause disease",
+        "explanation": "Miasma theory = disease caused by bad smells/corrupt air",
+        "marks": 1,
+        "difficulty": "foundation"
+      }
+    ],
+    "higher": [
+      {
+        "id": "hm1h1",
+        "question": "How far do you agree that the Church was the main reason for limited medical progress in medieval England? (16 marks)",
+        "type": "essay",
+        "correct_answer": "Balanced argument considering Church influence vs other factors (lack of technology, war, education) with a substantiated judgement",
+        "explanation": "16-mark questions require sustained argument with multiple factors and a final judgement",
+        "marks": 16,
+        "difficulty": "higher"
+      }
+    ]
+  },
+  "section_5_exam_guidance": {
+    "command_words": [
+      {
+        "word": "Explain",
+        "meaning": "Give reasons WHY — show cause and consequence"
+      },
+      {
+        "word": "How far do you agree",
+        "meaning": "Argue both sides, then give a justified conclusion"
+      }
+    ],
+    "exam_tips": [
+      "Always use specific dates and examples",
+      "Structure: Point → Evidence → Explanation",
+      "For 16-mark questions: intro, 3 paragraphs, conclusion"
+    ],
+    "common_mistakes": [
+      "Being descriptive instead of analytical",
+      "Forgetting to reach a conclusion in 'How far' questions"
+    ],
+    "mark_scheme_notes": [
+      "Simple statement = Level 1 (1-4)",
+      "Supported explanation = Level 2 (5-8)",
+      "Complex explanation with links = Level 3 (9-12)",
+      "Sustained judgement = Level 4 (13-16)"
+    ],
+    "time_allocation": "16-mark question: 20-25 minutes"
+  },
+  "section_6_additional_resources": {
+    "resources": [
+      {
+        "title": "Medieval Medicine Timeline",
+        "type": "interactive",
+        "description": "Interactive timeline of key events in medieval medicine"
+      }
+    ],
+    "further_reading": [
+      "AQA History GCSE Textbook — Medicine Through Time"
+    ],
+    "revision_checklist": [
+      "I can explain the Four Humours theory",
+      "I can describe common medieval treatments",
+      "I can evaluate the role of the Church",
+      "I can write a 16-mark essay with a judgement"
+    ]
+  },
+  "section_7_assessment_answers": {
+    "answers": [
+      {
+        "question_id": "hm1f1",
+        "model_answer": "The Four Humours were blood, phlegm, yellow bile, and black bile. Medieval doctors believed these four liquids needed to be balanced for good health.",
+        "mark_breakdown": [
+          "1 mark for naming at least 3 humours",
+          "1 mark for explaining they needed to be balanced"
+        ],
+        "examiner_tip": "You must name all four for full marks"
+      }
+    ],
+    "grade_boundaries": {
+      "grade_9": 88,
+      "grade_7": 70,
+      "grade_5": 50,
+      "grade_4": 40
+    }
+  },
+  "view_count": 0,
+  "avg_score": 0,
+  "completion_rate": 0,
+  "created_at": "2026-02-14T20:27:35.675Z",
+  "updated_at": "2026-02-14T20:27:35.675Z"
+}

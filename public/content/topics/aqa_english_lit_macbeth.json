@@ -1,0 +1,209 @@
+{
+  "id": "aqa_english_lit_macbeth",
+  "exam_board": "aqa",
+  "subject": "english_literature",
+  "topic_title": "Macbeth — Lady Macbeth",
+  "topic_number": "Shakespeare",
+  "tier_level": "both",
+  "section_1_key_concepts": {
+    "overview": "Lady Macbeth is one of Shakespeare's most complex characters. She drives the plot through her ambition, manipulation, and eventual guilt. Understanding her character arc is essential for exam success.",
+    "key_terms": [
+      {
+        "term": "Ambition",
+        "definition": "A strong desire to achieve something, often power",
+        "importance": "Lady Macbeth's defining trait that drives the plot"
+      },
+      {
+        "term": "Gender roles",
+        "definition": "Expectations of behaviour based on being male or female",
+        "importance": "Lady Macbeth challenges Jacobean gender norms"
+      },
+      {
+        "term": "Guilt",
+        "definition": "A feeling of responsibility for wrongdoing",
+        "importance": "Drives Lady Macbeth's descent into madness"
+      },
+      {
+        "term": "Soliloquy",
+        "definition": "A speech where a character speaks their thoughts aloud, alone on stage",
+        "importance": "Reveals Lady Macbeth's true feelings"
+      },
+      {
+        "term": "Patriarchal",
+        "definition": "A society ruled and dominated by men",
+        "importance": "Context for Lady Macbeth's subversive behaviour"
+      }
+    ],
+    "learning_objectives": [
+      "Analyse Lady Macbeth's character development across the play",
+      "Explore how Shakespeare uses language to present her ambition",
+      "Understand the significance of gender roles in Jacobean England",
+      "Analyse key quotations and their effects",
+      "Write a structured analytical essay response"
+    ]
+  },
+  "section_2_detailed_explanations": [
+    {
+      "heading": "Lady Macbeth's Introduction (Act 1, Scene 5)",
+      "content": "Lady Macbeth first appears reading Macbeth's letter about the witches' prophecy. She immediately begins planning Duncan's murder, calling on spirits to 'unsex me here' — asking to be stripped of feminine qualities. She calls Macbeth 'too full o' th' milk of human kindness', suggesting he is too gentle for murder. This establishes her as ambitious, manipulative, and willing to reject her femininity for power.",
+      "key_points": [
+        "'Unsex me here' — rejects femininity, links to gender theme",
+        "'Fill me from the crown to the toe top-full of direst cruelty' — wants to be unnaturally cruel",
+        "She is the driving force behind the murder plot",
+        "Shakespeare uses imperative verbs showing her control"
+      ]
+    },
+    {
+      "heading": "The Murder and Manipulation (Act 1, Scene 7 & Act 2)",
+      "content": "When Macbeth hesitates, Lady Macbeth questions his masculinity: 'When you durst do it, then you were a man.' She is practical — she plans the details, drugs the guards, and is frustrated when Macbeth brings the daggers back. She says 'A little water clears us of this deed' — showing her initial lack of guilt. Her strength here contrasts with her later breakdown.",
+      "key_points": [
+        "Manipulates through questioning his manhood",
+        "'Look like th' innocent flower, but be the serpent under't' — deception motif",
+        "She is pragmatic and composed during the murder",
+        "Dramatic irony: 'a little water' foreshadows her obsessive handwashing later"
+      ]
+    },
+    {
+      "heading": "Lady Macbeth's Decline (Act 5, Scene 1)",
+      "content": "By Act 5, Lady Macbeth is sleepwalking, obsessively washing her hands: 'Out, damned spot!' The doctor says she needs a priest, not a physician — suggesting her illness is spiritual guilt. She speaks in prose (not verse), reflecting her mental disintegration. Her death (reported offstage) symbolises how guilt destroys those who pursue power through evil.",
+      "key_points": [
+        "'Out, damned spot!' — guilt has consumed her",
+        "Handwashing = trying to cleanse guilt (contrast with Act 2)",
+        "Prose instead of verse = breakdown of order and control",
+        "Her offstage death may suggest she is no longer important to Macbeth"
+      ]
+    }
+  ],
+  "section_3_worked_examples": [
+    {
+      "question": "How does Shakespeare present Lady Macbeth as a powerful woman? (30 marks)",
+      "step_by_step": [
+        "Introduction: Lady Macbeth is presented as powerful through her ambition, manipulation of Macbeth, and rejection of gender norms — though this power ultimately destroys her.",
+        "Paragraph 1 (Act 1.5): 'Unsex me here' — imperative verb 'unsex' shows she commands supernatural forces. The word suggests power requires rejecting femininity, reflecting Jacobean views that women should be passive.",
+        "Paragraph 2 (Act 1.7): She manipulates Macbeth by questioning his masculinity — 'When you durst do it, then you were a man.' The conditional 'when...then' makes his manhood dependent on murder. Shakespeare shows her psychological power over him.",
+        "Paragraph 3 (Act 5.1): However, her power is ultimately an illusion. 'Out, damned spot!' — the exclamatory cry shows guilt has overwhelmed her. The adjective 'damned' suggests she recognises her own damnation. Shakespeare's message: unnatural power leads to destruction.",
+        "Conclusion: Lady Macbeth's arc — from commanding spirits to being commanded by guilt — serves as a warning about the corrupting nature of unchecked ambition."
+      ],
+      "answer": "A structured essay following Point-Evidence-Explanation-Link (PEEL) structure with contextual understanding"
+    }
+  ],
+  "section_4_practice_questions": {
+    "foundation": [
+      {
+        "id": "lm1f1",
+        "question": "What does Lady Macbeth mean by 'unsex me here'?",
+        "type": "short_answer",
+        "correct_answer": "She is asking to be stripped of her feminine qualities so she can be cruel enough to help murder the king",
+        "explanation": "The imperative 'unsex' shows her desire to reject femininity, which she sees as a weakness preventing her from acting ruthlessly",
+        "marks": 4,
+        "difficulty": "foundation"
+      },
+      {
+        "id": "lm1f2",
+        "question": "Which act does Lady Macbeth's famous sleepwalking scene occur in?",
+        "type": "mcq",
+        "options": [
+          "Act 2",
+          "Act 3",
+          "Act 4",
+          "Act 5"
+        ],
+        "correct_answer": "Act 5",
+        "explanation": "The sleepwalking scene (Act 5, Scene 1) shows her guilt-ridden mental breakdown",
+        "marks": 1,
+        "difficulty": "foundation"
+      }
+    ],
+    "higher": [
+      {
+        "id": "lm1h1",
+        "question": "How does Shakespeare use the motif of blood to track Lady Macbeth's psychological journey?",
+        "type": "essay",
+        "correct_answer": "Blood represents guilt throughout. In Act 2 she dismisses it ('a little water'), but by Act 5 she cannot wash it away ('Out, damned spot!'). This contrast shows guilt is inescapable.",
+        "explanation": "Track the blood motif across the play to show character development",
+        "marks": 8,
+        "difficulty": "higher"
+      }
+    ]
+  },
+  "section_5_exam_guidance": {
+    "command_words": [
+      {
+        "word": "How does Shakespeare present...",
+        "meaning": "Analyse language, structure, and form — include writer's methods"
+      },
+      {
+        "word": "To what extent...",
+        "meaning": "Argue a position with evidence — consider both sides"
+      }
+    ],
+    "exam_tips": [
+      "Use the extract AND the wider play",
+      "Include context but embed it naturally",
+      "Aim for 3 detailed paragraphs, not 5 brief ones",
+      "Use literary terminology: metaphor, imperative, semantic field"
+    ],
+    "common_mistakes": [
+      "Only writing about the extract, ignoring rest of play",
+      "Retelling the story instead of analysing language",
+      "Not including context about Jacobean England"
+    ],
+    "mark_scheme_notes": [
+      "AO1: Response to task (12 marks)",
+      "AO2: Language/structure analysis (12 marks)",
+      "AO3: Context (6 marks)",
+      "Top band requires 'perceptive, detailed analysis'"
+    ],
+    "time_allocation": "55 minutes for the Shakespeare question (including 15 min planning)"
+  },
+  "section_6_additional_resources": {
+    "resources": [
+      {
+        "title": "RSC Lady Macbeth Performance",
+        "type": "video",
+        "description": "Professional performance clips showing different interpretations"
+      },
+      {
+        "title": "Quotation Flash Cards",
+        "type": "interactive",
+        "description": "Key Lady Macbeth quotations with analysis"
+      }
+    ],
+    "further_reading": [
+      "AQA English Literature Anthology",
+      "York Notes on Macbeth"
+    ],
+    "revision_checklist": [
+      "I can analyse 5+ key Lady Macbeth quotations",
+      "I understand her character arc from power to guilt",
+      "I can discuss gender roles in Jacobean context",
+      "I can write a PEEL paragraph with embedded quotations"
+    ]
+  },
+  "section_7_assessment_answers": {
+    "answers": [
+      {
+        "question_id": "lm1f1",
+        "model_answer": "Lady Macbeth asks to be 'unsex[ed]' — stripped of feminine qualities like compassion and nurturing. In Jacobean England, women were expected to be gentle and submissive. By rejecting these traits, she seeks the cruelty needed to pursue power. The imperative verb commands the spirits, showing her determination.",
+        "mark_breakdown": [
+          "1 mark: identifies meaning (stripped of femininity)",
+          "1 mark: explains purpose (to be cruel)",
+          "1 mark: language analysis (imperative)",
+          "1 mark: context (Jacobean gender roles)"
+        ],
+        "examiner_tip": "Always link language analysis to the writer's purpose"
+      }
+    ],
+    "grade_boundaries": {
+      "grade_9": 88,
+      "grade_7": 72,
+      "grade_5": 52,
+      "grade_4": 42
+    }
+  },
+  "view_count": 0,
+  "avg_score": 0,
+  "completion_rate": 0,
+  "created_at": "2026-02-14T20:27:35.651Z",
+  "updated_at": "2026-02-14T20:27:35.651Z"
+}

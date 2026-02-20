@@ -1,0 +1,77 @@
+{
+  "id": "edexcel_maths_algebra_graphs",
+  "exam_board": "edexcel",
+  "subject": "maths",
+  "topic_title": "Algebra: Graphs",
+  "topic_number": "2.2",
+  "tier_level": "both",
+  "section_1_key_concepts": {
+    "overview": "Graphs allow us to visualise algebraic relationships. This topic covers plotting coordinates, straight line graphs (y=mx+c), and interpreting real-life graphs.",
+    "learning_objectives": [
+      "Plot coordinates in all four quadrants",
+      "Recognise, sketch and interpret graphs of linear functions",
+      "Use the form y = mx + c to identify parallel lines",
+      "Find the equation of a line through two points"
+    ],
+    "key_terms": [
+      {
+        "term": "Gradient",
+        "definition": "The steepness of a line (m)",
+        "importance": "Rise over run"
+      },
+      {
+        "term": "Y-intercept",
+        "definition": "Where the line crosses the y-axis (c)",
+        "importance": "Starting value"
+      },
+      {
+        "term": "Origin",
+        "definition": "The point (0,0)",
+        "importance": "Intersection of axes"
+      }
+    ]
+  },
+  "section_2_detailed_explanations": [
+    {
+      "heading": "Linear Graphs (y = mx + c)",
+      "content": "This is the equation of a straight line. 'm' is the gradient (steepness). 'c' is the y-intercept (where it cuts the y-axis). Positive 'm' goes uphill, negative 'm' goes downhill.",
+      "key_points": [
+        "m = change in y / change in x",
+        "Parallel lines have the same gradient"
+      ]
+    }
+  ],
+  "section_3_worked_examples": [],
+  "section_4_practice_questions": {
+    "foundation": [
+      {
+        "id": "q1",
+        "question": "What is the gradient of y = 3x + 2?",
+        "marks": 1,
+        "options": [
+          "3",
+          "2",
+          "3x"
+        ],
+        "correct_answer": "3",
+        "explanation": "In y=mx+c, m is the coefficient of x.",
+        "difficulty": "foundation"
+      }
+    ],
+    "higher": []
+  },
+  "section_5_exam_guidance": {
+    "common_mistakes": [],
+    "exam_tips": [],
+    "command_words": [],
+    "time_allocation": "15 mins"
+  },
+  "section_6_additional_resources": {
+    "resources": [],
+    "revision_checklist": []
+  },
+  "section_7_assessment_answers": {
+    "answers": [],
+    "grade_boundaries": {}
+  }
+}

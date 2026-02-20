@@ -1,0 +1,198 @@
+{
+  "id": "aqa_french_identity_culture",
+  "exam_board": "aqa",
+  "subject": "french",
+  "topic_title": "Identity and Culture — Me, My Family & Friends",
+  "topic_number": "Theme 1.1",
+  "tier_level": "both",
+  "section_1_key_concepts": {
+    "overview": "This topic covers how to describe yourself, your family, and relationships in French. You'll learn key vocabulary, grammar structures, and cultural context for AQA Theme 1.",
+    "key_terms": [
+      {
+        "term": "La famille",
+        "definition": "Family",
+        "importance": "Core vocabulary for speaking and writing"
+      },
+      {
+        "term": "Les loisirs",
+        "definition": "Hobbies/leisure activities",
+        "importance": "Common topic in speaking exam"
+      },
+      {
+        "term": "Les adjectifs",
+        "definition": "Adjectives — words that describe nouns",
+        "importance": "Must agree in gender and number in French"
+      },
+      {
+        "term": "Le présent",
+        "definition": "Present tense",
+        "importance": "Most commonly tested tense"
+      },
+      {
+        "term": "Le passé composé",
+        "definition": "Past tense (perfect)",
+        "importance": "Needed for higher marks"
+      }
+    ],
+    "learning_objectives": [
+      "Describe yourself and family members in French",
+      "Use adjective agreements correctly",
+      "Form and use present and past tenses",
+      "Discuss relationships and what makes a good friend",
+      "Use opinions and justifications (car/parce que)"
+    ]
+  },
+  "section_2_detailed_explanations": [
+    {
+      "heading": "Describing Family Members",
+      "content": "Key vocabulary: mon père (my father), ma mère (my mother), mon frère (my brother), ma sœur (my sister), mes grands-parents (my grandparents). To describe people: Il/Elle est + adjective. Example: Ma mère est gentille et travailleuse (My mother is kind and hardworking). Remember adjective agreements: add -e for feminine, -s for plural.",
+      "key_points": [
+        "mon/ma/mes = my (masc/fem/plural)",
+        "Adjectives agree with gender: gentil → gentille",
+        "Use 'Il est...' for he, 'Elle est...' for she",
+        "Family members are core vocabulary for all papers"
+      ]
+    },
+    {
+      "heading": "Talking About Relationships",
+      "content": "Je m'entends bien avec... (I get on well with...). On se dispute parfois (We argue sometimes). Mon meilleur ami est... (My best friend is...). Un bon ami doit être fidèle, honnête et compréhensif (A good friend should be loyal, honest and understanding).",
+      "key_points": [
+        "s'entendre bien/mal avec = get on well/badly with",
+        "Use connectives: cependant (however), de plus (moreover)",
+        "Give opinions: à mon avis, je pense que, je crois que",
+        "Use justifications with car/parce que (because)"
+      ]
+    }
+  ],
+  "section_3_worked_examples": [
+    {
+      "question": "Translate into French: 'I get on well with my sister because she is funny and kind.'",
+      "step_by_step": [
+        "I get on well with = Je m'entends bien avec",
+        "my sister = ma sœur",
+        "because = parce que / car",
+        "she is = elle est",
+        "funny = drôle (same for masc/fem)",
+        "and = et",
+        "kind = gentille (feminine because sister)"
+      ],
+      "answer": "Je m'entends bien avec ma sœur parce qu'elle est drôle et gentille.",
+      "common_mistakes": [
+        "Forgetting adjective agreement (gentil instead of gentille)",
+        "Using 'avec ma soeur car elle est' — parce que + elle = parce qu'elle"
+      ]
+    }
+  ],
+  "section_4_practice_questions": {
+    "foundation": [
+      {
+        "id": "fr1f1",
+        "question": "What does 'Je m'entends bien avec mon frère' mean?",
+        "type": "mcq",
+        "options": [
+          "I argue with my brother",
+          "I get on well with my brother",
+          "I live with my brother",
+          "I look like my brother"
+        ],
+        "correct_answer": "I get on well with my brother",
+        "explanation": "s'entendre bien avec = to get on well with",
+        "marks": 1,
+        "difficulty": "foundation"
+      },
+      {
+        "id": "fr1f2",
+        "question": "Write a sentence describing your best friend in French",
+        "type": "short_answer",
+        "correct_answer": "Mon meilleur ami est drôle et intelligent (or similar correct sentence)",
+        "explanation": "Must include correct adjective agreement and structure",
+        "marks": 2,
+        "difficulty": "foundation"
+      }
+    ],
+    "higher": [
+      {
+        "id": "fr1h1",
+        "question": "Write 40 words in French about your relationship with a family member. Include two tenses.",
+        "type": "essay",
+        "correct_answer": "A paragraph using present and past/future tense with opinions and justifications",
+        "explanation": "For higher marks, use multiple tenses and complex opinions",
+        "marks": 8,
+        "difficulty": "higher"
+      }
+    ]
+  },
+  "section_5_exam_guidance": {
+    "command_words": [
+      {
+        "word": "Translate",
+        "meaning": "Convert accurately between English and French"
+      },
+      {
+        "word": "Write approximately 90/150 words",
+        "meaning": "Foundation 90 words, Higher 150 words — quality matters more than quantity"
+      }
+    ],
+    "exam_tips": [
+      "Use three tenses for top marks",
+      "Always justify opinions with parce que/car",
+      "Check adjective agreements before submitting",
+      "Learn set phrases for each topic"
+    ],
+    "common_mistakes": [
+      "Wrong adjective agreement",
+      "Using only present tense",
+      "Direct translation from English word order"
+    ],
+    "mark_scheme_notes": [
+      "Content (what you say), Quality of Language (accuracy), Range (variety of vocab and structures)"
+    ],
+    "time_allocation": "Translation: 10 min, Writing: 25 min per question"
+  },
+  "section_6_additional_resources": {
+    "resources": [
+      {
+        "title": "Adjective Agreement Practice",
+        "type": "interactive",
+        "description": "Drag-and-drop adjective matching game"
+      },
+      {
+        "title": "French Family Vocabulary Audio",
+        "type": "video",
+        "description": "Listen and repeat pronunciation guide"
+      }
+    ],
+    "further_reading": [
+      "AQA GCSE French Textbook — Theme 1"
+    ],
+    "revision_checklist": [
+      "I can describe family members with correct adjective agreements",
+      "I can use present and past tenses",
+      "I can give and justify opinions in French",
+      "I know key relationship vocabulary"
+    ]
+  },
+  "section_7_assessment_answers": {
+    "answers": [
+      {
+        "question_id": "fr1f1",
+        "model_answer": "'I get on well with my brother' — s'entendre bien avec means to get along well with someone",
+        "mark_breakdown": [
+          "1 mark for correct translation"
+        ],
+        "examiner_tip": "Learn reflexive verbs as set phrases"
+      }
+    ],
+    "grade_boundaries": {
+      "grade_9": 88,
+      "grade_7": 72,
+      "grade_5": 52,
+      "grade_4": 42
+    }
+  },
+  "view_count": 0,
+  "avg_score": 0,
+  "completion_rate": 0,
+  "created_at": "2026-02-14T20:27:35.675Z",
+  "updated_at": "2026-02-14T20:27:35.675Z"
+}

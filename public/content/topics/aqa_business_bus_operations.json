@@ -1,0 +1,42 @@
+{
+  "id": "aqa_business_bus_operations",
+  "exam_board": "aqa",
+  "subject": "business",
+  "topic_title": "Business Operations",
+  "topic_number": "3",
+  "tier_level": "both",
+  "section_1_key_concepts": {
+    "overview": "This topic covers essential concepts for your GCSE exams.",
+    "learning_objectives": [
+      "Understand key definitions",
+      "Apply concepts to exam questions"
+    ],
+    "key_terms": [
+      {
+        "term": "Concept",
+        "definition": "A general idea or understanding of something",
+        "importance": "Fundamental to this topic"
+      }
+    ]
+  },
+  "section_2_detailed_explanations": [],
+  "section_3_worked_examples": [],
+  "section_4_practice_questions": {
+    "foundation": [],
+    "higher": []
+  },
+  "section_5_exam_guidance": {
+    "common_mistakes": [],
+    "exam_tips": [],
+    "command_words": [],
+    "time_allocation": "15 mins"
+  },
+  "section_6_additional_resources": {
+    "resources": [],
+    "revision_checklist": []
+  },
+  "section_7_assessment_answers": {
+    "answers": [],
+    "grade_boundaries": {}
+  }
+}

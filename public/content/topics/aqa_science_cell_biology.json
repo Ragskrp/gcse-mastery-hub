@@ -1,0 +1,217 @@
+{
+  "id": "aqa_science_cell_biology",
+  "exam_board": "aqa",
+  "subject": "combined_science",
+  "topic_title": "Cell Structure and Function",
+  "topic_number": "B2.1",
+  "tier_level": "both",
+  "section_1_key_concepts": {
+    "overview": "Cells are the basic building blocks of all living organisms. This topic covers the structure and function of eukaryotic and prokaryotic cells, and how to use microscopy to observe them.",
+    "key_terms": [
+      {
+        "term": "Eukaryotic cell",
+        "definition": "A cell with a nucleus and membrane-bound organelles (e.g., animal and plant cells)",
+        "importance": "Most complex organisms are eukaryotes"
+      },
+      {
+        "term": "Prokaryotic cell",
+        "definition": "A simpler cell without a true nucleus (e.g., bacteria)",
+        "importance": "Understanding differences between cell types"
+      },
+      {
+        "term": "Mitochondria",
+        "definition": "The organelle where aerobic respiration takes place",
+        "importance": "Provides energy (ATP) for the cell"
+      },
+      {
+        "term": "Ribosome",
+        "definition": "The site of protein synthesis in the cell",
+        "importance": "Makes all proteins the cell needs"
+      },
+      {
+        "term": "Cell membrane",
+        "definition": "A semi-permeable barrier controlling what enters and leaves the cell",
+        "importance": "Controls substance movement"
+      }
+    ],
+    "learning_objectives": [
+      "Describe the structure of eukaryotic and prokaryotic cells",
+      "Explain the function of each organelle",
+      "Use a microscope and calculate magnification",
+      "Compare animal, plant, and bacterial cells",
+      "Understand the scale of cells and units of measurement"
+    ]
+  },
+  "section_2_detailed_explanations": [
+    {
+      "heading": "Animal and Plant Cells",
+      "content": "Both animal and plant cells are eukaryotic. They share: nucleus (contains DNA), cell membrane, cytoplasm, mitochondria, and ribosomes. Plant cells additionally have: cell wall (cellulose), permanent vacuole (filled with cell sap), and chloroplasts (for photosynthesis).",
+      "key_points": [
+        "Both types have nucleus, membrane, cytoplasm, mitochondria, ribosomes",
+        "Plant cells also have cell wall, vacuole, chloroplasts",
+        "Not all plant cells have chloroplasts (e.g., root cells)"
+      ]
+    },
+    {
+      "heading": "Prokaryotic Cells (Bacteria)",
+      "content": "Prokaryotic cells are much smaller (1-5 μm vs 10-100 μm) and simpler. They have: cell membrane, cytoplasm, ribosomes (smaller), cell wall, and a single DNA loop (not enclosed in a nucleus). Some have plasmids (small rings of extra DNA) and flagella (tail for movement).",
+      "key_points": [
+        "No true nucleus — DNA floats freely",
+        "Much smaller than eukaryotic cells",
+        "May have plasmids and flagella",
+        "Cell wall is NOT made of cellulose"
+      ]
+    },
+    {
+      "heading": "Microscopy and Magnification",
+      "content": "Magnification = Image size ÷ Actual size. Light microscopes magnify up to ×1500 with a resolution of 200nm. Electron microscopes magnify up to ×2,000,000 with resolution of 0.2nm. Units: 1mm = 1000μm, 1μm = 1000nm.",
+      "key_points": [
+        "Formula: M = I ÷ A (magnification = image ÷ actual)",
+        "Light microscopes use light; electron microscopes use electrons",
+        "Electron microscopes reveal sub-cellular detail",
+        "Always convert units before calculating"
+      ]
+    }
+  ],
+  "section_3_worked_examples": [
+    {
+      "question": "A cell is 0.05mm long. Under a microscope, it appears 25mm. What is the magnification?",
+      "step_by_step": [
+        "Write the formula: M = I ÷ A",
+        "Image size (I) = 25mm",
+        "Actual size (A) = 0.05mm",
+        "M = 25 ÷ 0.05 = ×500"
+      ],
+      "answer": "×500",
+      "common_mistakes": [
+        "Forgetting to use the same units",
+        "Dividing actual by image instead"
+      ]
+    },
+    {
+      "question": "Convert 50 micrometres to millimetres",
+      "step_by_step": [
+        "1mm = 1000μm",
+        "50μm ÷ 1000 = 0.05mm"
+      ],
+      "answer": "0.05mm"
+    }
+  ],
+  "section_4_practice_questions": {
+    "foundation": [
+      {
+        "id": "cb1f1",
+        "question": "Which organelle controls what enters and leaves the cell?",
+        "type": "mcq",
+        "options": [
+          "Nucleus",
+          "Cell membrane",
+          "Cell wall",
+          "Cytoplasm"
+        ],
+        "correct_answer": "Cell membrane",
+        "explanation": "The cell membrane is semi-permeable and controls substance movement",
+        "marks": 1,
+        "difficulty": "foundation"
+      },
+      {
+        "id": "cb1f2",
+        "question": "Name two organelles found in plant cells but NOT in animal cells",
+        "type": "short_answer",
+        "correct_answer": "Cell wall and chloroplasts (or permanent vacuole)",
+        "explanation": "Plant cells have cell wall, chloroplasts, and a permanent vacuole that animal cells lack",
+        "marks": 2,
+        "difficulty": "foundation"
+      }
+    ],
+    "higher": [
+      {
+        "id": "cb1h1",
+        "question": "An image of a cell is 30mm. The magnification is ×600. Calculate the actual size in μm.",
+        "type": "calculation",
+        "correct_answer": "50μm",
+        "explanation": "A = I ÷ M = 30 ÷ 600 = 0.05mm = 50μm",
+        "marks": 3,
+        "difficulty": "higher"
+      }
+    ]
+  },
+  "section_5_exam_guidance": {
+    "command_words": [
+      {
+        "word": "Describe",
+        "meaning": "Give an account of the main features"
+      },
+      {
+        "word": "Compare",
+        "meaning": "Identify similarities and differences"
+      },
+      {
+        "word": "Calculate",
+        "meaning": "Work out using numbers — show working"
+      }
+    ],
+    "exam_tips": [
+      "Always state units in magnification questions",
+      "Draw and label diagrams clearly",
+      "When comparing cells, use a table format"
+    ],
+    "common_mistakes": [
+      "Saying plant cells don't have mitochondria (they do!)",
+      "Confusing cell wall and cell membrane",
+      "Unit conversion errors"
+    ],
+    "mark_scheme_notes": [
+      "1 mark per correct identification",
+      "Calculation marks: M1 for formula, M1 for substitution, A1 for answer with units"
+    ],
+    "time_allocation": "6-mark questions: spend 8-10 minutes"
+  },
+  "section_6_additional_resources": {
+    "resources": [
+      {
+        "title": "Virtual Microscope",
+        "type": "interactive",
+        "description": "Explore cells under different magnifications"
+      },
+      {
+        "title": "Cell Structure Animation",
+        "type": "video",
+        "description": "3D animation showing organelle functions"
+      }
+    ],
+    "further_reading": [
+      "AQA GCSE Biology Student Book — Chapter 1",
+      "CGP AQA Science Revision Guide"
+    ],
+    "revision_checklist": [
+      "I can label animal and plant cell diagrams",
+      "I can describe the function of each organelle",
+      "I can calculate magnification",
+      "I can compare eukaryotic and prokaryotic cells"
+    ]
+  },
+  "section_7_assessment_answers": {
+    "answers": [
+      {
+        "question_id": "cb1f1",
+        "model_answer": "Cell membrane — it is semi-permeable and controls the passage of substances into and out of the cell",
+        "mark_breakdown": [
+          "1 mark for identifying cell membrane"
+        ],
+        "examiner_tip": "Don't confuse with cell wall which provides structural support"
+      }
+    ],
+    "grade_boundaries": {
+      "grade_9": 92,
+      "grade_7": 76,
+      "grade_5": 56,
+      "grade_4": 46
+    }
+  },
+  "view_count": 0,
+  "avg_score": 0,
+  "completion_rate": 0,
+  "created_at": "2026-02-14T20:27:35.651Z",
+  "updated_at": "2026-02-14T20:27:35.651Z"
+}

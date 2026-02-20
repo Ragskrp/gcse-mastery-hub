@@ -1,0 +1,84 @@
+{
+  "id": "edexcel_maths_probability",
+  "exam_board": "edexcel",
+  "subject": "maths",
+  "topic_title": "Probability",
+  "topic_number": "5.1",
+  "tier_level": "both",
+  "section_1_key_concepts": {
+    "overview": "Probability is the maths of chance and uncertainty. Essential for statistics and decision making.",
+    "learning_objectives": [
+      "Understand probability scale from 0 to 1",
+      "Calculate theoretical probabilities",
+      "Use tree diagrams for combined events"
+    ],
+    "key_terms": [
+      {
+        "term": "Event",
+        "definition": "Something that happens (e.g. flipping a coin)",
+        "importance": "Outcome"
+      },
+      {
+        "term": "Mutually Exclusive",
+        "definition": "Events that cannot happen at the same time",
+        "importance": "Probabilities add to 1"
+      }
+    ]
+  },
+  "section_2_detailed_explanations": [
+    {
+      "heading": "Calculating Probability",
+      "content": "P(Event) = Number of successful outcomes / Total number of possible outcomes. Probabilities can be fractions, decimals or percentages.",
+      "key_points": [
+        "Total probability = 1",
+        "P(Not A) = 1 - P(A)"
+      ]
+    }
+  ],
+  "section_3_worked_examples": [
+    {
+      "question": "A bag has 3 red and 7 blue balls. P(Red)?",
+      "step_by_step": [
+        "Total balls = 3 + 7 = 10",
+        "Red balls = 3",
+        "P(Red) = 3/10"
+      ],
+      "answer": "3/10 or 0.3",
+      "common_mistakes": [
+        "Using ratios (3:7) instead of fractions"
+      ]
+    }
+  ],
+  "section_4_practice_questions": {
+    "foundation": [
+      {
+        "id": "q1",
+        "question": "Probability of rolling a 7 on a dice?",
+        "marks": 1,
+        "options": [
+          "0",
+          "1/6",
+          "1/7"
+        ],
+        "correct_answer": "0",
+        "explanation": "Impossible event.",
+        "difficulty": "foundation"
+      }
+    ],
+    "higher": []
+  },
+  "section_5_exam_guidance": {
+    "common_mistakes": [],
+    "exam_tips": [],
+    "command_words": [],
+    "time_allocation": "15 mins"
+  },
+  "section_6_additional_resources": {
+    "resources": [],
+    "revision_checklist": []
+  },
+  "section_7_assessment_answers": {
+    "answers": [],
+    "grade_boundaries": {}
+  }
+}

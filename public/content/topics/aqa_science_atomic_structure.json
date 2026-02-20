@@ -1,0 +1,201 @@
+{
+  "id": "aqa_science_atomic_structure",
+  "exam_board": "aqa",
+  "subject": "combined_science",
+  "topic_title": "Atomic Structure & Periodic Table",
+  "topic_number": "C1",
+  "tier_level": "both",
+  "section_1_key_concepts": {
+    "overview": "Everything is made of atoms. This topic covers the history of the atom, subatomic particles (protons, neutrons, electrons), isotopes, and how the periodic table is organised.",
+    "key_terms": [
+      {
+        "term": "Atom",
+        "definition": "Smallest part of an element that can exist",
+        "importance": "Building block of matter"
+      },
+      {
+        "term": "Isotope",
+        "definition": "Atoms of the same element with different numbers of neutrons",
+        "importance": "Affects atomic mass but not chemical properties"
+      },
+      {
+        "term": "Ion",
+        "definition": "An atom that has lost or gained electrons (charged)",
+        "importance": "Basis of ionic bonding"
+      },
+      {
+        "term": "Atomic Number",
+        "definition": "Number of protons in nucleus",
+        "importance": "Defines the element"
+      },
+      {
+        "term": "Mass Number",
+        "definition": "Total protons + neutrons",
+        "importance": "Used to calculate neutrons"
+      }
+    ],
+    "learning_objectives": [
+      "Describe the structure of an atom",
+      "Calculate protons, neutrons, and electrons",
+      "Explain the history of the atomic model",
+      "Describe the arrangement of the periodic table",
+      "Explain trends in Group 1 and Group 7"
+    ]
+  },
+  "section_2_detailed_explanations": [
+    {
+      "heading": "Structure of the Atom",
+      "content": "Atoms have a central nucleus containing protons (positive) and neutrons (neutral). Electrons (negative) orbit the nucleus in shells. Atoms are neutral because protons = electrons. Radius is ~0.1nm (1x10⁻¹⁰m).",
+      "key_points": [
+        "Proton: Mass 1, Charge +1",
+        "Neutron: Mass 1, Charge 0",
+        "Electron: Mass very small (~1/2000), Charge -1",
+        "Nucleus contains almost all the mass"
+      ]
+    },
+    {
+      "heading": "History of the Atom",
+      "content": "The model changed over time: 1) Dalton (Solid spheres), 2) JJ Thomson (Plum Pudding - ball of positive charge with electrons stuck in), 3) Rutherford (Alpha scattering - discovered nucleus), 4) Bohr (Electron shells), 5) Chadwick (Neutrons).",
+      "key_points": [
+        "Plum Pudding was disproved by Alpha Scattering",
+        "Rutherford showed atom is mostly empty space",
+        "Bohr added shells/energy levels"
+      ]
+    },
+    {
+      "heading": "The Periodic Table",
+      "content": "Arranged by atomic number. Groups (columns) = electrons in outer shell. Periods (rows) = number of shells. Group 1 (Alkali metals) get MORE reactive down the group. Group 7 (Halogens) get LESS reactive down the group. Group 0 (Noble gases) are unreactive (full outer shell).",
+      "key_points": [
+        "Mendeleev left gaps for undiscovered elements",
+        "Metals on left, non-metals on right",
+        "Elements in same grep have similar properties"
+      ]
+    }
+  ],
+  "section_3_worked_examples": [
+    {
+      "question": "Describe the structure of a Sodium atom (Mass 23, Atomic No 11)",
+      "step_by_step": [
+        "Protons = Atomic Number = 11",
+        "Electrons = Protons = 11",
+        "Neutrons = Mass - Atomic No = 23 - 11 = 12",
+        "Electronic structure: 2 in first shell, 8 in second, 1 in third (2,8,1)",
+        "Groups: It is in Group 1 because 1 electron in outer shell"
+      ],
+      "answer": "11 protons, 12 neutrons, 11 electrons (2,8,1)"
+    }
+  ],
+  "section_4_practice_questions": {
+    "foundation": [
+      {
+        "id": "sc1f1",
+        "question": "What is the charge of a proton?",
+        "type": "mcq",
+        "options": [
+          "+1",
+          "-1",
+          "0",
+          "+2"
+        ],
+        "correct_answer": "+1",
+        "explanation": "Protons are positive (+1), Electrons are negative (-1)",
+        "marks": 1,
+        "difficulty": "foundation"
+      },
+      {
+        "id": "sc1f2",
+        "question": "Why are Noble Gases unreactive?",
+        "type": "short_answer",
+        "correct_answer": "They have a full outer shell of electrons",
+        "explanation": "Stable configuration requires no loss/gain of electrons",
+        "marks": 2,
+        "difficulty": "foundation"
+      }
+    ],
+    "higher": [
+      {
+        "id": "sc1h1",
+        "question": "Explain why Group 1 metals get more reactive down the group (4 marks)",
+        "type": "essay",
+        "correct_answer": "Atoms get larger / more shells; Outer electron is further from nucleus; Weaker attraction from nucleus; Electron is lost more easily",
+        "explanation": "Shielding effect and distance from nucleus",
+        "marks": 4,
+        "difficulty": "higher"
+      }
+    ]
+  },
+  "section_5_exam_guidance": {
+    "command_words": [
+      {
+        "word": "Describe",
+        "meaning": "State features clearly"
+      },
+      {
+        "word": "Explain",
+        "meaning": "Give scientific reasons (using 'because')"
+      }
+    ],
+    "exam_tips": [
+      "Learn the charge/mass table for particles",
+      "Remember Group 1 gets MORE reactive down, Group 7 LESS",
+      "Always mention 'electrostatic attraction' in explaining reactivity"
+    ],
+    "common_mistakes": [
+      "Confusing mass number and atomic number",
+      "Forgetting neutrons have no charge",
+      "Thinking electrons orbit in random paths (they are in shells)"
+    ],
+    "mark_scheme_notes": [
+      "Specific scientific terminology is required for 'Explain' questions"
+    ],
+    "time_allocation": "1 min per mark"
+  },
+  "section_6_additional_resources": {
+    "resources": [
+      {
+        "title": "Build an Atom Sim",
+        "type": "interactive",
+        "description": "Add protons/neutrons to see element changes"
+      },
+      {
+        "title": "Alkali Metals Demo",
+        "type": "video",
+        "description": "Reactions of Li, Na, K with water"
+      }
+    ],
+    "further_reading": [
+      "CGP Combined Science - Chemistry Section 1"
+    ],
+    "revision_checklist": [
+      "I can draw electronic structures (e.g. 2,8,1)",
+      "I know the history of the atom",
+      "I can explain trends in Group 1 and 7"
+    ]
+  },
+  "section_7_assessment_answers": {
+    "answers": [
+      {
+        "question_id": "sc1h1",
+        "model_answer": "As you go down Group 1, atoms get larger with more shells. The outer electron is further from the nucleus, so the electrostatic attraction is weaker. This means the electron is lost more easily.",
+        "mark_breakdown": [
+          "1 mark: size increases",
+          "1 mark: distance increases",
+          "1 mark: attraction decreases",
+          "1 mark: easier to lose electron"
+        ],
+        "examiner_tip": "Use the word 'shielding' for extra credit"
+      }
+    ],
+    "grade_boundaries": {
+      "grade_9": 85,
+      "grade_7": 70,
+      "grade_5": 50,
+      "grade_4": 40
+    }
+  },
+  "view_count": 0,
+  "avg_score": 0,
+  "completion_rate": 0,
+  "created_at": "2026-02-14T20:27:35.692Z",
+  "updated_at": "2026-02-14T20:27:35.692Z"
+}

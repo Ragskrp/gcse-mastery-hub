@@ -1,0 +1,173 @@
+
+const fs = require('fs');
+const path = require('path');
+
+const OUTPUT_DIR = path.join(process.cwd(), 'public', 'content', 'topics');
+const FILE_PATH = path.join(OUTPUT_DIR, 'edexcel_maths_number_structure.json');
+
+const DEEP_CONTENT = {
+    id: "edexcel_maths_number_structure",
+    exam_board: "edexcel",
+    subject: "maths",
+    topic_title: "Number: Structure and Calculation",
+    topic_number: "1.1",
+    tier_level: "both",
+    section_1_key_concepts: {
+        overview: "This topic is the foundation of all mathematics. It mastery involves understanding how numbers work, from the value of each digit to performing complex calculations with precision. It covers integers, decimals, types of numbers, order of operations (BIDMAS), and the laws of arithmetic.",
+        learning_objectives: [
+            "Order positive and negative integers, decimals, and fractions",
+            "Use the symbols =, ≠, <, >, ≤, ≥ correctly",
+            "Apply the four operations (+, -, ×, ÷) to integers, decimals, and simple fractions (proper and improper) and mixed numbers",
+            "Understand and use place value (e.g., thousands, hundredths)",
+            "Recognise and use relationships between operations (inverse operations)",
+            "Use brackets and the hierarchy of operations (BIDMAS)",
+            "Round numbers and measures to an appropriate degree of accuracy (decimal places, significant figures)",
+            "Estimate answers to calculations using one significant figure",
+            "Identify prime numbers, square numbers, cube numbers, and their roots"
+        ],
+        key_terms: [
+            { term: "Integer", definition: "A whole number, positive, negative, or zero (e.g., -5, 0, 42). No fractions or decimals.", importance: "Fundamental number type." },
+            { term: "Place Value", definition: "The value of a digit depending on its position in the number (e.g., the 5 in 500 represents 5 hundreds).", importance: "Critical for understanding magnitude." },
+            { term: "BIDMAS", definition: "Acronym for order of operations: Brackets, Indices, Division/Multiplication, Addition/Subtraction.", importance: "Ensures there is only one correct answer to a calculation." },
+            { term: "Significant Figures", definition: "The digits in a number that contribute to its measurement resolution. The first non-zero digit is the 1st significant figure.", importance: "Used for precision and estimation." },
+            { term: "Product", definition: "The result of multiplying two or more numbers.", importance: "Exam terminology." },
+            { term: "Quotient", definition: "The result of dividing one number by another.", importance: "Exam terminology." },
+            { term: "Inverse Operation", definition: "The operation that reverses the effect of another (e.g., subtraction is the inverse of addition).", importance: "Used in solving equations and checking answers." }
+        ]
+    },
+    section_2_detailed_explanations: [
+        {
+            heading: "1. Place Value and Ordering",
+            content: "The value of every digit is determined by its column. Moving left multiplies the value by 10; moving right divides by 10. \n\nColumns: ... | Thousands | Hundreds | Tens | Units | . | Tenths | Hundredths | Thousandths | ...\n\nComparing Numbers:\n1. Align the decimal points.\n2. Compare digits from left to right.\n3. The first column with a different digit determines which number is larger.\n\nNegative Numbers: \nThink of a vertical thermometer. -10 is lower (smaller) than -2. The 'larger' the number looks, the smaller it actually is if it has a minus sign.",
+            key_points: ["Always align decimal points when ordering.", "-100 is smaller than -1.", "Use placeholder zeros to make comparing decimals easier (e.g., compare 0.4 and 0.35 -> compare 0.40 and 0.35)."]
+        },
+        {
+            heading: "2. The Four Operations (Written Methods)",
+            content: "You must be fluent in column methods.\n\nAddition & Subtraction:\n- Align decimal points vertically.\n- Fill empty spots with zeros.\n- Add/Subtract from right to left.\n- 'Carry' or 'Borrow' (Exchange) carefully.\n\nMultiplication:\n- Grid Method: Reliable for partitioning (e.g. 23 x 45 becomes (20+3) x (40+5)).\n- Column Method: Standard algorithm. Remember to put a '0' placeholder when multiplying by the tens digit.\n- Decimals: Ignore decimal points, multiply as integers, then put the decimal point back. The answer has the same total decimal places as the question steps combined.\n\nDivision:\n- Short Division (Bus Stop): Good for single digit divisors.\n- Long Division: Essential for 2-digit divisors (e.g. dividing by 13). List the multiples of the divisor first to make it easier.",
+            key_points: ["When multiplying decimals: 0.2 x 0.3 = 0.06 (1 dp + 1 dp = 2 dp).", "For long division: Subtraction is key to finding the remainder at each step."]
+        },
+        {
+            heading: "3. Order of Operations (BIDMAS)",
+            content: "Calculations must be done in a specific hierarchy, or you will get the wrong answer.\n\nB - Brackets (Do everything inside first)\nI - Indices (Powers and Roots)\nD/M - Division & Multiplication (Equal priority, work Left to Right)\nA/S - Addition & Subtraction (Equal priority, work Left to Right)\n\nExample: 3 + 4 x 2\nWrong: 7 x 2 = 14.\nCorrect: Multiplication first. 4 x 2 = 8. Then 3 + 8 = 11.",
+            key_points: ["Calculators follow BIDMAS.", "Division and Multiplication are equal - go left to right.", "Indices includes square roots."]
+        },
+        {
+            heading: "4. Rounding and Estimation",
+            content: "Rounding makes numbers easier to assume or work with.\n\nDecimal Places (dp):\nCount after the decimal point. Look at the NEXT number. 5+ rounds up.\n\nSignificant Figures (sf):\nCount from the first NON-ZERO digit. \nExample: Round 0.004567 to 2 s.f.\n1st s.f. is 4. 2nd is 5. Next is 6 (Round up).\nAnswer: 0.0046.\n\nEstimation:\nALWAYS round every number in the calculation to 1 Significant Figure (1 s.f.) first, then calculate. Do not calculate then round.",
+            key_points: ["0.00507 has 3 significant figures (5, 0, 7). Leading zeros are NOT significant.", "Estimation implies 1 s.f. rounding unless told otherwise."]
+        },
+        {
+            heading: "5. Prime Factors, HCF and LCM",
+            content: "Every number can be broken down into a product of prime numbers (Prime Factor Decomposition).\n\nMethod: Factor Tree.\n- Split the number into two factors.\n- Circle any primes.\n- Continue until all branches end in primes.\n- Write as a product (e.g. 2 x 2 x 3 = 2² x 3).\n\nHCF (Highest Common Factor): Variations of Venn Diagram method using prime factors. The intersection implies numbers that divide BOTH.\n\nLCM (Lowest Common Multiple): The union of the Venn diagram implies the smallest number both divide into.",
+            key_points: ["1 is NOT a prime number.", "2 is the only even prime number.", "HCF is multiplying shared primes.", "LCM is multiplying all primes in Venn diagram."]
+        }
+    ],
+    section_3_worked_examples: [
+        {
+            question: "Evaluate: 4 + 6 × (3² - 5)",
+            step_by_step: [
+                "1. Brackets first: Inside is (3² - 5).",
+                "2. Indices inside brackets: 3² = 9. So (9 - 5).",
+                "3. Finish brackets: 9 - 5 = 4.",
+                "4. Rewrite calculation: 4 + 6 × 4",
+                "5. Multiplication before Addition (BIDMAS): 6 × 4 = 24.",
+                "6. Addition: 4 + 24 = 28."
+            ],
+            answer: "28",
+            common_mistakes: ["Doing 4 + 6 first (yielding 10) -> gives 40 (Wrong).", "Forgetting 3² is 9, not 6."]
+        },
+        {
+            question: "Estimate the value of: (21.4 × 9.8) / 0.49",
+            step_by_step: [
+                "1. Round everything to 1 significant figure.",
+                "   21.4 → 20",
+                "   9.8 → 10",
+                "   0.49 → 0.5 (Note: 0.5 is 1 s.f.)",
+                "2. Rewrite: (20 × 10) / 0.5",
+                "3. Calculate numerator: 200",
+                "4. Divide by 0.5: 200 / 0.5",
+                "   Dividing by a half is the same as multiplying by 2.",
+                "   200 × 2 = 400."
+            ],
+            answer: "400",
+            common_mistakes: ["Rounding 0.49 to 0 or 1 (too inaccurate).", "Thinking 200 / 0.5 is 100."]
+        },
+        {
+            question: "Write 180 as a product of prime factors.",
+            step_by_step: [
+                "1. Split 180: e.g., 18 × 10",
+                "2. Split 18: 2 × 9 (Circle 2)",
+                "3. Split 9: 3 × 3 (Circle 3s)",
+                "4. Split 10: 2 × 5 (Circle 2, 5)",
+                "5. Collect primes: 2, 2, 3, 3, 5",
+                "6. Write in index form: 2² × 3² × 5"
+            ],
+            answer: "2² × 3² × 5",
+            common_mistakes: ["Writing just a list '2, 2, 3, 3, 5' without multiplication signs.", "Stopping at non-primes like 9."]
+        }
+    ],
+    section_4_practice_questions: {
+        foundation: [
+            { id: "f1", question: "What is the value of the digit 7 in 5723?", marks: 1, options: ["7", "70", "700", "7000"], correct_answer: "700", explanation: "It is in the hundreds column.", difficulty: "foundation" },
+            { id: "f2", question: "Calculate 4.5 + 13.26", marks: 2, options: ["17.76", "17.31", "13.71", "58.26"], correct_answer: "17.76", explanation: "Align 4.50 and 13.26. 0+6=6, 5+2=7, 4+3=7, 1=1.", difficulty: "foundation" },
+            { id: "f3", question: "Round 5678 to the nearest 100.", marks: 1, options: ["5600", "5700", "5680"], correct_answer: "5700", explanation: "7 tens is >= 5, so round hundreds up.", difficulty: "foundation" },
+            { id: "f4", question: "2 + 3 x 4 = ?", marks: 1, options: ["20", "14", "9"], correct_answer: "14", explanation: "Multiplication first: 3x4=12. Then 2+12=14.", difficulty: "foundation" }
+        ],
+        higher: [
+            { id: "h1", question: "Estimate: (6.1 x 3.9) / 0.52", marks: 3, options: ["48", "4.8", "480", "24"], correct_answer: "48", explanation: "(6 x 4) / 0.5 = 24 / 0.5 = 48.", difficulty: "higher" },
+            { id: "h2", question: "Given 34 x 56 = 1904, what is 3.4 x 0.56?", marks: 2, options: ["1.904", "19.04", "0.1904"], correct_answer: "1.904", explanation: "3.4 (div 10) x 0.56 (div 100) = Total div 1000. 1904 / 1000 = 1.904.", difficulty: "higher" },
+            { id: "h3", question: "Express 72 as a product of prime factors in index form.", marks: 3, options: ["2² x 3²", "2³ x 3²", "2³ x 3³"], correct_answer: "2³ x 3²", explanation: "72 = 8 x 9. 8 = 2³, 9 = 3².", difficulty: "higher" },
+            { id: "h4", question: "Evaluate: 5⁻²", marks: 2, options: ["-10", "1/25", "-25", "0.2"], correct_answer: "1/25", explanation: "Negative power means reciprocal. 1 / 5² = 1/25.", difficulty: "higher" }
+        ]
+    },
+    section_5_exam_guidance: {
+        common_mistakes: [
+            "Forgetting standard order of operations (BIDMAS) - especially doing addition before multiplication.",
+            "Mis-aligning columns when adding/subtracting decimals.",
+            "Rounding errors: Counting significant figures from the start of the number (0.00..) instead of the first counting number.",
+            "Long division: Losing track of remainders or place value.",
+            "Estimation: Calculating the exact answer then rounding it (Marks will be deducted! You must round the components first)."
+        ],
+        exam_tips: [
+            "Always show your working for 2+ mark questions. If you make an arithmetic error but the method is right, you get marks.",
+            "For estimation questions, write down the rounded numbers (e.g., 'approx 20 x 5') to secure the method mark immediately.",
+            "Check your answer is sensible. If you estimate 20 x 5 and your actual calculation gives 10,000, you've missed a decimal point."
+        ],
+        command_words: [
+            { word: "Evaluate", meaning: "Work out the value of (calculate the final number)." },
+            { word: "Estimate", meaning: "Round numbers to 1 s.f. and find an approximate answer." },
+            { word: "Express", meaning: "Rewrite a number in a different form (e.g. as a product of primes)." }
+        ],
+        time_allocation: "1 hour for mastery of this unit"
+    },
+    section_6_additional_resources: {
+        resources: [
+            { title: "BBC Bitesize - Place Value", type: "article", description: "Comprehensive guide to integers and decimals." },
+            { title: "MathsGenie - BIDMAS", type: "video", description: "Walkthrough of order of operations exam questions." }
+        ],
+        revision_checklist: [
+            "I can order decimals and negative numbers confidently.",
+            "I can do long multiplication and long division without a calculator.",
+            "I use BIDMAS instinctively for every calculation.",
+            "I know the difference between 'Decimal Places' and 'Significant Figures'.",
+            "I can find the HCF and LCM of two numbers."
+        ]
+    },
+    section_7_assessment_answers: {
+        answers: [
+            {
+                model_answer: "(Example Long Answer) \nQ: Estimate the total cost of 31 books at £4.95 each.\n\n1. Round values to 1 s.f.:\n   31 ≈ 30\n   4.95 ≈ 5\n2. Calculation: 30 × 5 = 150\n3. Answer: £150",
+                mark_breakdown: ["1 mark for rounding 31 to 30 and 4.95 to 5", "1 mark for correct multiplication result"],
+                examiner_tip: "Do not try to work out 31 x 4.95 precisely. The question asks for an estimate."
+            }
+        ],
+        grade_boundaries: {
+            grade_4: 55,
+            grade_7: 75,
+            grade_9: 90
+        }
+    }
+};
+
+fs.writeFileSync(FILE_PATH, JSON.stringify(DEEP_CONTENT, null, 2));
+console.log("✅ Deep content update complete for: Number Structure");

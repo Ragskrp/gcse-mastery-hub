@@ -1,0 +1,161 @@
+{
+  "id": "aqa_science_forces",
+  "exam_board": "aqa",
+  "subject": "combined_science",
+  "topic_title": "Forces and Motion",
+  "topic_number": "P5",
+  "tier_level": "both",
+  "section_1_key_concepts": {
+    "overview": "Forces cause objects to move, change speed, or change shape. This topic covers vectors, Newton's Laws, and motion graphs.",
+    "key_terms": [
+      {
+        "term": "Vector",
+        "definition": "Measurement with magnitude AND direction",
+        "importance": "Force, Velocity, Displacement"
+      },
+      {
+        "term": "Scalar",
+        "definition": "Measurement with magnitude only",
+        "importance": "Speed, Distance, Mass"
+      },
+      {
+        "term": "Resultant Force",
+        "definition": "The single force that has the same effect as all forces acting on an object",
+        "importance": "Determines motion (Newton's 2nd Law)"
+      },
+      {
+        "term": "Acceleration",
+        "definition": "Rate of change of velocity",
+        "importance": "a = (v-u)/t"
+      },
+      {
+        "term": "Terminal Velocity",
+        "definition": "Constant max speed reached when forces are balanced",
+        "importance": "Falling objects"
+      }
+    ],
+    "learning_objectives": [
+      "Distinguish between scalar and vector quantities",
+      "Calculate resultant forces",
+      "Apply Newton's Three Laws of Motion",
+      "Interpret Distance-Time and Velocity-Time graphs",
+      "Calculate work done (W = Fs)"
+    ]
+  },
+  "section_2_detailed_explanations": [
+    {
+      "heading": "Scalars vs Vectors",
+      "content": "Scalars have size only (Speed, Distance, Mass, Energy, Time). Vectors have size AND direction (Velocity, Displacement, Weight, Force, Acceleration). We represent vectors with arrows.",
+      "key_points": [
+        "Speed is scalar, Velocity is vector",
+        "Mass is scalar, Weight is vector",
+        "Vectors can be added/subtracted"
+      ]
+    },
+    {
+      "heading": "Newton's Laws",
+      "content": "1) If resultant force is zero, object remains stationary or moves at constant velocity. 2) F = ma (Force = mass × acceleration). 3) Every action has an equal and opposite reaction.",
+      "key_points": [
+        "Balanced forces = constant speed (or still)",
+        "Unbalanced forces = acceleration",
+        "F=ma is the key formula"
+      ]
+    }
+  ],
+  "section_3_worked_examples": [
+    {
+      "question": "A car of mass 1000kg accelerates at 2m/s². Calculate the resultant force.",
+      "step_by_step": [
+        "Formula: F = ma",
+        "Substitute: F = 1000 × 2",
+        "Calculate: 2000",
+        "Unit: Newtons (N)"
+      ],
+      "answer": "2000N"
+    }
+  ],
+  "section_4_practice_questions": {
+    "foundation": [
+      {
+        "id": "spf1",
+        "question": "Is velocity a scalar or a vector?",
+        "type": "mcq",
+        "options": [
+          "Scalar",
+          "Vector"
+        ],
+        "correct_answer": "Vector",
+        "explanation": "It has direction",
+        "marks": 1,
+        "difficulty": "foundation"
+      }
+    ],
+    "higher": [
+      {
+        "id": "sph1",
+        "question": "Explain terminal velocity of a skydiver (6 marks)",
+        "type": "essay",
+        "correct_answer": "Weight acts down; Air resistance acts up. Initially Weight > Air resistance -> accelerates. As speed increases, air resistance increases. Eventually Air resistance = Weight. Resultant force = 0. Constant speed reached.",
+        "explanation": "Steps: Acceleration -> Resistance Increases -> Forces Balance -> Constant Speed",
+        "marks": 6,
+        "difficulty": "higher"
+      }
+    ]
+  },
+  "section_5_exam_guidance": {
+    "command_words": [
+      {
+        "word": "Calculate",
+        "meaning": "Use formula"
+      },
+      {
+        "word": "Describe motion",
+        "meaning": "Constant speed / accelerating / stationary"
+      }
+    ],
+    "exam_tips": [
+      "Remember units (N, m/s, m/s²)",
+      "Gradient of Distance-Time graph = Speed",
+      "Area under Velocity-Time graph = Distance"
+    ],
+    "common_mistakes": [
+      "Confusing mass (kg) and weight (N)",
+      "Thinking constant speed means 'force is constant' (Force is ZERO)"
+    ],
+    "mark_scheme_notes": [
+      "Show substitution into formula for method marks"
+    ],
+    "time_allocation": "1 min per mark"
+  },
+  "section_6_additional_resources": {
+    "resources": [
+      {
+        "title": "Forces Simulation",
+        "type": "interactive",
+        "description": "Experiment with F=ma"
+      }
+    ],
+    "further_reading": [
+      "CGP Physics Section 5"
+    ],
+    "revision_checklist": [
+      "I can define Newton's laws",
+      "I can read motion graphs",
+      "I know vector vs scalar"
+    ]
+  },
+  "section_7_assessment_answers": {
+    "answers": [],
+    "grade_boundaries": {
+      "grade_9": 80,
+      "grade_7": 65,
+      "grade_5": 45,
+      "grade_4": 35
+    }
+  },
+  "view_count": 0,
+  "avg_score": 0,
+  "completion_rate": 0,
+  "created_at": "2026-02-14T20:27:35.705Z",
+  "updated_at": "2026-02-14T20:27:35.705Z"
+}

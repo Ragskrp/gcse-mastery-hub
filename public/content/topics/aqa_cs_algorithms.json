@@ -1,0 +1,164 @@
+{
+  "id": "aqa_cs_algorithms",
+  "exam_board": "aqa",
+  "subject": "computer_science",
+  "topic_title": "Algorithms - Sorting & Searching",
+  "topic_number": "Paper 1",
+  "tier_level": "both",
+  "section_1_key_concepts": {
+    "overview": "Algorithms are step-by-step instructions to solve a problem. You must know Binary Search, Linear Search, Bubble Sort, Merge Sort, and Insertion Sort.",
+    "key_terms": [
+      {
+        "term": "Algorithm",
+        "definition": "A sequence of steps to solve a problem",
+        "importance": "Core concept of CS"
+      },
+      {
+        "term": "Decomposition",
+        "definition": "Breaking down a problem into smaller parts",
+        "importance": "Computational Thinking"
+      },
+      {
+        "term": "Abstraction",
+        "definition": "Removing unnecessary detail",
+        "importance": "Focuses on the core problem"
+      },
+      {
+        "term": "Binary Search",
+        "definition": "Divide and conquer search (list MUST be ordered)",
+        "importance": "Efficient (O(log n))"
+      },
+      {
+        "term": "Linear Search",
+        "definition": "Checking items one by one",
+        "importance": "Simple but slow (O(n))"
+      }
+    ],
+    "learning_objectives": [
+      "Perform Linear and Binary searches",
+      "Trace Bubble, Merge, and Insertion sorts",
+      "Compare efficiency of algorithms",
+      "Write pseudocode for simple algorithms"
+    ]
+  },
+  "section_2_detailed_explanations": [
+    {
+      "heading": "Search Algorithms",
+      "content": "Linear Search: Start at index 0, check match. If no, move to index 1. Repeat. Works on ANY list. Slow for big lists. Binary Search: 1) Find middle item. 2) If match, stop. 3) If item < middle, discard right half. 4) If item > middle, discard left half. REPEAT on remaining list. List MUST be sorted. Very fast.",
+      "key_points": [
+        "Linear = Simple, Slow, Unsorted lists ok",
+        "Binary = Complex, Fast, Must be SORTED"
+      ]
+    },
+    {
+      "heading": "Sorting Algorithms",
+      "content": "Bubble Sort: Compare adjacent pairs, swap if wrong order. Repeat passes until no swaps. Slowest. Merge Sort: Split list in half recursively until size 1. Merge back together in order. Fastest (Divide & Conquer). Insertion Sort: Take one item, insert into correct position in sorted part.",
+      "key_points": [
+        "Bubble = Swapping pairs",
+        "Merge = Splitting and merging",
+        "Insertion = Placing one by one"
+      ]
+    }
+  ],
+  "section_3_worked_examples": [
+    {
+      "question": "Perform a Bubble Sort on: [5, 2, 8, 1]",
+      "step_by_step": [
+        "Pass 1:",
+        "Compare 5,2 -> Swap -> [2,5,8,1]",
+        "Compare 5,8 -> Stay -> [2,5,8,1]",
+        "Compare 8,1 -> Swap -> [2,5,1,8]",
+        "Pass 2:",
+        "Compare 2,5 -> Stay",
+        "Compare 5,1 -> Swap -> [2,1,5,8]",
+        "Compare 5,8 -> Stay",
+        "Pass 3:",
+        "Compare 2,1 -> Swap -> [1,2,5,8] -> SORTED"
+      ],
+      "answer": "[1, 2, 5, 8]"
+    }
+  ],
+  "section_4_practice_questions": {
+    "foundation": [
+      {
+        "id": "cs1f1",
+        "question": "Which search needs a sorted list?",
+        "type": "mcq",
+        "options": [
+          "Linear",
+          "Binary"
+        ],
+        "correct_answer": "Binary",
+        "explanation": "It relies on discarding half based on order",
+        "marks": 1,
+        "difficulty": "foundation"
+      }
+    ],
+    "higher": [
+      {
+        "id": "cs1h1",
+        "question": "Compare Merge Sort and Bubble Sort efficiency (4 marks)",
+        "type": "essay",
+        "correct_answer": "Merge sort is much faster for large lists (n log n). Bubble sort is slow (n^2). Merge sort uses more memory.",
+        "explanation": "Time complexity vs Space complexity",
+        "marks": 4,
+        "difficulty": "higher"
+      }
+    ]
+  },
+  "section_5_exam_guidance": {
+    "command_words": [
+      {
+        "word": "Trace",
+        "meaning": "Show the state of list at each step"
+      },
+      {
+        "word": "Compare",
+        "meaning": "Efficiency/Speed/Memory"
+      }
+    ],
+    "exam_tips": [
+      "Learn the steps for Merge Sort diagram",
+      "Binary search: remember to round midpoint correctly"
+    ],
+    "common_mistakes": [
+      "Trying Binary Search on unsorted list",
+      "Stopping Bubble sort before verifying no swaps"
+    ],
+    "mark_scheme_notes": [
+      "Trace tables must be accurate"
+    ],
+    "time_allocation": "1 mark per min"
+  },
+  "section_6_additional_resources": {
+    "resources": [
+      {
+        "title": "Sorting Algorithms Visualiser",
+        "type": "interactive",
+        "description": "Watch bars sort themselves"
+      }
+    ],
+    "further_reading": [
+      "OCR/AQA CS Guide"
+    ],
+    "revision_checklist": [
+      "I can trace Bubble Sort",
+      "I can explain Binary Search",
+      "I can write Pseudocode"
+    ]
+  },
+  "section_7_assessment_answers": {
+    "answers": [],
+    "grade_boundaries": {
+      "grade_9": 80,
+      "grade_7": 65,
+      "grade_5": 45,
+      "grade_4": 35
+    }
+  },
+  "view_count": 0,
+  "avg_score": 0,
+  "completion_rate": 0,
+  "created_at": "2026-02-14T20:27:35.715Z",
+  "updated_at": "2026-02-14T20:27:35.715Z"
+}

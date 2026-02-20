@@ -1,0 +1,154 @@
+{
+  "id": "aqa_history_elizabeth",
+  "exam_board": "aqa",
+  "subject": "history",
+  "topic_title": "Elizabethan England - Early Problems",
+  "topic_number": "2",
+  "tier_level": "both",
+  "section_1_key_concepts": {
+    "overview": "Elizabeth I faced massive challenges when she became Queen in 1558: Religion, Marriage, Foreign threats (Spain/France/Scotland), and Legitimacy.",
+    "key_terms": [
+      {
+        "term": "Legitimacy",
+        "definition": "Legal right to rule",
+        "importance": "Catholics thought she was illegitimate"
+      },
+      {
+        "term": "Puritans",
+        "definition": "Extreme Protestants",
+        "importance": "Wanted to purify the church"
+      },
+      {
+        "term": "Mary Queen of Scots",
+        "definition": "Elizabeth's Catholic cousin",
+        "importance": "Main threat to the throne"
+      },
+      {
+        "term": "Religious Settlement",
+        "definition": "The 'Middle Way' (1559)",
+        "importance": "Attempt to please both sides"
+      },
+      {
+        "term": "Privy Council",
+        "definition": "Queen's advisors",
+        "importance": "Helped run the country"
+      }
+    ],
+    "learning_objectives": [
+      "Describe Elizabeth's problems in 1558",
+      "Explain the Religious Settlement",
+      "Evaluate the threat of Mary Queen of Scots",
+      "Analyse relations with Spain"
+    ]
+  },
+  "section_2_detailed_explanations": [
+    {
+      "heading": "Problems in 1558",
+      "content": "1) Religion: Country divided between Catholic/Protestant. 2) Legitimacy: Catholics didn't recognise Henry VIII's marriage to Anne Boleyn. 3) Gender: Many thought a woman couldn't rule. 4) Money: Crown was in debt. 5) France/Scotland: Auld Alliance threat.",
+      "key_points": [
+        "Divided religion",
+        "Gender prejudice",
+        "Debt",
+        "Foreign threats"
+      ]
+    },
+    {
+      "heading": "The Religious Settlement (1559)",
+      "content": "Act of Supremacy (Liz = Governor, not Head). Act of Uniformity (New Prayer Book, services in English, some Catholic decorations kept). Goal: A 'Middle Way' to avoid civil war. Result: Generally worked, but angered extremes (Puritans and hardline Catholics).",
+      "key_points": [
+        "Middle Way",
+        "Governor vs Head",
+        "English Bible",
+        "Compromise"
+      ]
+    }
+  ],
+  "section_3_worked_examples": [
+    {
+      "question": "Explain two consequences of the Religious Settlement (8 marks)",
+      "step_by_step": [
+        "Consequence 1: Relative peace/Stability. It satisfied the majority of moderate people.",
+        "Consequence 2: Opposition from extremists. The Papal Bull (1570) excommunicated her, and Puritans began challenging her authority in Parliament."
+      ],
+      "answer": "Two developed paragraphs (Point-Evidence-Explain)"
+    }
+  ],
+  "section_4_practice_questions": {
+    "foundation": [
+      {
+        "id": "he1f1",
+        "question": "What year was the Religious Settlement?",
+        "type": "short_answer",
+        "correct_answer": "1559",
+        "explanation": "One year after she became Queen",
+        "marks": 1,
+        "difficulty": "foundation"
+      }
+    ],
+    "higher": [
+      {
+        "id": "he1h1",
+        "question": "Write an account of the plot against Elizabeth involving Mary Queen of Scots (8 marks)",
+        "type": "essay",
+        "correct_answer": "Focus on Babington Plot / Throckmorton Plot",
+        "explanation": "Chronological account showing cause and consequence",
+        "marks": 8,
+        "difficulty": "higher"
+      }
+    ]
+  },
+  "section_5_exam_guidance": {
+    "command_words": [
+      {
+        "word": "Write an account",
+        "meaning": "Narrative story (Chronological) + Analysis"
+      },
+      {
+        "word": "How convincing",
+        "meaning": "Evaluate interpretation using own knowledge"
+      }
+    ],
+    "exam_tips": [
+      "Know the dates of the plots",
+      "Distinguish between Puritans and Catholics"
+    ],
+    "common_mistakes": [
+      "Confusing Mary I (Bloody Mary) with Mary Queen of Scots"
+    ],
+    "mark_scheme_notes": [
+      "Specific detail gets top marks"
+    ],
+    "time_allocation": "10-15 mins per question"
+  },
+  "section_6_additional_resources": {
+    "resources": [
+      {
+        "title": "Elizabethan Portrait Analysis",
+        "type": "article",
+        "description": "How she used image for power"
+      }
+    ],
+    "further_reading": [
+      "AQA History Elizabethan Age"
+    ],
+    "revision_checklist": [
+      "I can list 1558 problems",
+      "I describe the Settlement",
+      "I know why MQS was a threat"
+    ]
+  },
+  "section_7_assessment_answers": {
+    "answers": [],
+    "grade_boundaries": {
+      "grade_9": 80,
+      "grade_7": 65,
+      "grade_5": 45,
+      "grade_4": 35
+    }
+  },
+  "view_count": 0,
+  "avg_score": 0,
+  "completion_rate": 0,
+  "created_at": "2026-02-14T20:27:35.705Z",
+  "updated_at": "2026-02-14T20:27:35.705Z"
+}

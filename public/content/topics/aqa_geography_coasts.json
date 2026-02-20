@@ -1,0 +1,165 @@
+{
+  "id": "aqa_geography_coasts",
+  "exam_board": "aqa",
+  "subject": "geography",
+  "topic_title": "Physical Landscapes in the UK: Coasts",
+  "topic_number": "Paper 1",
+  "tier_level": "both",
+  "section_1_key_concepts": {
+    "overview": "Coastal landscapes are shaped by waves, weathering, and erosion. This topic covers the processes (Hydraulic Action, Abrasion) and landforms (Spits, Stacks, Headlands).",
+    "key_terms": [
+      {
+        "term": "Hydraulic Action",
+        "definition": "Power of waves smashing air into cracks",
+        "importance": "Primary erosion process"
+      },
+      {
+        "term": "Abrasion",
+        "definition": "Rocks hurling against the cliff like sandpaper",
+        "importance": "Smoothes/carves rock"
+      },
+      {
+        "term": "Longshore Drift",
+        "definition": "Movement of sediment along the coast",
+        "importance": "Builds beaches/spits"
+      },
+      {
+        "term": "Swash/Backwash",
+        "definition": "Waves moving up/down beach",
+        "importance": "Constructive vs Destructive waves"
+      },
+      {
+        "term": "Headland",
+        "definition": "Hard rock sticking out into sea",
+        "importance": "Where caves/arches form"
+      }
+    ],
+    "learning_objectives": [
+      "Explain the processes of erosion",
+      "Describe formation of erosional landforms (Stack)",
+      "Describe formation of depositional landforms (Spit)",
+      "Evaluate hard vs soft engineering management"
+    ]
+  },
+  "section_2_detailed_explanations": [
+    {
+      "heading": "Processes of Erosion",
+      "content": "1) Hydraulic Action: Air compressed into cracks. 2) Abrasion: Rocks scrape bed. 3) Attrition: Rocks hit each other (become rounder/smaller). 4) Solution: Chemical dissolving (chalk/limestone).",
+      "key_points": [
+        "Learn the 4 types",
+        "Hydraulic = Water Power",
+        "Abrasion = Sandpaper",
+        "Attrition = Rocks vs Rocks"
+      ]
+    },
+    {
+      "heading": "Landform Formation: Old Harry Rocks",
+      "content": "Crack -> Cave (Hydraulic Action widens crack). Cave -> Arch (breaks through headland). Arch -> Stack (roof collapses due to gravity). Stack -> Stump (eroded by waves).",
+      "key_points": [
+        "Crack-Cave-Arch-Stack-Stump",
+        "Process takes thousands of years",
+        "Happens on headlands"
+      ]
+    },
+    {
+      "heading": "Coastal Management",
+      "content": "Hard Engineering: Sea Walls (expensive, ugly, effective), Groynes (stops longshore drift, creates beach). Soft Engineering: Beach Nourishment (adds sand, looks natural), Managed Retreat (let nature take course, cheap but land lost).",
+      "key_points": [
+        "Hard = Concrete/Structures",
+        "Soft = Working with nature",
+        "Evaluate costs vs benefits"
+      ]
+    }
+  ],
+  "section_3_worked_examples": [
+    {
+      "question": "Explain the formation of a spit (4 marks)",
+      "step_by_step": [
+        "1. Longshore drift moves sediment along the coast in direction of prevailing wind.",
+        "2. Coastline changes shape (e.g. river mouth).",
+        "3. Sediment is deposited in sheltered water, building a ridge.",
+        "4. Hooked end forms due to wind changes/waves."
+      ],
+      "answer": "Successive diagram or 4 points in sequence"
+    }
+  ],
+  "section_4_practice_questions": {
+    "foundation": [
+      {
+        "id": "gc1f1",
+        "question": "What is Attrition?",
+        "type": "short_answer",
+        "correct_answer": "Rocks hitting each other and becoming smaller/rounder",
+        "explanation": "Specific type of erosion involving sediment itself",
+        "marks": 2,
+        "difficulty": "foundation"
+      }
+    ],
+    "higher": [
+      {
+        "id": "gc1h1",
+        "question": "Evaluate the use of hard engineering to protect coastlines (6 marks)",
+        "type": "essay",
+        "correct_answer": "Sea wall: protecting towns but very expensive (£5k/m). Groynes: build beach but starve downstream (terminal groyne syndrome). Conclusion: Effective but often ugly/costly.",
+        "explanation": "Must include specific examples and pros/cons",
+        "marks": 6,
+        "difficulty": "higher"
+      }
+    ]
+  },
+  "section_5_exam_guidance": {
+    "command_words": [
+      {
+        "word": "Explain formation",
+        "meaning": "Step-by-step process"
+      },
+      {
+        "word": "Evaluate",
+        "meaning": "Pros vs Cons + Judgement"
+      }
+    ],
+    "exam_tips": [
+      "Draw diagrams! Even rough ones help explain formation",
+      "Use key terms (Hydraulic Action, etc)"
+    ],
+    "common_mistakes": [
+      "Confusing Swash (up) and Backwash (down)",
+      "Mixing up erosion types"
+    ],
+    "mark_scheme_notes": [
+      "Sequence is key for formation questions"
+    ],
+    "time_allocation": "1 min per mark"
+  },
+  "section_6_additional_resources": {
+    "resources": [
+      {
+        "title": "Coasts Flyover",
+        "type": "video",
+        "description": "Drone footage of Holderness Coast"
+      }
+    ],
+    "further_reading": [
+      "CGP Geography Paper 1"
+    ],
+    "revision_checklist": [
+      "I can define erosion types",
+      "I can explain longshore drift",
+      "I can evaluate sea walls"
+    ]
+  },
+  "section_7_assessment_answers": {
+    "answers": [],
+    "grade_boundaries": {
+      "grade_9": 80,
+      "grade_7": 65,
+      "grade_5": 45,
+      "grade_4": 35
+    }
+  },
+  "view_count": 0,
+  "avg_score": 0,
+  "completion_rate": 0,
+  "created_at": "2026-02-14T20:27:35.715Z",
+  "updated_at": "2026-02-14T20:27:35.715Z"
+}

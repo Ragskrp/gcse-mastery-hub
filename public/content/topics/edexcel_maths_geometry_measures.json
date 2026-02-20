@@ -1,0 +1,71 @@
+{
+  "id": "edexcel_maths_geometry_measures",
+  "exam_board": "edexcel",
+  "subject": "maths",
+  "topic_title": "Geometry: Measures and Mensuration",
+  "topic_number": "4.2",
+  "tier_level": "both",
+  "section_1_key_concepts": {
+    "overview": "Measures involve converting units, calculating area and volume, and scale drawings. Accuracy in formulae is key.",
+    "learning_objectives": [
+      "Convert metric units of length, mass and capacity",
+      "Calculate perimeter and area of rectangles, triangles and compound shapes",
+      "Calculate volume of cubes and cuboids"
+    ],
+    "key_terms": [
+      {
+        "term": "Area",
+        "definition": "Use squared units (cm²)",
+        "importance": "2D space"
+      },
+      {
+        "term": "Volume",
+        "definition": "Use cubed units (cm³)",
+        "importance": "3D space"
+      }
+    ]
+  },
+  "section_2_detailed_explanations": [
+    {
+      "heading": "Area Formulae",
+      "content": "Rectangle: l × w. Triangle: ½ × b × h. Parallelogram: b × h (perpendicular height). Trapezium: ½(a+b)h.",
+      "key_points": [
+        "Triangle is HALF base x height",
+        "Use perpendicular height"
+      ]
+    }
+  ],
+  "section_3_worked_examples": [],
+  "section_4_practice_questions": {
+    "foundation": [
+      {
+        "id": "q1",
+        "question": "Area of a triangle with base 4cm and height 3cm?",
+        "marks": 1,
+        "options": [
+          "12cm²",
+          "6cm²",
+          "7cm²"
+        ],
+        "correct_answer": "6cm²",
+        "explanation": "0.5 x 4 x 3 = 6.",
+        "difficulty": "foundation"
+      }
+    ],
+    "higher": []
+  },
+  "section_5_exam_guidance": {
+    "common_mistakes": [],
+    "exam_tips": [],
+    "command_words": [],
+    "time_allocation": "15 mins"
+  },
+  "section_6_additional_resources": {
+    "resources": [],
+    "revision_checklist": []
+  },
+  "section_7_assessment_answers": {
+    "answers": [],
+    "grade_boundaries": {}
+  }
+}

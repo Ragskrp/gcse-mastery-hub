@@ -1,0 +1,178 @@
+{
+  "id": "aqa_english_lang_paper1",
+  "exam_board": "aqa",
+  "subject": "english_language",
+  "topic_title": "Paper 1 — Explorations in Creative Reading and Writing",
+  "topic_number": "Paper 1",
+  "tier_level": "both",
+  "section_1_key_concepts": {
+    "overview": "AQA English Language Paper 1 tests your ability to read and analyse a fiction extract, then write your own creative piece. It's worth 50% of the English Language GCSE.",
+    "key_terms": [
+      {
+        "term": "Inference",
+        "definition": "Reading between the lines to understand implied meaning",
+        "importance": "Essential for Q2 and Q3"
+      },
+      {
+        "term": "Structural features",
+        "definition": "How a writer organises their text (e.g., shifts in focus, contrast, repetition)",
+        "importance": "Tested in Q3 (8 marks)"
+      },
+      {
+        "term": "Language analysis",
+        "definition": "Examining the effects of specific words, phrases, and techniques",
+        "importance": "Core skill for Q2 (8 marks) and Q4 (20 marks)"
+      },
+      {
+        "term": "Narrative perspective",
+        "definition": "The viewpoint from which a story is told (first person, third person, etc.)",
+        "importance": "Affects how the reader experiences the text"
+      },
+      {
+        "term": "Extended metaphor",
+        "definition": "A metaphor that continues throughout a paragraph or text",
+        "importance": "Impressive technique for Q5 creative writing"
+      }
+    ],
+    "learning_objectives": [
+      "Identify and interpret explicit and implicit information (Q1-Q2)",
+      "Analyse how writers use structure for effect (Q3)",
+      "Evaluate critically with appropriate terminology (Q4)",
+      "Write a creative piece with varied vocabulary and techniques (Q5)"
+    ]
+  },
+  "section_2_detailed_explanations": [
+    {
+      "heading": "Question Breakdown",
+      "content": "Q1 (4 marks, 5 min): List 4 things about a topic from a specific section. Q2 (8 marks, 10 min): How does the writer use language to describe/present X? Q3 (8 marks, 10 min): How does the writer structure the text? Q4 (20 marks, 20 min): To what extent do you agree with the statement? Q5 (40 marks, 45 min): Creative writing — either a description or narrative.",
+      "key_points": [
+        "Q1: Simple retrieval — find 4 facts",
+        "Q2: Language analysis — use word-level detail",
+        "Q3: Structure — beginning, middle, end, shifts",
+        "Q4: Evaluation — agree/disagree with evidence",
+        "Q5: Creative writing — plan and craft carefully"
+      ]
+    },
+    {
+      "heading": "Language Analysis Technique (Q2 and Q4)",
+      "content": "Use the 'What-How-Why' method. WHAT does the writer say? HOW do they say it (technique + quotation)? WHY — what effect does this have on the reader? Example: The writer describes the forest as a 'cathedral of shadows' (metaphor). The noun 'cathedral' suggests grandeur and reverence, while 'shadows' creates an unsettling contrast, making the reader feel both awe and unease.",
+      "key_points": [
+        "Always quote single words or short phrases",
+        "Name the technique (metaphor, simile, personification etc.)",
+        "Explain the EFFECT on the reader's feelings",
+        "Use the connotations of individual words"
+      ]
+    }
+  ],
+  "section_3_worked_examples": [
+    {
+      "question": "Analyse how the writer uses language: 'The sea clawed at the rocks, hungry and relentless, swallowing everything in its path.'",
+      "step_by_step": [
+        "Identify technique: Personification — the sea is given human/animal qualities ('clawed', 'hungry', 'swallowing')",
+        "Analyse word: 'Clawed' has connotations of an animal attacking its prey, suggesting the sea is violent and dangerous",
+        "Analyse word: 'Hungry' personifies the sea as insatiable — it will never be satisfied, creating a sense of threat",
+        "Effect: The cumulative effect of these violent verbs creates a sense of the sea as a powerful, unstoppable predatory force, making the reader feel fear and powerlessness"
+      ],
+      "answer": "Detailed language analysis using What-How-Why, with word-level analysis and reader response"
+    }
+  ],
+  "section_4_practice_questions": {
+    "foundation": [
+      {
+        "id": "el1f1",
+        "question": "What is inference?",
+        "type": "mcq",
+        "options": [
+          "Copying from the text",
+          "Reading between the lines",
+          "Summarising the text",
+          "Finding facts"
+        ],
+        "correct_answer": "Reading between the lines",
+        "explanation": "Inference means understanding what is implied but not directly stated",
+        "marks": 1,
+        "difficulty": "foundation"
+      }
+    ],
+    "higher": [
+      {
+        "id": "el1h1",
+        "question": "Analyse how the writer uses language to create tension in the following extract (8 marks)",
+        "type": "essay",
+        "correct_answer": "At least 2 detailed language analysis paragraphs using What-How-Why with specific quotations and effects",
+        "explanation": "Must identify techniques, quote precisely, and explain effects on the reader",
+        "marks": 8,
+        "difficulty": "higher"
+      }
+    ]
+  },
+  "section_5_exam_guidance": {
+    "command_words": [
+      {
+        "word": "How does the writer use language",
+        "meaning": "Identify techniques, quote, and analyse effects"
+      },
+      {
+        "word": "To what extent do you agree",
+        "meaning": "Give a balanced response with evidence from the text"
+      }
+    ],
+    "exam_tips": [
+      "Time management is crucial — stick to suggested times",
+      "For Q5, plan for 5 minutes before writing",
+      "Use varied sentence lengths for effect",
+      "Short sentences = tension. Long sentences = description."
+    ],
+    "common_mistakes": [
+      "Feature-spotting without analysis (just naming the technique)",
+      "Quoting entire sentences instead of key words",
+      "Running out of time on Q5"
+    ],
+    "mark_scheme_notes": [
+      "Q5: Content & Organisation (24 marks) + Technical Accuracy (16 marks)",
+      "SPaG matters in Q5!"
+    ],
+    "time_allocation": "Total paper: 1 hour 45 minutes"
+  },
+  "section_6_additional_resources": {
+    "resources": [
+      {
+        "title": "Language Analysis Practice Papers",
+        "type": "worksheet",
+        "description": "Practice extracts with model answers"
+      }
+    ],
+    "further_reading": [
+      "AQA English Language Revision Guide"
+    ],
+    "revision_checklist": [
+      "I can identify and analyse language techniques",
+      "I can discuss structural features",
+      "I can write a creative piece with varied techniques",
+      "I manage my time effectively across the paper"
+    ]
+  },
+  "section_7_assessment_answers": {
+    "answers": [
+      {
+        "question_id": "el1f1",
+        "model_answer": "Inference means reading between the lines — understanding what a writer implies without directly stating it.",
+        "mark_breakdown": [
+          "1 mark for correct definition"
+        ],
+        "examiner_tip": "Inference is tested throughout the paper, not just in one question"
+      }
+    ],
+    "grade_boundaries": {
+      "grade_9": 86,
+      "grade_7": 68,
+      "grade_5": 50,
+      "grade_4": 40
+    }
+  },
+  "view_count": 0,
+  "avg_score": 0,
+  "completion_rate": 0,
+  "created_at": "2026-02-14T20:27:35.675Z",
+  "updated_at": "2026-02-14T20:27:35.675Z"
+}

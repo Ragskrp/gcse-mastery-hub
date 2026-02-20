@@ -1,0 +1,99 @@
+{
+  "id": "edexcel_maths_ratio",
+  "exam_board": "edexcel",
+  "subject": "maths",
+  "topic_title": "Ratio and Proportion",
+  "topic_number": "3.1",
+  "tier_level": "both",
+  "section_1_key_concepts": {
+    "overview": "Ratio and proportion are used to compare quantities. This topic includes sharing in a given ratio, scale factors, and direct/inverse proportion.",
+    "learning_objectives": [
+      "Simplify ratios to their simplest form n:1",
+      "Divide a quantity in a given ratio",
+      "Solve problems involving direct proportion using the unitary method"
+    ],
+    "key_terms": [
+      {
+        "term": "Ratio",
+        "definition": "A comparison of two amounts",
+        "importance": "Part-to-part"
+      },
+      {
+        "term": "Proportion",
+        "definition": "Relationship between two variables",
+        "importance": "Scaling"
+      }
+    ]
+  },
+  "section_2_detailed_explanations": [
+    {
+      "heading": "Sharing in a Ratio",
+      "content": "To share an amount in a ratio (e.g. 3:2), add the parts (3+2=5). Divide the total amount by the total parts to find the value of 1 part. Multiply by the ratio parts.",
+      "key_points": [
+        "Add parts",
+        "Divide total",
+        "Multiply ratio"
+      ]
+    }
+  ],
+  "section_3_worked_examples": [
+    {
+      "question": "Share £50 in the ratio 2:3",
+      "step_by_step": [
+        "Total parts = 2 + 3 = 5",
+        "50 / 5 = 10",
+        "2 parts = 2 x 10 = £20",
+        "3 parts = 3 x 10 = £30"
+      ],
+      "answer": "£20 and £30",
+      "common_mistakes": [
+        "Dividing by 2 or 3 instead of 5"
+      ]
+    }
+  ],
+  "section_4_practice_questions": {
+    "foundation": [
+      {
+        "id": "q1",
+        "question": "Simplify 10:4",
+        "marks": 1,
+        "options": [
+          "5:2",
+          "2:5",
+          "2:1"
+        ],
+        "correct_answer": "5:2",
+        "explanation": "Divide both by 2.",
+        "difficulty": "foundation"
+      },
+      {
+        "id": "q2",
+        "question": "Divide 20 in 1:4",
+        "marks": 1,
+        "options": [
+          "5, 15",
+          "4, 16",
+          "2, 18"
+        ],
+        "correct_answer": "4, 16",
+        "explanation": "1+4=5. 20/5=4. 1x4=4, 4x4=16.",
+        "difficulty": "foundation"
+      }
+    ],
+    "higher": []
+  },
+  "section_5_exam_guidance": {
+    "common_mistakes": [],
+    "exam_tips": [],
+    "command_words": [],
+    "time_allocation": "15 mins"
+  },
+  "section_6_additional_resources": {
+    "resources": [],
+    "revision_checklist": []
+  },
+  "section_7_assessment_answers": {
+    "answers": [],
+    "grade_boundaries": {}
+  }
+}

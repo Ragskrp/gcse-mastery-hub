@@ -1,0 +1,139 @@
+
+const fs = require('fs');
+const path = require('path');
+
+const OUTPUT_DIR = path.join(process.cwd(), 'public', 'content', 'topics');
+const FILE_PATH = path.join(OUTPUT_DIR, 'edexcel_maths_geometry_angles.json');
+
+const DEEP_CONTENT = {
+    id: "edexcel_maths_geometry_angles",
+    exam_board: "edexcel",
+    subject: "maths",
+    topic_title: "Geometry: Angles and Polygons",
+    topic_number: "4.1",
+    tier_level: "both",
+    section_1_key_concepts: {
+        overview: "Geometry is the study of shapes, sizes, and properties of space. This topic covers angle facts (lines, points, triangles), parallel line rules, and the properties of polygons.",
+        learning_objectives: [
+            "Use angle facts: straight lines (180°), around a point (360°), vertically opposite (equal)",
+            "Derive and use the sum of angles in a triangle (180°) and quadrilateral (360°)",
+            "Identify alternate, corresponding, and co-interior angles on parallel lines",
+            "Calculate interior and exterior angles of regular polygons",
+            "Solve multi-step geometric problems involving algebraic expressions"
+        ],
+        key_terms: [
+            { term: "Perpendicular", definition: "Lines meeting at exactly 90° (right angle).", importance: "indicated by a square symbol." },
+            { term: "Parallel", definition: "Lines that never meet and are always the same distance apart.", importance: "indicated by arrows (>>)." },
+            { term: "Polygon", definition: "A 2D shape with straight sides (e.g. pentagon, hexagon).", importance: "Exam questions often combine polygon rules with parallel lines." },
+            { term: "Regular Polygon", definition: "A polygon where all sides are equal length and all interior angles are equal.", importance: "Key for exterior angle formula." },
+            { term: "Isosceles Triangle", definition: "A triangle with 2 equal sides and 2 equal base angles.", importance: "Very common in exam questions to hide information." }
+        ]
+    },
+    section_2_detailed_explanations: [
+        {
+            heading: "1. Basic Angle Facts",
+            content: "You must memorise these rules to solve geometry puzzles.\n\n• Angles on a straight line add to 180°.\n• Angles around a point add to 360°.\n• Vertically opposite angles are equal (X-shape).\n• Angles in a triangle add to 180°.\n• Base angles of an isosceles triangle are equal.",
+            key_points: ["Look for isosceles triangles hidden in circles or polygons.", "Vertically opposite angles are the easiest marks to spot."]
+        },
+        {
+            type: "component",
+            name: "AngleExplorer"
+        },
+        {
+            heading: "2. Parallel Line Rules",
+            content: "When a line (transversal) crosses two parallel lines, special angle pairs are formed.\n\n• Alternate Angles (Z-shape): Must be in the 'armpits' of the Z. They are EQUAL.\n• Corresponding Angles (F-shape): Must be in the 'armpits' of the F. They are EQUAL.\n• Co-interior Angles (C-shape): Inside the parallel lines. They ADD TO 180° (Supplementary).",
+            key_points: ["Draw the Z, F or C on the diagram to prove your method.", "Don't just say 'Z-angles', say 'Alternate angles are equal'."]
+        },
+        {
+            heading: "3. Polygons (Interior & Exterior)",
+            content: "Rules for Regular Polygons (n = number of sides):\n\n• Exterior Angles: Always sum to 360°. One exterior angle = 360 ÷ n.\n• Interior Angles: Interior + Exterior = 180° (Straight line).\n• Sum of Interior Angles: (n - 2) × 180°.\n\nExample: Regular Hexagon (6 sides).\nExt angle = 360 ÷ 6 = 60°.\nInt angle = 180 - 60 = 120°.\nCheck: (6-2)x180 = 720°. 120 x 6 = 720°.",
+            key_points: ["It is usually faster to find the EXTERIOR angle first, then subtract from 180 to find the interior angle.", "Sum of interior angles formula: Splitting the shape into triangles."]
+        }
+    ],
+    section_3_worked_examples: [
+        {
+            question: "ABC is an isosceles triangle with AB = AC. Angle BAC = 50°. Find angle ABC.",
+            step_by_step: [
+                "1. Identify equal sides: AB = AC means angle B = angle C (Base angles).",
+                "2. Subtract top angle from 180: 180 - 50 = 130°.",
+                "3. Share equally between B and C: 130 ÷ 2 = 65°.",
+                "Answer: 65°"
+            ],
+            answer: "65°",
+            common_mistakes: ["Assuming the 50° is one of the base angles.", "Forgetting to divide by 2."]
+        },
+        {
+            question: "Calculate the size of one interior angle of a regular decagon (10 sides).",
+            step_by_step: [
+                "Method 1: Using Exterior Angles (Faster)",
+                "1. Exterior angle = 360 ÷ n = 360 ÷ 10 = 36°.",
+                "2. Interior angle = 180 - Exterior = 180 - 36 = 144°.",
+                "Method 2: Sum of Interior Angles",
+                "1. Sum = (n-2) × 180 = (10-2) × 180 = 8 × 180 = 1440°.",
+                "2. One angle = 1440 ÷ 10 = 144°."
+            ],
+            answer: "144°",
+            common_mistakes: ["Trying to draw it instead of calculating.", "Using 360 as the sum of INTERIOR angles (it's the sum of exterior)."]
+        }
+    ],
+    section_4_practice_questions: {
+        foundation: [
+            { id: "f1", question: "Calculate the size of angle x if angles on a straight line are 120 and x.", marks: 1, options: ["60", "90", "120"], correct_answer: "60", explanation: "180 - 120 = 60.", difficulty: "foundation" },
+            { id: "f2", question: "What is the sum of angles in a triangle?", marks: 1, options: ["180", "360", "90"], correct_answer: "180", explanation: "Basic fact.", difficulty: "foundation" },
+            { id: "f3", question: "Identify the angle relationship: Z-shape.", marks: 1, options: ["Alternate", "Corresponding", "Vertically Opposite"], correct_answer: "Alternate", explanation: "Z angles are Alternate.", difficulty: "foundation" }
+        ],
+        higher: [
+            { id: "h1", question: "The interior angle of a regular polygon is 135°. How many sides does it have?", marks: 3, options: ["8", "6", "10", "12"], correct_answer: "8", explanation: "Ext = 180 - 135 = 45. Sides = 360 / 45 = 8.", difficulty: "higher" },
+            { id: "h2", question: "Find x if angles in a quadrilateral are x, 2x, 3x and 4x.", marks: 3, options: ["36", "18", "40", "90"], correct_answer: "36", explanation: "Sum = 360. x+2x+3x+4x = 10x. 10x = 360. x = 36.", difficulty: "higher" },
+            { id: "h3", question: "Two parallel lines are crossed by a transversal. Angle A is 70. Find co-interior angle B.", marks: 2, options: ["110", "70", "20"], correct_answer: "110", explanation: "Co-interior angles add to 180. 180 - 70 = 110.", difficulty: "higher" }
+        ]
+    },
+    section_5_exam_guidance: {
+        common_mistakes: [
+            "Confusing 'Corresponding' (F) and 'Alternate' (Z) angle names.",
+            "Assuming lines are parallel just because they look it (look for the arrows!).",
+            "Assuming a diagram is drawn to scale (it usually says 'Not drawn to scale').",
+            "Forgetting to give REASONS (marks are often '1 for answer, 1 for reason'). e.g. 'Because alternate angles are equal'."
+        ],
+        exam_tips: [
+            "Trace the parallel lines with your pen to help spot the F, Z or C shapes.",
+            "If you see an isosceles triangle, immediately mark the two base angles as equal.",
+            "For 'Give Reasons' questions, use the full official names: 'Angles on a straight line add to 180', not just 'straight line'."
+        ],
+        command_words: [
+            { word: "Calculate", meaning: "Work out the numerical value." },
+            { word: "Give reasons", meaning: "Quote the geometric rule you used (e.g. 'Angles in a triangle sum to 180')." },
+            { word: "Prove", meaning: "Use a logical chain of reasoning to show a statement is true." }
+        ],
+        time_allocation: "1 hour"
+    },
+    section_6_additional_resources: {
+        resources: [
+            { title: "BBC Bitesize - Geometry", type: "article", description: "Interactive guides on angles and shapes." },
+            { title: "CorbettMaths - Angles", type: "video", description: "Video tutorials on every angle rule." }
+        ],
+        revision_checklist: [
+            "I know the sum of angles in a triangle (180) and quadrilateral (360).",
+            "I can identify Alternate, Corresponding and Co-interior angles.",
+            "I can calculate interior/exterior angles of polygons.",
+            "I remember to give reasons for my answers."
+        ]
+    },
+    section_7_assessment_answers: {
+        answers: [
+            {
+                model_answer: "Q: Find x. Give reasons.\n\n1. Angle y = 70° (Vertically opposite angles are equal).\n2. x + y = 180° (Co-interior angles add to 180°).\n3. x + 70 = 180.\n4. x = 110°.",
+                mark_breakdown: ["1 mark for x = 110", "1 mark for 'Vertically opposite'", "1 mark for 'Co-interior'"],
+                examiner_tip: "You must state the full rule to get the reasoning marks."
+            }
+        ],
+        grade_boundaries: {
+            grade_4: "Basic Angles",
+            grade_6: "Polygons",
+            grade_8: "Circle Theorems (Next Topic)"
+        }
+    }
+};
+
+fs.writeFileSync(FILE_PATH, JSON.stringify(DEEP_CONTENT, null, 2));
+console.log("✅ Deep content update complete for: Geometry Angles");

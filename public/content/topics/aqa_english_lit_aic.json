@@ -1,0 +1,199 @@
+{
+  "id": "aqa_english_lit_aic",
+  "exam_board": "aqa",
+  "subject": "english_literature",
+  "topic_title": "An Inspector Calls — Responsibility",
+  "topic_number": "Modern Texts",
+  "tier_level": "both",
+  "section_1_key_concepts": {
+    "overview": "JB Priestley's play is a critique of 1912 capitalism and a call for social responsibility. Inspect Goole interrogates the Birling family about the suicide of Eva Smith to show that 'we are members of one body'.",
+    "key_terms": [
+      {
+        "term": "Socialism",
+        "definition": "Political system valuing community/equality",
+        "importance": "Priestley's preferred ideology"
+      },
+      {
+        "term": "Capitalism",
+        "definition": "System valuing individual profit/business",
+        "importance": "represented by Mr Birling"
+      },
+      {
+        "term": "Responsibility",
+        "definition": "Duty to care for others",
+        "importance": "Central theme of the play"
+      },
+      {
+        "term": "Dramatic Irony",
+        "definition": "Audience knows what characters don't",
+        "importance": "Used to undermine Mr Birling"
+      },
+      {
+        "term": "Patriarchy",
+        "definition": "Male dominated society",
+        "importance": "Context for Eva Smith's struggles"
+      }
+    ],
+    "learning_objectives": [
+      "Analyse the character of Inspector Goole",
+      "Explore the theme of Social Responsibility",
+      "Understand the context of 1912 vs 1945",
+      "Analyse the generational divide (Young vs Old)",
+      "Evaluate Mr Birling as a symbol of capitalism"
+    ]
+  },
+  "section_2_detailed_explanations": [
+    {
+      "heading": "The Inspector's Role",
+      "content": "Goole is not a normal police inspector; he is a moral force (possibly supernatural). His name 'Goole' sounds like 'Ghoul'. He controls the pace, interrupts characters, and acts as Priestley's mouthpiece. His final speech warns of 'fire and blood and anguish' if society doesn't change.",
+      "key_points": [
+        "Mouthpiece for Priestley",
+        "Omniscient (all-knowing)",
+        "Moral teacher",
+        "Catalyst for change"
+      ]
+    },
+    {
+      "heading": "Social Responsibility",
+      "content": "The play argues that we are all responsible for each other. The Birlings represent different failures of responsibility: Mr Birling (employer), Sheila (jealousy), Gerald (exploitation), Mrs Birling (charity refusal), Eric (abuse). Sheila and Eric accept responsibility; the parents do not.",
+      "key_points": [
+        "'We are members of one body'",
+        "Chain of events theory",
+        "Contrast between generations",
+        "Eva Smith represents the working class"
+      ]
+    },
+    {
+      "heading": "Context: 1912 vs 1945",
+      "content": "Written in 1945 (end of WWII, rise of Labour/Welfare State) but set in 1912 (Edwardian era, rigid class system, pre-WWI). Priestley uses dramatic irony (e.g. Birling saying the Titanic is 'unsinkable') to make the 1912 capitalist views look foolish to a 1945 audience.",
+      "key_points": [
+        "Audience knows wars/Titanic happened",
+        "Birling looks foolish/arrogant",
+        "Call for post-war social change",
+        "Class system critique"
+      ]
+    }
+  ],
+  "section_3_worked_examples": [
+    {
+      "question": "How does Priestley present the theme of responsibility? (30 marks)",
+      "step_by_step": [
+        "Intro: Priestley uses the play to criticise capitalist individualism and promote socialist collective responsibility.",
+        "Para 1: Mr Birling ('community and all that nonsense') — rejects responsibility, symbolises uncaring capitalism.",
+        "Para 2: The Inspector ('members of one body') — acts as the moral center, teaching that actions have consequences.",
+        "Para 3: The Younger Generation (Sheila/Eric) — they accept guilt ('I'm ashamed of it'), offering hope for the future.",
+        "Conclusion: The play is a warning that refusing responsibility leads to conflict ('fire and blood')."
+      ],
+      "answer": "Essay contrasting characters' attitudes towards responsibility"
+    }
+  ],
+  "section_4_practice_questions": {
+    "foundation": [
+      {
+        "id": "aicf1",
+        "question": "Who says the Titanic is 'unsinkable, absolutely unsinkable'?",
+        "type": "mcq",
+        "options": [
+          "Eric",
+          "Gerald",
+          "Mr Birling",
+          "The Inspector"
+        ],
+        "correct_answer": "Mr Birling",
+        "explanation": "Shows his arrogance and lack of foresight",
+        "marks": 1,
+        "difficulty": "foundation"
+      },
+      {
+        "id": "aicf2",
+        "question": "What happens to Eva Smith?",
+        "type": "short_answer",
+        "correct_answer": "She commits suicide by drinking disinfectant",
+        "explanation": "The suicide triggers the investigation",
+        "marks": 1,
+        "difficulty": "foundation"
+      }
+    ],
+    "higher": [
+      {
+        "id": "aich1",
+        "question": "How does Priestley use the character of Mrs Birling to critique class prejudice? (30 marks)",
+        "type": "essay",
+        "correct_answer": "Analysis of her arrogance, refusal of charity, and 'girls of that class' comment",
+        "explanation": "Focus on social class and her static character arc",
+        "marks": 30,
+        "difficulty": "higher"
+      }
+    ]
+  },
+  "section_5_exam_guidance": {
+    "command_words": [
+      {
+        "word": "How does Priestley present...",
+        "meaning": "Analyse methods (language, structure, dramatic devices)"
+      }
+    ],
+    "exam_tips": [
+      "Don't treat characters as real people; they are constructs/symbols",
+      "Always link to Priestley's message/purpose",
+      "Embed context (1912/1945)"
+    ],
+    "common_mistakes": [
+      "Retelling the plot",
+      "Ignoring the Inspector's final speech",
+      "Forgetting the 'play' aspect (lights, exits/entrances)"
+    ],
+    "mark_scheme_notes": [
+      "AO1: Response (12)",
+      "AO2: Methods (12)",
+      "AO3: Context (6)"
+    ],
+    "time_allocation": "45 minutes"
+  },
+  "section_6_additional_resources": {
+    "resources": [
+      {
+        "title": "Inspector Calls BBC Adaptation",
+        "type": "video",
+        "description": "Clip of the final speech"
+      },
+      {
+        "title": "Character Quotes Quiz",
+        "type": "interactive",
+        "description": "Match quote to character"
+      }
+    ],
+    "further_reading": [
+      "York Notes: An Inspector Calls"
+    ],
+    "revision_checklist": [
+      "I can define Dramatic Irony",
+      "I know the 7 deadly sins links",
+      "I can analyse Mr Birling vs The Inspector"
+    ]
+  },
+  "section_7_assessment_answers": {
+    "answers": [
+      {
+        "question_id": "aicf1",
+        "model_answer": "Mr Birling says this. It is dramatic irony because the audience knows the Titanic sinks. This makes Birling seem foolish and untrustworthy.",
+        "mark_breakdown": [
+          "1 mark: Mr Birling",
+          "1 mark: dramatic irony explanation"
+        ],
+        "examiner_tip": "Use the term 'dramatic irony'"
+      }
+    ],
+    "grade_boundaries": {
+      "grade_9": 88,
+      "grade_7": 72,
+      "grade_5": 52,
+      "grade_4": 42
+    }
+  },
+  "view_count": 0,
+  "avg_score": 0,
+  "completion_rate": 0,
+  "created_at": "2026-02-14T20:27:35.692Z",
+  "updated_at": "2026-02-14T20:27:35.692Z"
+}

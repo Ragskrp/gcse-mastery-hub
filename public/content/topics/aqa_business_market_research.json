@@ -1,0 +1,184 @@
+{
+  "id": "aqa_business_market_research",
+  "exam_board": "aqa",
+  "subject": "business",
+  "topic_title": "Market Research",
+  "topic_number": "1.2",
+  "tier_level": "both",
+  "section_1_key_concepts": {
+    "overview": "Market research is the process of gathering information about consumers, competitors, and market trends. Businesses use this data to make informed decisions and reduce risk.",
+    "key_terms": [
+      {
+        "term": "Primary research",
+        "definition": "Data collected first-hand for a specific purpose (e.g., surveys, interviews)",
+        "importance": "Provides up-to-date, relevant data"
+      },
+      {
+        "term": "Secondary research",
+        "definition": "Data that already exists, collected by someone else (e.g., government reports, internet)",
+        "importance": "Cheaper and quicker to obtain"
+      },
+      {
+        "term": "Qualitative data",
+        "definition": "Data based on opinions, feelings, and reasons — usually in words",
+        "importance": "Helps understand WHY customers behave a certain way"
+      },
+      {
+        "term": "Quantitative data",
+        "definition": "Data that can be measured and expressed as numbers/statistics",
+        "importance": "Easy to analyse and compare"
+      },
+      {
+        "term": "Market segmentation",
+        "definition": "Dividing a market into groups of customers with similar needs",
+        "importance": "Allows targeted marketing"
+      }
+    ],
+    "learning_objectives": [
+      "Explain the purpose of market research",
+      "Distinguish between primary and secondary research",
+      "Evaluate different market research methods",
+      "Understand qualitative vs quantitative data",
+      "Explain market segmentation and its benefits"
+    ]
+  },
+  "section_2_detailed_explanations": [
+    {
+      "heading": "Why Businesses Conduct Market Research",
+      "content": "Market research helps businesses: identify customer needs and wants, spot gaps in the market, reduce the risk of product failure, understand competitor strategies, and make informed decisions about pricing, promotion, and distribution. Without it, businesses are essentially guessing.",
+      "key_points": [
+        "Reduces risk of failure",
+        "Identifies customer needs before launch",
+        "Helps with pricing and promotion decisions",
+        "Keeps business aware of competitors"
+      ]
+    },
+    {
+      "heading": "Primary vs Secondary Research",
+      "content": "Primary research (field research) involves collecting new data: surveys, questionnaires, interviews, focus groups, observations. It is specific to your needs but expensive and time-consuming. Secondary research (desk research) uses existing data: websites, newspapers, government statistics, market reports. It is cheaper but may be outdated or not specific enough.",
+      "key_points": [
+        "Primary = new data, specific, expensive, time-consuming",
+        "Secondary = existing data, cheaper, quicker, may be outdated",
+        "Best approach: use both together",
+        "Primary methods: surveys, interviews, focus groups, observation"
+      ]
+    }
+  ],
+  "section_3_worked_examples": [
+    {
+      "question": "Evaluate the use of online surveys as a method of primary market research for a new clothing brand (6 marks)",
+      "step_by_step": [
+        "Point 1 (Advantage): Online surveys can reach a large number of people quickly and cheaply compared to face-to-face interviews.",
+        "Development: This is important for a new clothing brand with a limited budget, as they can gather lots of quantitative data on fashion preferences without high costs.",
+        "Point 2 (Disadvantage): However, responses may be superficial — customers might not explain WHY they prefer certain styles.",
+        "Development: This means the brand may miss important qualitative insights that a focus group would provide.",
+        "Judgement: Overall, online surveys are a useful starting point but should be combined with smaller focus groups to gather both quantitative and qualitative data."
+      ],
+      "answer": "Balanced evaluation with advantages, disadvantages, and a justified judgement"
+    }
+  ],
+  "section_4_practice_questions": {
+    "foundation": [
+      {
+        "id": "mr1f1",
+        "question": "Which of these is an example of primary research?",
+        "type": "mcq",
+        "options": [
+          "Reading a newspaper article",
+          "Conducting a survey",
+          "Using government statistics",
+          "Checking a competitor's website"
+        ],
+        "correct_answer": "Conducting a survey",
+        "explanation": "A survey collects new data first-hand, making it primary research",
+        "marks": 1,
+        "difficulty": "foundation"
+      },
+      {
+        "id": "mr1f2",
+        "question": "Give one advantage and one disadvantage of secondary research",
+        "type": "short_answer",
+        "correct_answer": "Advantage: Cheaper/quicker. Disadvantage: May be outdated/not specific",
+        "explanation": "Secondary research uses existing data — fast but potentially irrelevant",
+        "marks": 2,
+        "difficulty": "foundation"
+      }
+    ],
+    "higher": [
+      {
+        "id": "mr1h1",
+        "question": "Justify which type of market research a startup restaurant should prioritise",
+        "type": "essay",
+        "correct_answer": "Primary research (local area surveys, taste tests) because the restaurant needs specific local data about dining preferences, dietary requirements, and price sensitivity that secondary data cannot provide",
+        "explanation": "Higher-level questions require justified decisions",
+        "marks": 6,
+        "difficulty": "higher"
+      }
+    ]
+  },
+  "section_5_exam_guidance": {
+    "command_words": [
+      {
+        "word": "Evaluate",
+        "meaning": "Consider advantages and disadvantages, then make a judgement"
+      },
+      {
+        "word": "Justify",
+        "meaning": "Give reasons for your decision — explain WHY"
+      }
+    ],
+    "exam_tips": [
+      "Use business terminology",
+      "Always apply to the context given",
+      "For 6-mark questions, give both sides then judge"
+    ],
+    "common_mistakes": [
+      "Being too generic — always link to the specific business",
+      "Not making a final judgement in evaluate questions"
+    ],
+    "mark_scheme_notes": [
+      "Knowledge marks (1-2), Application marks (1-2), Analysis/Evaluation marks (1-2)"
+    ],
+    "time_allocation": "About 1.5 minutes per mark"
+  },
+  "section_6_additional_resources": {
+    "resources": [
+      {
+        "title": "Market Research Case Studies",
+        "type": "article",
+        "description": "Real examples of successful market research"
+      }
+    ],
+    "further_reading": [
+      "AQA GCSE Business Textbook — Chapter 2"
+    ],
+    "revision_checklist": [
+      "I can explain primary vs secondary research",
+      "I can evaluate research methods",
+      "I understand qualitative vs quantitative data"
+    ]
+  },
+  "section_7_assessment_answers": {
+    "answers": [
+      {
+        "question_id": "mr1f1",
+        "model_answer": "Conducting a survey is primary research because you are collecting data first-hand for a specific purpose.",
+        "mark_breakdown": [
+          "1 mark for correct identification"
+        ],
+        "examiner_tip": "Primary = you collect it yourself, Secondary = it already exists"
+      }
+    ],
+    "grade_boundaries": {
+      "grade_9": 90,
+      "grade_7": 74,
+      "grade_5": 54,
+      "grade_4": 44
+    }
+  },
+  "view_count": 0,
+  "avg_score": 0,
+  "completion_rate": 0,
+  "created_at": "2026-02-14T20:27:35.675Z",
+  "updated_at": "2026-02-14T20:27:35.675Z"
+}
