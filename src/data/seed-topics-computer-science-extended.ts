@@ -27,8 +27,7 @@ export const SEED_TOPICS_COMPUTER_SCIENCE_EXTENDED: Topic[] = [
     },
     section_2_detailed_explanations: [
       {
-        heading: "Machine Learning: Types and Algorithms",
-        content: "Supervised learning: trained on labeled data to predict outputs (classification, regression). Examples: email spam detection, medical diagnosis. Unsupervised learning: finds patterns in unlabeled data (clustering, dimensionality reduction). Examples: customer segmentation, anomaly detection. Reinforcement learning: learns through rewards/penalties; agents optimize behavior. Examples: game AI, robotics. Common algorithms: decision trees, random forests, support vector machines, k-means clustering. Deep learning: neural networks with many layers enabling complex pattern recognition. Trade-offs: simpler algorithms interpretable but less accurate; complex models accurate but 'black box'.",
+        heading: "Machine Learning: Types and Algorithms", content: "Supervised learning: trained on labeled data to predict outputs (classification, regression). Examples: email spam detection, medical diagnosis. Unsupervised learning: finds patterns in unlabeled data (clustering, dimensionality reduction). Examples: customer segmentation, anomaly detection. Reinforcement learning: learns through rewards/penalties; agents optimize behavior. Examples: game AI, robotics. Common algorithms: decision trees, random forests, support vector machines, k-means clustering. Deep learning: neural networks with many layers enabling complex pattern recognition. Trade-offs: simpler algorithms interpretable but less accurate; complex models accurate but 'black box'.", animation_type: "reveal",
         key_points: [
           "Supervised vs unsupervised vs reinforcement learning approaches",
           "Different algorithms suit different problems",
@@ -38,8 +37,7 @@ export const SEED_TOPICS_COMPUTER_SCIENCE_EXTENDED: Topic[] = [
         ]
       },
       {
-        heading: "Neural Networks & Deep Learning",
-        content: "Neural networks mimic brain structure: neurons connected in layers (input, hidden, output). Weights adjusted during training to minimize prediction error. Activation functions enable non-linear learning. Backpropagation algorithm enables efficient training. Deep learning: networks with many hidden layers. Convolutional neural networks (CNNs): effective for image recognition; use filters to detect features. Recurrent neural networks (RNNs): process sequential data; maintain memory of previous inputs. Transformers: newest architecture enabling self-attention; powers GPT, other language models. Limitations: require massive data, computational power, training time; vulnerable to adversarial examples.",
+        heading: "Neural Networks & Deep Learning", content: "Neural networks mimic brain structure: neurons connected in layers (input, hidden, output). Weights adjusted during training to minimize prediction error. Activation functions enable non-linear learning. Backpropagation algorithm enables efficient training. Deep learning: networks with many hidden layers. Convolutional neural networks (CNNs): effective for image recognition; use filters to detect features. Recurrent neural networks (RNNs): process sequential data; maintain memory of previous inputs. Transformers: newest architecture enabling self-attention; powers GPT, other language models. Limitations: require massive data, computational power, training time; vulnerable to adversarial examples.", animation_type: "reveal",
         key_points: [
           "Neural networks learn by adjusting connection weights",
           "Deep learning enables complex pattern recognition",
@@ -49,8 +47,7 @@ export const SEED_TOPICS_COMPUTER_SCIENCE_EXTENDED: Topic[] = [
         ]
       },
       {
-        heading: "AI Ethics: Bias, Privacy, and Impact",
-        content: "Algorithmic bias: training data reflects human biases (gender, race, wealth) → models perpetuate/amplify discrimination in hiring, lending, criminal justice. Privacy concerns: training data collection, model extraction attacks, surveillance applications. Job displacement: automation replacing workers, economically disruptive. Autonomy: AI making decisions affecting humans (medical diagnosis, criminal sentencing, military targeting) raises responsibility questions. Alignment problem: advanced AI systems pursuing goals misaligned with human values could cause harm. Current governance weak: tech companies largely self-regulate; governments struggling with regulation; little international coordination.",
+        heading: "AI Ethics: Bias, Privacy, and Impact", content: "Algorithmic bias: training data reflects human biases (gender, race, wealth) → models perpetuate/amplify discrimination in hiring, lending, criminal justice. Privacy concerns: training data collection, model extraction attacks, surveillance applications. Job displacement: automation replacing workers, economically disruptive. Autonomy: AI making decisions affecting humans (medical diagnosis, criminal sentencing, military targeting) raises responsibility questions. Alignment problem: advanced AI systems pursuing goals misaligned with human values could cause harm. Current governance weak: tech companies largely self-regulate; governments struggling with regulation; little international coordination.", animation_type: "reveal",
         key_points: [
           "Training data bias causes discriminatory AI systems",
           "Data privacy increasingly violated for model training",
@@ -189,8 +186,7 @@ export const SEED_TOPICS_COMPUTER_SCIENCE_EXTENDED: Topic[] = [
     },
     section_2_detailed_explanations: [
       {
-        heading: "Cybersecurity Threats & Attack Types",
-        content: "Malware: viruses (replicate, cause damage), trojans (hide malicious intent), ransomware (encrypt files, demand payment), spyware (steal information). Social engineering: phishing (fake emails), pretexting (fake identity), baiting (enticing downloads). Network attacks: DDoS (flood servers, cause outages), man-in-middle (intercept communications), brute force (guess passwords). Data breaches: causing loss/theft of sensitive information. Supply chain attacks: compromising vendors to attack larger targets. Ransomware particularly destructive: hospitals, governments, businesses hit; payments fund criminal organizations. Attack sophistication increasing; traditional firewalls insufficient.",
+        heading: "Cybersecurity Threats & Attack Types", content: "Malware: viruses (replicate, cause damage), trojans (hide malicious intent), ransomware (encrypt files, demand payment), spyware (steal information). Social engineering: phishing (fake emails), pretexting (fake identity), baiting (enticing downloads). Network attacks: DDoS (flood servers, cause outages), man-in-middle (intercept communications), brute force (guess passwords). Data breaches: causing loss/theft of sensitive information. Supply chain attacks: compromising vendors to attack larger targets. Ransomware particularly destructive: hospitals, governments, businesses hit; payments fund criminal organizations. Attack sophistication increasing; traditional firewalls insufficient.", animation_type: "reveal",
         key_points: [
           "Multiple threat types exploit technical and human vulnerabilities",
           "Social engineering often most effective attack vector",
@@ -200,8 +196,7 @@ export const SEED_TOPICS_COMPUTER_SCIENCE_EXTENDED: Topic[] = [
         ]
       },
       {
-        heading: "Encryption & Cryptography",
-        content: "Symmetric encryption: same key for encryption/decryption (AES, DES). Fast but key distribution problematic. Asymmetric encryption: public key (encryption) and private key (decryption); solves key distribution but slower. RSA widely used; security depends on factorization difficulty. Hash functions: convert input to fixed-length output; used for passwords and integrity verification. Digital signatures: ensure message authenticity and non-repudiation. Perfect encryption mathematically impossible to break, but implementation vulnerabilities exist. Quantum computing threatens RSA (would quickly factor large numbers); post-quantum cryptography being developed.",
+        heading: "Encryption & Cryptography", content: "Symmetric encryption: same key for encryption/decryption (AES, DES). Fast but key distribution problematic. Asymmetric encryption: public key (encryption) and private key (decryption); solves key distribution but slower. RSA widely used; security depends on factorization difficulty. Hash functions: convert input to fixed-length output; used for passwords and integrity verification. Digital signatures: ensure message authenticity and non-repudiation. Perfect encryption mathematically impossible to break, but implementation vulnerabilities exist. Quantum computing threatens RSA (would quickly factor large numbers); post-quantum cryptography being developed.", animation_type: "reveal",
         key_points: [
           "Encryption protocols essential for data protection",
           "Symmetric vs asymmetric encryption trade-offs",
@@ -211,8 +206,7 @@ export const SEED_TOPICS_COMPUTER_SCIENCE_EXTENDED: Topic[] = [
         ]
       },
       {
-        heading: "Cybersecurity Defenses & Governance",
-        content: "Firewalls: filter network traffic based on rules. Intrusion detection/prevention systems: monitor for attacks. Multi-factor authentication: stronger password protection. Regular patching: fixes known vulnerabilities. Employee training: reduces social engineering success. Incident response plans: minimize damage when breaches occur. Regulations (GDPR, CCPA) require data protection; companies face penalties for breaches. Cybersecurity skills shortage: demand vastly exceeds supply. Ethical hacking (penetration testing) helping organizations identify vulnerabilities. International coordination weak; cybercrime prosecution difficult across borders.",
+        heading: "Cybersecurity Defenses & Governance", content: "Firewalls: filter network traffic based on rules. Intrusion detection/prevention systems: monitor for attacks. Multi-factor authentication: stronger password protection. Regular patching: fixes known vulnerabilities. Employee training: reduces social engineering success. Incident response plans: minimize damage when breaches occur. Regulations (GDPR, CCPA) require data protection; companies face penalties for breaches. Cybersecurity skills shortage: demand vastly exceeds supply. Ethical hacking (penetration testing) helping organizations identify vulnerabilities. International coordination weak; cybercrime prosecution difficult across borders.", animation_type: "reveal",
         key_points: [
           "Layered defenses more effective than single solution",
           "Technical measures insufficient without human factors",

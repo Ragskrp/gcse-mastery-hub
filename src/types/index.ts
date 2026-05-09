@@ -47,6 +47,9 @@ export interface DetailedExplanation {
   heading: string;
   content: string;
   diagram_description?: string;
+  visual_url?: string;
+  animation_type?: "pulse" | "float" | "graph-draw" | "reveal" | "none";
+  interactive_type?: "atomic" | "oscillator" | "geometry" | "none";
   key_points: string[];
 }
 
@@ -134,6 +137,9 @@ export interface Topic {
   expert_tips_detailed?: string[];
   scientific_context?: string;
   historical_significance?: string;
+  // Visual & Interactive Enhancement
+  topic_hero_image?: string;
+  topic_video_url?: string;
   view_count?: number;
   avg_score?: number;
   completion_rate?: number;

@@ -30,18 +30,15 @@ export const SEED_TOPICS_PART4: Topic[] = [
         },
         section_2_detailed_explanations: [
             {
-                heading: "Basic Angle Rules",
-                content: "Angles on a straight line add to 180°. Angles around a point add to 360°. Vertically opposite angles are equal. Angles in a triangle add to 180°. Angles in a quadrilateral add to 360°.",
+                heading: "Basic Angle Rules", content: "Angles on a straight line add to 180°. Angles around a point add to 360°. Vertically opposite angles are equal. Angles in a triangle add to 180°. Angles in a quadrilateral add to 360°.", interactive_type: "geometry", animation_type: "graph-draw",
                 key_points: ["Line = 180°", "Point = 360°", "Triangle = 180°", "Quadrilateral = 360°", "Vertically opposite = Equal"]
             },
             {
-                heading: "Parallel Lines",
-                content: "When a transversal crosses parallel lines: 1) Alternate angles (Z-shape) are EQUAL. 2) Corresponding angles (F-shape) are EQUAL. 3) Co-interior angles (C-shape) ADD to 180°.",
+                heading: "Parallel Lines", content: "When a transversal crosses parallel lines: 1) Alternate angles (Z-shape) are EQUAL. 2) Corresponding angles (F-shape) are EQUAL. 3) Co-interior angles (C-shape) ADD to 180°.", interactive_type: "none", animation_type: "none",
                 key_points: ["Alternate (Z) are equal", "Corresponding (F) are equal", "Co-interior (C) add to 180", "Look for the arrows to identify parallel lines"]
             },
             {
-                heading: "Polygons",
-                content: "Sum of interior angles = (n-2) × 180, where n is number of sides. Exterior angles always sum to 360°. For a REGULAR polygon, one exterior angle = 360 ÷ n. One interior angle = 180 - exterior angle.",
+                heading: "Polygons", content: "Sum of interior angles = (n-2) × 180, where n is number of sides. Exterior angles always sum to 360°. For a REGULAR polygon, one exterior angle = 360 ÷ n. One interior angle = 180 - exterior angle.", interactive_type: "none", animation_type: "none",
                 key_points: ["Sum Interior = (n-2)×180", "Sum Exterior = 360", "Exterior = 360/n (regular)", "Interior + Exterior = 180"]
             }
         ],
@@ -120,13 +117,11 @@ export const SEED_TOPICS_PART4: Topic[] = [
         },
         section_2_detailed_explanations: [
             {
-                heading: "Scalars vs Vectors",
-                content: "Scalars have size only (Speed, Distance, Mass, Energy, Time). Vectors have size AND direction (Velocity, Displacement, Weight, Force, Acceleration). We represent vectors with arrows.",
+                heading: "Scalars vs Vectors", content: "Scalars have size only (Speed, Distance, Mass, Energy, Time). Vectors have size AND direction (Velocity, Displacement, Weight, Force, Acceleration). We represent vectors with arrows.", interactive_type: "none", animation_type: "none",
                 key_points: ["Speed is scalar, Velocity is vector", "Mass is scalar, Weight is vector", "Vectors can be added/subtracted"]
             },
             {
-                heading: "Newton's Laws",
-                content: "1) If resultant force is zero, object remains stationary or moves at constant velocity. 2) F = ma (Force = mass × acceleration). 3) Every action has an equal and opposite reaction.",
+                heading: "Newton's Laws", content: "1) If resultant force is zero, object remains stationary or moves at constant velocity. 2) F = ma (Force = mass × acceleration). 3) Every action has an equal and opposite reaction.", interactive_type: "none", animation_type: "none",
                 key_points: ["Balanced forces = constant speed (or still)", "Unbalanced forces = acceleration", "F=ma is the key formula"]
             }
         ],
@@ -193,13 +188,11 @@ export const SEED_TOPICS_PART4: Topic[] = [
         },
         section_2_detailed_explanations: [
             {
-                heading: "Problems in 1558",
-                content: "1) Religion: Country divided between Catholic/Protestant. 2) Legitimacy: Catholics didn't recognise Henry VIII's marriage to Anne Boleyn. 3) Gender: Many thought a woman couldn't rule. 4) Money: Crown was in debt. 5) France/Scotland: Auld Alliance threat.",
+                heading: "Problems in 1558", content: "1) Religion: Country divided between Catholic/Protestant. 2) Legitimacy: Catholics didn't recognise Henry VIII's marriage to Anne Boleyn. 3) Gender: Many thought a woman couldn't rule. 4) Money: Crown was in debt. 5) France/Scotland: Auld Alliance threat.", animation_type: "reveal",
                 key_points: ["Divided religion", "Gender prejudice", "Debt", "Foreign threats"]
             },
             {
-                heading: "The Religious Settlement (1559)",
-                content: "Act of Supremacy (Liz = Governor, not Head). Act of Uniformity (New Prayer Book, services in English, some Catholic decorations kept). Goal: A 'Middle Way' to avoid civil war. Result: Generally worked, but angered extremes (Puritans and hardline Catholics).",
+                heading: "The Religious Settlement (1559)", content: "Act of Supremacy (Liz = Governor, not Head). Act of Uniformity (New Prayer Book, services in English, some Catholic decorations kept). Goal: A 'Middle Way' to avoid civil war. Result: Generally worked, but angered extremes (Puritans and hardline Catholics).", animation_type: "reveal",
                 key_points: ["Middle Way", "Governor vs Head", "English Bible", "Compromise"]
             }
         ],

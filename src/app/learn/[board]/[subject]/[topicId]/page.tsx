@@ -1,26 +1,54 @@
 "use client";
+import { motion } from "framer-motion";
+import { HeroVisual } from "@/components/visuals/HeroVisual";
+import { InteractiveDiagram } from "@/components/visuals/InteractiveDiagram";
+
 import { useState } from "react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
+
+// Import ALL seed data
+import { SEED_TOPICS_MISSING_CORE } from "@/data/seed-topics-missing-core";
 import { SEED_TOPICS } from "@/data/seed-topics";
 import { SEED_TOPICS_PART2 } from "@/data/seed-topics-2";
 import { SEED_TOPICS_PART3 } from "@/data/seed-topics-3";
 import { SEED_TOPICS_PART4 } from "@/data/seed-topics-4";
 import { SEED_TOPICS_PART5 } from "@/data/seed-topics-5";
-import { SEED_MATHS_EXTENDED } from "@/data/seed-topics-maths-extended";
-import { SEED_TOPICS_ENGLISH_EXTENDED } from "@/data/seed-topics-english-extended";
-import { SEED_TOPICS_HUMANITIES_EXTENDED } from "@/data/seed-topics-humanities-extended";
-import { SEED_TOPICS_SCIENCES_EXTENDED } from "@/data/seed-topics-sciences-extended";
-import { SEED_TOPICS_FRENCH_EXTENDED } from "@/data/seed-topics-french-extended";
-import { SEED_TOPICS_RELIGIOUS_STUDIES_EXTENDED } from "@/data/seed-topics-religious-studies-extended";
-import { SEED_TOPICS_GEOGRAPHY_EXTENDED } from "@/data/seed-topics-geography-extended";
 import { SEED_TOPICS_COMPUTER_SCIENCE_EXTENDED } from "@/data/seed-topics-computer-science-extended";
+import { SEED_TOPICS_ENGLISH_EXTENDED } from "@/data/seed-topics-english-extended";
+import { SEED_TOPICS_FRENCH_EXTENDED } from "@/data/seed-topics-french-extended";
+import { SEED_TOPICS_GEOGRAPHY_EXTENDED } from "@/data/seed-topics-geography-extended";
+import { SEED_TOPICS_HUMANITIES_EXTENDED } from "@/data/seed-topics-humanities-extended";
+import { SEED_TOPICS_RELIGIOUS_STUDIES_EXTENDED } from "@/data/seed-topics-religious-studies-extended";
+import { SEED_TOPICS_SCIENCES_EXTENDED } from "@/data/seed-topics-sciences-extended";
+import { SEED_MATHS_COMPREHENSIVE } from "@/data/seed-topics-maths-comprehensive";
+import { SEED_MATHS_EXTENDED_2 } from "@/data/seed-topics-maths-extended-2";
+import { SEED_MATHS_EXTENDED_3 } from "@/data/seed-topics-maths-extended-3";
+import { SEED_MATHS_EXTENDED } from "@/data/seed-topics-maths-extended";
+
 import { useAppStore } from "@/lib/store";
 import { COIN_REWARDS, XP_REWARDS } from "@/lib/utils";
 import { Topic } from "@/types";
 
-const ALL_TOPICS = [...SEED_TOPICS, ...SEED_TOPICS_PART2, ...SEED_TOPICS_PART3, ...SEED_TOPICS_PART4, ...SEED_TOPICS_PART5, ...SEED_MATHS_EXTENDED, ...SEED_TOPICS_ENGLISH_EXTENDED, ...SEED_TOPICS_HUMANITIES_EXTENDED, ...SEED_TOPICS_SCIENCES_EXTENDED, ...SEED_TOPICS_FRENCH_EXTENDED, ...SEED_TOPICS_RELIGIOUS_STUDIES_EXTENDED, ...SEED_TOPICS_GEOGRAPHY_EXTENDED, ...SEED_TOPICS_COMPUTER_SCIENCE_EXTENDED];
-
+const ALL_TOPICS = [
+    ...SEED_TOPICS_MISSING_CORE,
+    ...SEED_TOPICS,
+    ...SEED_TOPICS_PART2,
+    ...SEED_TOPICS_PART3,
+    ...SEED_TOPICS_PART4,
+    ...SEED_TOPICS_PART5,
+    ...SEED_TOPICS_COMPUTER_SCIENCE_EXTENDED,
+    ...SEED_TOPICS_ENGLISH_EXTENDED,
+    ...SEED_TOPICS_FRENCH_EXTENDED,
+    ...SEED_TOPICS_GEOGRAPHY_EXTENDED,
+    ...SEED_TOPICS_HUMANITIES_EXTENDED,
+    ...SEED_TOPICS_RELIGIOUS_STUDIES_EXTENDED,
+    ...SEED_TOPICS_SCIENCES_EXTENDED,
+    ...SEED_MATHS_COMPREHENSIVE,
+    ...SEED_MATHS_EXTENDED_2,
+    ...SEED_MATHS_EXTENDED_3,
+    ...SEED_MATHS_EXTENDED
+];
 
 import { getTopicById } from "@/lib/content";
 import { useEffect } from "react";
@@ -112,6 +140,7 @@ export default function TopicPage() {
                 </div>
 
                 {/* Header */}
+                <HeroVisual subject={topic.subject} image={topic.topic_hero_image} />
                 <div className="mb-8">
                     <span className="text-xs font-semibold px-3 py-1 rounded-full inline-block mb-3" style={{ background: "rgba(102,126,234,0.1)", color: "var(--primary)" }}>
                         {topic.exam_board.toUpperCase()} · {topic.topic_number} · {topic.tier_level === "both" ? "Foundation & Higher" : topic.tier_level}
@@ -165,7 +194,7 @@ export default function TopicPage() {
             {/* Expert Tips Sidebar/Section */}
             {topic.expert_tips_detailed && topic.expert_tips_detailed.length > 0 && (
                 <div className="container max-w-4xl mt-12">
-                    <div className="bg-[var(--primary)]/10 border-l-4 border-[var(--primary)] p-6 rounded-r-2xl">
+                    <div className="bg-[var(--primary)]/10 border-l-4 border-l-[var(--primary)] p-6 rounded-r-2xl">
                         <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
                             <span>💡</span> Expert Study Tips
                         </h3>
@@ -242,13 +271,13 @@ import { FractionWall } from "@/components/interactive/FractionWall";
 import { EquationSolver } from "@/components/interactive/EquationSolver";
 import { AngleExplorer } from "@/components/interactive/AngleExplorer";
 
+
 function Section2({ data }: { data: (Topic["section_2_detailed_explanations"][0] | { type: "component", name: string })[] }) {
     if (!data) return null;
 
     return (
-        <div className="space-y-6">
+        <div className="space-y-12">
             {data.map((item, i) => {
-                // Check if it's an interactive component
                 if ("type" in item && item.type === "component") {
                     if (item.name === "NumberLine") return <NumberLine key={i} />;
                     if (item.name === "FractionWall") return <FractionWall key={i} />;
@@ -257,26 +286,48 @@ function Section2({ data }: { data: (Topic["section_2_detailed_explanations"][0]
                     return null;
                 }
 
-                // Otherwise render standard text content
                 const exp = item as Topic["section_2_detailed_explanations"][0];
                 return (
-                    <div key={i}>
-                        <h4 className="font-bold text-lg mb-2">{exp.heading}</h4>
-                        <p className="mb-3 whitespace-pre-wrap" style={{ color: "var(--text-muted)" }}>{exp.content}</p>
+                    <motion.div
+                        key={i}
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                    >
+                        <h4 className="font-bold text-2xl mb-4 gradient-text">{exp.heading}</h4>
+
+                        {exp.interactive_type && exp.interactive_type !== "none" && (
+                            <InteractiveDiagram type={exp.interactive_type} label={exp.heading} />
+                        )}
+
+                        <p className="mb-6 text-lg leading-relaxed opacity-80 whitespace-pre-wrap">{exp.content}</p>
+
+                        {exp.visual_url && (
+                            <div className="my-8 rounded-2xl overflow-hidden border border-[var(--border)] shadow-xl">
+                                <img src={exp.visual_url} alt={exp.heading} className="w-full h-auto" />
+                            </div>
+                        )}
+
                         {exp.key_points && (
-                            <div className="p-4 rounded-xl" style={{ background: "rgba(16,185,129,0.05)", border: "1px solid rgba(16,185,129,0.2)" }}>
-                                <div className="font-semibold text-sm mb-2" style={{ color: "#10b981" }}>✅ Key Points</div>
-                                <ul className="list-disc pl-5 space-y-1 text-sm" style={{ color: "var(--text-muted)" }}>
-                                    {exp.key_points.map((kp, j) => <li key={j}>{kp}</li>)}
+                            <div className="p-6 rounded-2xl bg-gradient-to-br from-[var(--primary)]/10 to-transparent border border-[var(--primary)]/20">
+                                <div className="font-bold text-sm mb-4 uppercase tracking-widest text-[var(--primary)]">💡 Key Insights</div>
+                                <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    {exp.key_points.map((kp, j) => (
+                                        <li key={j} className="text-sm opacity-90 flex items-start gap-2">
+                                            <span className="text-[var(--primary)]">•</span>
+                                            {kp}
+                                        </li>
+                                    ))}
                                 </ul>
                             </div>
                         )}
-                    </div>
+                    </motion.div>
                 );
             })}
         </div>
     );
 }
+
 
 function Section3({ data }: { data: Topic["section_3_worked_examples"] }) {
     return (

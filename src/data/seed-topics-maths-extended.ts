@@ -41,20 +41,17 @@ export const SEED_MATHS_EXTENDED_BASE: Topic[] = [
         },
         section_2_detailed_explanations: [
             {
-                heading: "Function Notation & Gradient",
-                content: "y = mx + c where m is gradient and c is y-intercept. Gradient = rise/run = (y₂-y₁)/(x₂-x₁). Positive gradient slopes up (left to right), negative slopes down. Parallel lines have same gradient. Perpendicular gradients multiply to -1.",
+                heading: "Function Notation & Gradient", content: "y = mx + c where m is gradient and c is y-intercept. Gradient = rise/run = (y₂-y₁)/(x₂-x₁). Positive gradient slopes up (left to right), negative slopes down. Parallel lines have same gradient. Perpendicular gradients multiply to -1.", animation_type: "reveal",
                 diagram_description: "Graph showing line with gradient triangle marked (rise and run), positive and negative slope examples, parallel and perpendicular lines comparison",
                 key_points: ["Gradient = rise/run", "y-intercept is where x=0", "Parallel lines: same gradient", "Perpendicular: m₁ × m₂ = -1"]
             },
             {
-                heading: "Plotting Linear Graphs",
-                content: "Two methods: 1) Table of values - pick x values, calculate y using equation, plot points. 2) Using gradient & intercept - start at c on y-axis, use gradient to find other points. Always use a ruler and extend line across graph.",
+                heading: "Plotting Linear Graphs", content: "Two methods: 1) Table of values - pick x values, calculate y using equation, plot points. 2) Using gradient & intercept - start at c on y-axis, use gradient to find other points. Always use a ruler and extend line across graph.", animation_type: "reveal",
                 diagram_description: "Coordinate grid showing plotted points, line drawn through them, gradient triangle marked, showing how to extend line",
                 key_points: ["Plot at least 3 points", "Use ruler for straight line", "Extend line to show it continues", "Label axes clearly"]
             },
             {
-                heading: "Interpreting Graphs",
-                content: "Gradients tell stories: steep = fast change, shallow = slow change. Zero gradient = horizontal (constant). Undefined (vertical) lines are not functions. Real-world: gradient = rate of change (speed, temperature change, etc).",
+                heading: "Interpreting Graphs", content: "Gradients tell stories: steep = fast change, shallow = slow change. Zero gradient = horizontal (constant). Undefined (vertical) lines are not functions. Real-world: gradient = rate of change (speed, temperature change, etc).", animation_type: "reveal",
                 diagram_description: "Four graphs showing zero gradient, positive gradient, negative gradient, steep vs shallow examples with real-world labels (Distance-Time graphs)",
                 key_points: ["Steeper gradient = faster change", "Flat line = no change", "Horizontal = constant value", "Reading graphs: find points then interpret meaning"]
             }
@@ -153,20 +150,17 @@ export const SEED_MATHS_EXTENDED_BASE: Topic[] = [
         },
         section_2_detailed_explanations: [
             {
-                heading: "SOHCAHTOA & The Ratios",
-                content: "In a right-angled triangle: SOH = Sin(θ) = Opposite/Hypotenuse. CAH = Cos(θ) = Adjacent/Hypotenuse. TOA = Tan(θ) = Opposite/Adjacent. Always label sides relative to the angle you're using.",
+                heading: "SOHCAHTOA & The Ratios", content: "In a right-angled triangle: SOH = Sin(θ) = Opposite/Hypotenuse. CAH = Cos(θ) = Adjacent/Hypotenuse. TOA = Tan(θ) = Opposite/Adjacent. Always label sides relative to the angle you're using.", interactive_type: "none", animation_type: "none",
                 diagram_description: "Right-angled triangle with labeled sides (opposite, adjacent, hypotenuse), angle θ marked, SOHCAHTOA formula shown with color-coded sides",
                 key_points: ["Label sides relative to angle θ", "Hypotenuse is always opposite right angle", "Choose ratio based on which sides you know", "Use calculator in degree mode"]
             },
             {
-                heading: "Finding Sides & Angles",
-                content: "Finding sides: Use sin/cos/tan (depending on what you know) and rearrange. Finding angles: Use inverse functions sin⁻¹, cos⁻¹, tan⁻¹. Example: If sin(θ)=0.5, then θ=sin⁻¹(0.5)=30°.",
+                heading: "Finding Sides & Angles", content: "Finding sides: Use sin/cos/tan (depending on what you know) and rearrange. Finding angles: Use inverse functions sin⁻¹, cos⁻¹, tan⁻¹. Example: If sin(θ)=0.5, then θ=sin⁻¹(0.5)=30°.", interactive_type: "geometry", animation_type: "graph-draw",
                 diagram_description: "Side-by-side examples: triangle with known side asking to find unknown, step-by-step formula rearrangement shown",
                 key_points: ["Rearrange formula to find unknown", "Use inverse functions (shift+trig on calculator)", "Check angle is reasonable (0-90° for acute angles)", "Answer has correct units (degrees for angles, cm/m for lengths)"]
             },
             {
-                heading: "Angles of Elevation & Depression",
-                content: "Angle of elevation: angle up from horizontal. Angle of depression: angle down from horizontal. These angles are always equal (alternate angles). Draw the right triangle carefully with horizontal line.",
+                heading: "Angles of Elevation & Depression", content: "Angle of elevation: angle up from horizontal. Angle of depression: angle down from horizontal. These angles are always equal (alternate angles). Draw the right triangle carefully with horizontal line.", interactive_type: "geometry", animation_type: "graph-draw",
                 diagram_description: "Observer looking up at building (angle of elevation marked), observer looking down from cliff (angle of depression marked), showing they're equal",
                 key_points: ["Elevation is upward from horizontal", "Depression is downward from horizontal", "Both measured from horizontal line", "Angles equal by alternate angle theorem"]
             }
@@ -260,20 +254,17 @@ export const SEED_MATHS_EXTENDED_BASE: Topic[] = [
         },
         section_2_detailed_explanations: [
             {
-                heading: "Circumference & Area",
-                content: "Circumference = 2πr or πd. Area = πr². Always use exact answers with π unless asked to round. For arcs & sectors: Arc length = (θ/360°) × 2πr. Sector area = (θ/360°) × πr².",
+                heading: "Circumference & Area", content: "Circumference = 2πr or πd. Area = πr². Always use exact answers with π unless asked to round. For arcs & sectors: Arc length = (θ/360°) × 2πr. Sector area = (θ/360°) × πr².", interactive_type: "none", animation_type: "none",
                 diagram_description: "Circle with radius marked, diameter shown, circumference labeled; separate diagram showing sector with angle θ, arc length formula illustrated",
                 key_points: ["C = 2πr (circumference)", "A = πr² (area)", "Arc length = (θ/360) × 2πr", "Sector area = (θ/360) × πr²"]
             },
             {
-                heading: "Circle Theorems",
-                content: "1) Angle at center is twice angle at circumference. 2) Angle in semicircle is 90°. 3) Opposite angles in cyclic quadrilateral sum to 180°. 4) Tangent perpendicular to radius. 5) Angles in same segment are equal.",
+                heading: "Circle Theorems", content: "1) Angle at center is twice angle at circumference. 2) Angle in semicircle is 90°. 3) Opposite angles in cyclic quadrilateral sum to 180°. 4) Tangent perpendicular to radius. 5) Angles in same segment are equal.", animation_type: "reveal",
                 diagram_description: "Six separate diagrams showing each theorem: angle at center vs circumference, right angle in semicircle, cyclic quadrilateral, tangent perpendicular to radius, angles in same segment",
                 key_points: ["Memorize all 5 theorems", "Draw diagrams to visualize", "Theorems apply to ANY circle", "Use for angle proofs"]
             },
             {
-                heading: "Segments & Compound Areas",
-                content: "Segment = sector minus triangle. Compound shapes: may need to add/subtract circles or parts of circles. Always identify all the shapes involved.",
+                heading: "Segments & Compound Areas", content: "Segment = sector minus triangle. Compound shapes: may need to add/subtract circles or parts of circles. Always identify all the shapes involved.", interactive_type: "none", animation_type: "none",
                 diagram_description: "Circle with sector highlighted, triangle in center marked, segment shown (sector minus triangle); compound shape example with overlapping circles",
                 key_points: ["Segment = Sector - Triangle", "Use decomposition for complex shapes", "May need Pythagoras or trig to find components"]
             }
@@ -370,20 +361,17 @@ export const SEED_MATHS_EXTENDED_BASE: Topic[] = [
         },
         section_2_detailed_explanations: [
             {
-                heading: "Reflection",
-                content: "Reflect shape across mirror line. Common lines: x-axis (y→-y), y-axis (x→-x), y=x (swap x and y), y=-x (swap and negate). Each point equidistant from mirror line on opposite side. Use grid to count distance from mirror.",
+                heading: "Reflection", content: "Reflect shape across mirror line. Common lines: x-axis (y→-y), y-axis (x→-x), y=x (swap x and y), y=-x (swap and negate). Each point equidistant from mirror line on opposite side. Use grid to count distance from mirror.", animation_type: "reveal",
                 diagram_description: "Four separate coordinate grids showing: reflection over x-axis, reflection over y-axis, reflection over y=x, reflection over y=-x with original and reflected shapes",
                 key_points: ["Mirror line bisects perpendicular", "Each point same distance on other side", "Shape and size unchanged", "Orientation reversed (mirror image)"]
             },
             {
-                heading: "Rotation",
-                content: "Rotate shape around center point. Specify: angle (90°, 180°, 270°), direction (clockwise/counter-clockwise), center. 90° CCW: (x,y)→(-y,x). 180°: (x,y)→(-x,-y). 270° CCW: (x,y)→(y,-x).",
+                heading: "Rotation", content: "Rotate shape around center point. Specify: angle (90°, 180°, 270°), direction (clockwise/counter-clockwise), center. 90° CCW: (x,y)→(-y,x). 180°: (x,y)→(-x,-y). 270° CCW: (x,y)→(y,-x).", interactive_type: "none", animation_type: "none",
                 diagram_description: "Coordinate grid showing triangle rotated 90° CCW around origin, 180° around origin, 270° around origin, 90° around different center point",
                 key_points: ["State angle, direction, center", "Shape and size unchanged", "Use tracing paper or formulas", "Check with compass if center off-grid"]
             },
             {
-                heading: "Translation & Enlargement",
-                content: "Translation: move by vector (a, b) = right a, up b. Enlargement: scale by factor k from center. If k>1, shape gets bigger. If 0<k<1, shape gets smaller. If k<0, shape on opposite side of center AND inverted.",
+                heading: "Translation & Enlargement", content: "Translation: move by vector (a, b) = right a, up b. Enlargement: scale by factor k from center. If k>1, shape gets bigger. If 0<k<1, shape gets smaller. If k<0, shape on opposite side of center AND inverted.", animation_type: "reveal",
                 diagram_description: "Coordinate grid showing translation by vector (3,2), separate grid showing enlargement scale factor 2 from origin, scale factor -1 from origin",
                 key_points: ["Translation: vector describes movement", "Enlargement k=2 means all dimensions × 2", "Negative scale factor: inverts", "Area scales by k², volume by k³"]
             }
@@ -484,20 +472,17 @@ export const SEED_MATHS_EXTENDED_BASE: Topic[] = [
         },
         section_2_detailed_explanations: [
             {
-                heading: "Factorising & Solutions",
-                content: "For ax²+bx+c=0, find two numbers that multiply to ac and add to b. Rewrite bx using those numbers, then factor. If (x+p)(x+q)=0, then x=-p or x=-q. Always check by expanding.",
+                heading: "Factorising & Solutions", content: "For ax²+bx+c=0, find two numbers that multiply to ac and add to b. Rewrite bx using those numbers, then factor. If (x+p)(x+q)=0, then x=-p or x=-q. Always check by expanding.", interactive_type: "none", animation_type: "none",
                 diagram_description: "Step-by-step factorisation process shown on grid, parabola with x-intercepts marked as solutions",
                 key_points: ["Find factors of ac that sum to b", "Rewrite middle term", "Factor by grouping", "Set each factor to zero"]
             },
             {
-                heading: "Quadratic Formula & Discriminant",
-                content: "x = (-b ± √(b²-4ac)) / 2a. Discriminant Δ = b² - 4ac. If Δ>0: two real solutions. If Δ=0: one repeated solution (touches x-axis). If Δ<0: no real solutions (no x-intercepts).",
+                heading: "Quadratic Formula & Discriminant", content: "x = (-b ± √(b²-4ac)) / 2a. Discriminant Δ = b² - 4ac. If Δ>0: two real solutions. If Δ=0: one repeated solution (touches x-axis). If Δ<0: no real solutions (no x-intercepts).", interactive_type: "none", animation_type: "none",
                 diagram_description: "Three parabolas: one crossing x-axis twice (Δ>0), one touching once (Δ=0), one not touching (Δ<0)",
                 key_points: ["Always identify a, b, c correctly", "Discriminant tells number of solutions", "Use calculator carefully with ± symbol", "Check solutions in original equation"]
             },
             {
-                heading: "Completing the Square & Graphing",
-                content: "Rearrange ax²+bx+c to form a(x+p)²+q. Vertex is at (-p, q). Parabola opens up if a>0, down if a<0. Axis of symmetry: x=-b/2a.",
+                heading: "Completing the Square & Graphing", content: "Rearrange ax²+bx+c to form a(x+p)²+q. Vertex is at (-p, q). Parabola opens up if a>0, down if a<0. Axis of symmetry: x=-b/2a.", interactive_type: "none", animation_type: "none",
                 diagram_description: "Parabola with vertex marked, axis of symmetry drawn, showing how to read turning point from completed square form",
                 key_points: ["Completed square form: a(x+p)² + q", "Vertex: (-p, q)", "Minimum/maximum at vertex", "Axis of symmetry: vertical line through vertex"]
             }

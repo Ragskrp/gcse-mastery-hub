@@ -28,13 +28,11 @@ export const SEED_TOPICS_PART2: Topic[] = [
         },
         section_2_detailed_explanations: [
             {
-                heading: "Why Businesses Conduct Market Research",
-                content: "Market research helps businesses: identify customer needs and wants, spot gaps in the market, reduce the risk of product failure, understand competitor strategies, and make informed decisions about pricing, promotion, and distribution. Without it, businesses are essentially guessing.",
+                heading: "Why Businesses Conduct Market Research", content: "Market research helps businesses: identify customer needs and wants, spot gaps in the market, reduce the risk of product failure, understand competitor strategies, and make informed decisions about pricing, promotion, and distribution. Without it, businesses are essentially guessing.", animation_type: "reveal",
                 key_points: ["Reduces risk of failure", "Identifies customer needs before launch", "Helps with pricing and promotion decisions", "Keeps business aware of competitors"]
             },
             {
-                heading: "Primary vs Secondary Research",
-                content: "Primary research (field research) involves collecting new data: surveys, questionnaires, interviews, focus groups, observations. It is specific to your needs but expensive and time-consuming. Secondary research (desk research) uses existing data: websites, newspapers, government statistics, market reports. It is cheaper but may be outdated or not specific enough.",
+                heading: "Primary vs Secondary Research", content: "Primary research (field research) involves collecting new data: surveys, questionnaires, interviews, focus groups, observations. It is specific to your needs but expensive and time-consuming. Secondary research (desk research) uses existing data: websites, newspapers, government statistics, market reports. It is cheaper but may be outdated or not specific enough.", animation_type: "reveal",
                 key_points: ["Primary = new data, specific, expensive, time-consuming", "Secondary = existing data, cheaper, quicker, may be outdated", "Best approach: use both together", "Primary methods: surveys, interviews, focus groups, observation"]
             }
         ],
@@ -114,13 +112,11 @@ export const SEED_TOPICS_PART2: Topic[] = [
         },
         section_2_detailed_explanations: [
             {
-                heading: "Describing Family Members",
-                content: "Key vocabulary: mon père (my father), ma mère (my mother), mon frère (my brother), ma sœur (my sister), mes grands-parents (my grandparents). To describe people: Il/Elle est + adjective. Example: Ma mère est gentille et travailleuse (My mother is kind and hardworking). Remember adjective agreements: add -e for feminine, -s for plural.",
+                heading: "Describing Family Members", content: "Key vocabulary: mon père (my father), ma mère (my mother), mon frère (my brother), ma sœur (my sister), mes grands-parents (my grandparents). To describe people: Il/Elle est + adjective. Example: Ma mère est gentille et travailleuse (My mother is kind and hardworking). Remember adjective agreements: add -e for feminine, -s for plural.", animation_type: "reveal",
                 key_points: ["mon/ma/mes = my (masc/fem/plural)", "Adjectives agree with gender: gentil → gentille", "Use 'Il est...' for he, 'Elle est...' for she", "Family members are core vocabulary for all papers"]
             },
             {
-                heading: "Talking About Relationships",
-                content: "Je m'entends bien avec... (I get on well with...). On se dispute parfois (We argue sometimes). Mon meilleur ami est... (My best friend is...). Un bon ami doit être fidèle, honnête et compréhensif (A good friend should be loyal, honest and understanding).",
+                heading: "Talking About Relationships", content: "Je m'entends bien avec... (I get on well with...). On se dispute parfois (We argue sometimes). Mon meilleur ami est... (My best friend is...). Un bon ami doit être fidèle, honnête et compréhensif (A good friend should be loyal, honest and understanding).", animation_type: "reveal",
                 key_points: ["s'entendre bien/mal avec = get on well/badly with", "Use connectives: cependant (however), de plus (moreover)", "Give opinions: à mon avis, je pense que, je crois que", "Use justifications with car/parce que (because)"]
             }
         ],
@@ -204,13 +200,11 @@ export const SEED_TOPICS_PART2: Topic[] = [
         },
         section_2_detailed_explanations: [
             {
-                heading: "Medieval Beliefs About Disease",
-                content: "Medieval people believed disease was caused by: 1) An imbalance of the Four Humours (from Hippocrates and Galen), 2) Miasma — bad smells and corrupt air, 3) God's punishment for sin, 4) Alignment of planets and stars. Because they didn't know about germs, treatments were often ineffective. The Church controlled education and promoted Galen's ideas, discouraging new thinking.",
+                heading: "Medieval Beliefs About Disease", content: "Medieval people believed disease was caused by: 1) An imbalance of the Four Humours (from Hippocrates and Galen), 2) Miasma — bad smells and corrupt air, 3) God's punishment for sin, 4) Alignment of planets and stars. Because they didn't know about germs, treatments were often ineffective. The Church controlled education and promoted Galen's ideas, discouraging new thinking.", animation_type: "reveal",
                 key_points: ["Four Humours: blood, phlegm, yellow bile, black bile", "Church promoted Galen = limited challenge to old ideas", "Supernatural beliefs (God, astrology) were common", "No understanding of germs until 19th century"]
             },
             {
-                heading: "Medieval Treatments",
-                content: "Common treatments included: bloodletting (removing blood to 'rebalance humours'), purging (vomiting/laxatives), herbal remedies, prayer and pilgrimage, and flagellation (whipping to seek God's forgiveness). While some herbal remedies had genuine medicinal properties, most treatments were based on flawed theories.",
+                heading: "Medieval Treatments", content: "Common treatments included: bloodletting (removing blood to 'rebalance humours'), purging (vomiting/laxatives), herbal remedies, prayer and pilgrimage, and flagellation (whipping to seek God's forgiveness). While some herbal remedies had genuine medicinal properties, most treatments were based on flawed theories.", animation_type: "reveal",
                 key_points: ["Bloodletting — most common treatment", "Herbal remedies — some actually worked!", "Prayer/pilgrimage — reflects supernatural beliefs", "Leeches used to remove 'excess blood'"]
             }
         ],
@@ -289,13 +283,11 @@ export const SEED_TOPICS_PART2: Topic[] = [
         },
         section_2_detailed_explanations: [
             {
-                heading: "Forms of Worship",
-                content: "Liturgical worship follows a set order of service (e.g., Catholic Mass). Non-liturgical worship is more informal and spontaneous (e.g., Quaker meetings). Private worship is individual prayer and Bible study at home. Each form helps Christians connect with God differently.",
+                heading: "Forms of Worship", content: "Liturgical worship follows a set order of service (e.g., Catholic Mass). Non-liturgical worship is more informal and spontaneous (e.g., Quaker meetings). Private worship is individual prayer and Bible study at home. Each form helps Christians connect with God differently.", animation_type: "reveal",
                 key_points: ["Liturgical = formal, structured, set prayers", "Non-liturgical = informal, spontaneous, charismatic", "Private = individual prayer, meditation, Bible reading", "All forms aim to worship and communicate with God"]
             },
             {
-                heading: "Sacraments: Baptism and Eucharist",
-                content: "Baptism: Infant baptism (Catholic, Anglican) welcomes babies into the Church — parents and godparents make promises. Believers' baptism (Baptist) is full immersion for those old enough to choose. Eucharist: Catholics believe bread and wine literally become Christ's body and blood (transubstantiation). Protestants see it as symbolic remembrance.",
+                heading: "Sacraments: Baptism and Eucharist", content: "Baptism: Infant baptism (Catholic, Anglican) welcomes babies into the Church — parents and godparents make promises. Believers' baptism (Baptist) is full immersion for those old enough to choose. Eucharist: Catholics believe bread and wine literally become Christ's body and blood (transubstantiation). Protestants see it as symbolic remembrance.", animation_type: "reveal",
                 key_points: ["Infant baptism = promises made on child's behalf", "Believers' baptism = personal choice, full immersion", "Transubstantiation = Catholic belief in literal change", "Protestants = symbolic remembrance of Last Supper"]
             }
         ],
@@ -374,13 +366,11 @@ export const SEED_TOPICS_PART2: Topic[] = [
         },
         section_2_detailed_explanations: [
             {
-                heading: "Question Breakdown",
-                content: "Q1 (4 marks, 5 min): List 4 things about a topic from a specific section. Q2 (8 marks, 10 min): How does the writer use language to describe/present X? Q3 (8 marks, 10 min): How does the writer structure the text? Q4 (20 marks, 20 min): To what extent do you agree with the statement? Q5 (40 marks, 45 min): Creative writing — either a description or narrative.",
+                heading: "Question Breakdown", content: "Q1 (4 marks, 5 min): List 4 things about a topic from a specific section. Q2 (8 marks, 10 min): How does the writer use language to describe/present X? Q3 (8 marks, 10 min): How does the writer structure the text? Q4 (20 marks, 20 min): To what extent do you agree with the statement? Q5 (40 marks, 45 min): Creative writing — either a description or narrative.", animation_type: "reveal",
                 key_points: ["Q1: Simple retrieval — find 4 facts", "Q2: Language analysis — use word-level detail", "Q3: Structure — beginning, middle, end, shifts", "Q4: Evaluation — agree/disagree with evidence", "Q5: Creative writing — plan and craft carefully"]
             },
             {
-                heading: "Language Analysis Technique (Q2 and Q4)",
-                content: "Use the 'What-How-Why' method. WHAT does the writer say? HOW do they say it (technique + quotation)? WHY — what effect does this have on the reader? Example: The writer describes the forest as a 'cathedral of shadows' (metaphor). The noun 'cathedral' suggests grandeur and reverence, while 'shadows' creates an unsettling contrast, making the reader feel both awe and unease.",
+                heading: "Language Analysis Technique (Q2 and Q4)", content: "Use the 'What-How-Why' method. WHAT does the writer say? HOW do they say it (technique + quotation)? WHY — what effect does this have on the reader? Example: The writer describes the forest as a 'cathedral of shadows' (metaphor). The noun 'cathedral' suggests grandeur and reverence, while 'shadows' creates an unsettling contrast, making the reader feel both awe and unease.", animation_type: "reveal",
                 key_points: ["Always quote single words or short phrases", "Name the technique (metaphor, simile, personification etc.)", "Explain the EFFECT on the reader's feelings", "Use the connotations of individual words"]
             }
         ],

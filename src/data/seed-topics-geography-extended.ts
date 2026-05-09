@@ -27,8 +27,7 @@ export const SEED_TOPICS_GEOGRAPHY_EXTENDED: Topic[] = [
     },
     section_2_detailed_explanations: [
       {
-        heading: "Greenhouse Gas Emissions & Global Warming",
-        content: "CO2, methane, nitrous oxide trap heat; human activities increase concentrations: fossil fuel combustion, deforestation, agriculture, industrial processes. Pre-industrial 280 ppm CO2 now 420+ ppm, driving 1.1°C warming. Positive feedbacks amplify: melting ice reduces reflectivity, thawing permafrost releases methane. Impacts: changing precipitation, extreme weather, sea level rise, ecosystem disruption. Global emissions still rising despite renewable energy growth; coal/oil remain dominant energy sources.",
+        heading: "Greenhouse Gas Emissions & Global Warming", content: "CO2, methane, nitrous oxide trap heat; human activities increase concentrations: fossil fuel combustion, deforestation, agriculture, industrial processes. Pre-industrial 280 ppm CO2 now 420+ ppm, driving 1.1°C warming. Positive feedbacks amplify: melting ice reduces reflectivity, thawing permafrost releases methane. Impacts: changing precipitation, extreme weather, sea level rise, ecosystem disruption. Global emissions still rising despite renewable energy growth; coal/oil remain dominant energy sources.", animation_type: "reveal",
         key_points: [
           "Anthropogenic CO2/GHG emissions warming planet",
           "Positive feedbacks accelerate warming nonlinearly",
@@ -38,8 +37,7 @@ export const SEED_TOPICS_GEOGRAPHY_EXTENDED: Topic[] = [
         ]
       },
       {
-        heading: "Climate Impacts: Ecological & Social",
-        content: "Warming causes ecosystem shifts: poleward/upslope migration, phenological changes (birds breeding earlier), coral bleaching, drought, flooding. Agricultural productivity threatened in some regions while others benefit (complex distribution). Sea level rise threatens island and coastal communities. Health impacts: heat stress, disease expansion, malnutrition. Migration pressures as some regions become uninhabitable. Climate change amplifies inequality: wealthy adapt; poor suffer most from impacts they caused least.",
+        heading: "Climate Impacts: Ecological & Social", content: "Warming causes ecosystem shifts: poleward/upslope migration, phenological changes (birds breeding earlier), coral bleaching, drought, flooding. Agricultural productivity threatened in some regions while others benefit (complex distribution). Sea level rise threatens island and coastal communities. Health impacts: heat stress, disease expansion, malnutrition. Migration pressures as some regions become uninhabitable. Climate change amplifies inequality: wealthy adapt; poor suffer most from impacts they caused least.", animation_type: "reveal",
         key_points: [
           "Ecosystems cannot adapt quickly enough to warming speed",
           "Agricultural productivity changes vary regionally",
@@ -49,8 +47,7 @@ export const SEED_TOPICS_GEOGRAPHY_EXTENDED: Topic[] = [
         ]
       },
       {
-        heading: "Mitigation & Adaptation: Strategies & Challenges",
-        content: "Mitigation: renewable energy, efficiency, electrification, reforestation, carbon capture. Challenges: infrastructure lock-in, economic transition, political resistance from fossil fuel interests. Adaptation: sea walls, drought-resistant crops, cooling centers, migration planning. But: some impacts unavoidable (sea level rise committed); adaptation has limits. International frameworks: Paris Agreement (nationally determined contributions), carbon trading, loss and damage finance for vulnerable countries. Implementation gaps: pledges vs. action; developed countries historically responsible but developing countries must transition too.",
+        heading: "Mitigation & Adaptation: Strategies & Challenges", content: "Mitigation: renewable energy, efficiency, electrification, reforestation, carbon capture. Challenges: infrastructure lock-in, economic transition, political resistance from fossil fuel interests. Adaptation: sea walls, drought-resistant crops, cooling centers, migration planning. But: some impacts unavoidable (sea level rise committed); adaptation has limits. International frameworks: Paris Agreement (nationally determined contributions), carbon trading, loss and damage finance for vulnerable countries. Implementation gaps: pledges vs. action; developed countries historically responsible but developing countries must transition too.", animation_type: "reveal",
         key_points: [
           "Mitigation requires rapid energy system transformation",
           "Adaptation cannot match severe climate change scenarios",
@@ -193,8 +190,7 @@ export const SEED_TOPICS_GEOGRAPHY_EXTENDED: Topic[] = [
     },
     section_2_detailed_explanations: [
       {
-        heading: "Water Scarcity & Stress Distribution",
-        content: "About 70% fresh water used for agriculture; 2 billion people in high water stress regions. Physical scarcity: insufficient water (arid regions, seasonal variation). Economic scarcity: inadequate infrastructure preventing access (often in low-income countries). Groundwater depletion critical: Ogallala Aquifer (North America), Indus Basin aquifer drops meters annually. Climate change worsens: altered precipitation, earlier snowmelt, increased evaporation. Unequal distribution: wealthy nations often import water-intensive goods; poor countries export water-intensive crops while facing water stress.",
+        heading: "Water Scarcity & Stress Distribution", content: "About 70% fresh water used for agriculture; 2 billion people in high water stress regions. Physical scarcity: insufficient water (arid regions, seasonal variation). Economic scarcity: inadequate infrastructure preventing access (often in low-income countries). Groundwater depletion critical: Ogallala Aquifer (North America), Indus Basin aquifer drops meters annually. Climate change worsens: altered precipitation, earlier snowmelt, increased evaporation. Unequal distribution: wealthy nations often import water-intensive goods; poor countries export water-intensive crops while facing water stress.", animation_type: "reveal",
         key_points: [
           "2+ billion people in high water stress regions",
           "Agriculture uses 70% fresh water but contributes to scarcity",
@@ -204,8 +200,7 @@ export const SEED_TOPICS_GEOGRAPHY_EXTENDED: Topic[] = [
         ]
       },
       {
-        heading: "Transboundary Waters & Cooperation Challenges",
-        content: "Major rivers cross borders: Nile (11 countries), Mekong (6), Danube (10). Upstream countries controlling water can disadvantage downstream neighbors. Historical conflicts: Israeli-Palestinian water disputes, Indus Waters Treaty (nuclear powers India-Pakistan), dam disputes (Ethiopia's Grand Renaissance Dam affects Egypt). Cooperation frameworks exist (international treaties, joint management) but implementation inconsistent. Climate change adds pressure: reduced flows threaten agreements premised on historical flows. Water typically cheaper than conflict; incentives for cooperation but political will often lacking.",
+        heading: "Transboundary Waters & Cooperation Challenges", content: "Major rivers cross borders: Nile (11 countries), Mekong (6), Danube (10). Upstream countries controlling water can disadvantage downstream neighbors. Historical conflicts: Israeli-Palestinian water disputes, Indus Waters Treaty (nuclear powers India-Pakistan), dam disputes (Ethiopia's Grand Renaissance Dam affects Egypt). Cooperation frameworks exist (international treaties, joint management) but implementation inconsistent. Climate change adds pressure: reduced flows threaten agreements premised on historical flows. Water typically cheaper than conflict; incentives for cooperation but political will often lacking.", animation_type: "reveal",
         key_points: [
           "Transboundary waters create cooperation/conflict potential",
           "Upstream control creates power imbalances",
@@ -215,8 +210,7 @@ export const SEED_TOPICS_GEOGRAPHY_EXTENDED: Topic[] = [
         ]
       },
       {
-        heading: "Water Pollution & Sustainability",
-        content: "Pollution reduces usable freshwater: industrial discharge, agricultural runoff (eutrophication), municipal sewage, plastic. Many regions unable to treat wastewater safely - human and environmental health impacted. Groundwater contamination from agriculture (nitrates) and industry harder to reverse than surface water. Circular economy approaches: wastewater treatment, recycling, efficiency improvements. But behavioral changes slow: industrial countries accustomed to abundant cheap water; inefficient irrigation continues; water pricing weak due to political resistance.",
+        heading: "Water Pollution & Sustainability", content: "Pollution reduces usable freshwater: industrial discharge, agricultural runoff (eutrophication), municipal sewage, plastic. Many regions unable to treat wastewater safely - human and environmental health impacted. Groundwater contamination from agriculture (nitrates) and industry harder to reverse than surface water. Circular economy approaches: wastewater treatment, recycling, efficiency improvements. But behavioral changes slow: industrial countries accustomed to abundant cheap water; inefficient irrigation continues; water pricing weak due to political resistance.", animation_type: "reveal",
         key_points: [
           "Pollution reduces usable freshwater globally",
           "Wastewater treatment capacity inadequate in many regions",

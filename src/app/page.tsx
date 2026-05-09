@@ -4,24 +4,49 @@ import { SUBJECTS } from "@/lib/constants";
 import { useAppStore } from "@/lib/store";
 import { useMounted } from "@/lib/hooks";
 import { SEED_QUIZZES } from "@/data/seed-quizzes";
+
+// Import ALL seed data
+import { SEED_TOPICS_MISSING_CORE } from "@/data/seed-topics-missing-core";
 import { SEED_TOPICS } from "@/data/seed-topics";
 import { SEED_TOPICS_PART2 } from "@/data/seed-topics-2";
 import { SEED_TOPICS_PART3 } from "@/data/seed-topics-3";
 import { SEED_TOPICS_PART4 } from "@/data/seed-topics-4";
 import { SEED_TOPICS_PART5 } from "@/data/seed-topics-5";
-import { SEED_MATHS_EXTENDED } from "@/data/seed-topics-maths-extended";
-import { SEED_TOPICS_ENGLISH_EXTENDED } from "@/data/seed-topics-english-extended";
-import { SEED_TOPICS_HUMANITIES_EXTENDED } from "@/data/seed-topics-humanities-extended";
-import { SEED_TOPICS_SCIENCES_EXTENDED } from "@/data/seed-topics-sciences-extended";
-import { SEED_TOPICS_FRENCH_EXTENDED } from "@/data/seed-topics-french-extended";
-import { SEED_TOPICS_RELIGIOUS_STUDIES_EXTENDED } from "@/data/seed-topics-religious-studies-extended";
-import { SEED_TOPICS_GEOGRAPHY_EXTENDED } from "@/data/seed-topics-geography-extended";
 import { SEED_TOPICS_COMPUTER_SCIENCE_EXTENDED } from "@/data/seed-topics-computer-science-extended";
+import { SEED_TOPICS_ENGLISH_EXTENDED } from "@/data/seed-topics-english-extended";
+import { SEED_TOPICS_FRENCH_EXTENDED } from "@/data/seed-topics-french-extended";
+import { SEED_TOPICS_GEOGRAPHY_EXTENDED } from "@/data/seed-topics-geography-extended";
+import { SEED_TOPICS_HUMANITIES_EXTENDED } from "@/data/seed-topics-humanities-extended";
+import { SEED_TOPICS_RELIGIOUS_STUDIES_EXTENDED } from "@/data/seed-topics-religious-studies-extended";
+import { SEED_TOPICS_SCIENCES_EXTENDED } from "@/data/seed-topics-sciences-extended";
+import { SEED_MATHS_COMPREHENSIVE } from "@/data/seed-topics-maths-comprehensive";
+import { SEED_MATHS_EXTENDED_2 } from "@/data/seed-topics-maths-extended-2";
+import { SEED_MATHS_EXTENDED_3 } from "@/data/seed-topics-maths-extended-3";
+import { SEED_MATHS_EXTENDED } from "@/data/seed-topics-maths-extended";
+
 import { TOPIC_MANIFEST } from "@/lib/content";
 import { AdSlot } from "@/components/ads/AdSlot";
 import { StreakBanner } from "@/components/gamification/StreakBanner";
 
-const ALL_TOPICS = [...SEED_TOPICS, ...SEED_TOPICS_PART2, ...SEED_TOPICS_PART3, ...SEED_TOPICS_PART4, ...SEED_TOPICS_PART5, ...SEED_MATHS_EXTENDED, ...SEED_TOPICS_ENGLISH_EXTENDED, ...SEED_TOPICS_HUMANITIES_EXTENDED, ...SEED_TOPICS_SCIENCES_EXTENDED, ...SEED_TOPICS_FRENCH_EXTENDED, ...SEED_TOPICS_RELIGIOUS_STUDIES_EXTENDED, ...SEED_TOPICS_GEOGRAPHY_EXTENDED, ...SEED_TOPICS_COMPUTER_SCIENCE_EXTENDED];
+const ALL_TOPICS = [
+    ...SEED_TOPICS_MISSING_CORE,
+    ...SEED_TOPICS,
+    ...SEED_TOPICS_PART2,
+    ...SEED_TOPICS_PART3,
+    ...SEED_TOPICS_PART4,
+    ...SEED_TOPICS_PART5,
+    ...SEED_TOPICS_COMPUTER_SCIENCE_EXTENDED,
+    ...SEED_TOPICS_ENGLISH_EXTENDED,
+    ...SEED_TOPICS_FRENCH_EXTENDED,
+    ...SEED_TOPICS_GEOGRAPHY_EXTENDED,
+    ...SEED_TOPICS_HUMANITIES_EXTENDED,
+    ...SEED_TOPICS_RELIGIOUS_STUDIES_EXTENDED,
+    ...SEED_TOPICS_SCIENCES_EXTENDED,
+    ...SEED_MATHS_COMPREHENSIVE,
+    ...SEED_MATHS_EXTENDED_2,
+    ...SEED_MATHS_EXTENDED_3,
+    ...SEED_MATHS_EXTENDED
+];
 
 export default function HomePage() {
   const { user } = useAppStore();
@@ -99,7 +124,7 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {TOPIC_MANIFEST.filter(t => ["edexcel_maths_differentiation_basics", "aqa_combined_science_bio_cell_biology", "aqa_computer_science_ai_machine_learning"].includes(t.id)).map((topic) => (
+            {TOPIC_MANIFEST.filter(t => ["edexcel_maths_differentiation_basics", "aqa_science_cell_biology", "aqa_computer_science_ai_machine_learning"].includes(t.id)).map((topic) => (
               <Link
                 key={topic.id}
                 href={`/learn/${topic.exam_board}/${topic.subject.replace(/_/g, "-")}/${topic.id}`}
@@ -155,7 +180,7 @@ export default function HomePage() {
                   </div>
                   <h3 className="font-bold text-base mb-1">{subject.name}</h3>
                   <p className="text-sm mb-3" style={{ color: "var(--text-muted)" }}>
-                    {subject.board.toUpperCase()} · {subject.topicCount} topics
+                    {subject.board.toUpperCase()} · {subjectTopics.length} topics
                   </p>
                   <div className="progress-bar">
                     {mounted && user && (

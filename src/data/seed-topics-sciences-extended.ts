@@ -32,18 +32,15 @@ export const SEED_TOPICS_SCIENCES_EXTENDED: Topic[] = [
         },
         section_2_detailed_explanations: [
             {
-                heading: "Circulatory System: Transport and Regulation",
-                content: "Heart pumps oxygenated blood through arteries to body tissues; deoxygenated blood returns via veins. Capillaries enable exchange between blood and tissue cells. Blood pressure varies by vessel type: high in arteries (withstanding pump force), low in capillaries (enabling exchange), variable in veins (aided by muscle contractions). Heart rate and blood vessel diameter adjust to meet changing oxygen demands. Exercise increases cardiac output; stress triggers 'fight or flight' cardiovascular response.",
+                heading: "Circulatory System: Transport and Regulation", content: "Heart pumps oxygenated blood through arteries to body tissues; deoxygenated blood returns via veins. Capillaries enable exchange between blood and tissue cells. Blood pressure varies by vessel type: high in arteries (withstanding pump force), low in capillaries (enabling exchange), variable in veins (aided by muscle contractions). Heart rate and blood vessel diameter adjust to meet changing oxygen demands. Exercise increases cardiac output; stress triggers 'fight or flight' cardiovascular response.", animation_type: "reveal",
                 key_points: ["Systolic/diastolic pressure measurements", "Vessel structure reflects function", "Blood flow controlled by multiple mechanisms", "Lifestyle factors affect cardiovascular health"]
             },
             {
-                heading: "Respiratory-Circulatory Integration: Gas Exchange",
-                content: "Lungs enable oxygen uptake and CO2 removal. Breathing mechanics: diaphragm contracts (inhalation), intercostal muscles assist in deep breathing. Alveoli maximize surface area for gas exchange. Hemoglobin in red blood cells carries oxygen; oxygen level signals breathing rate adjustment. Tissue cells generate CO2 (metabolic waste) which diffuses into blood and returns to lungs. Partial pressure gradients drive gas movement across membranes.",
+                heading: "Respiratory-Circulatory Integration: Gas Exchange", content: "Lungs enable oxygen uptake and CO2 removal. Breathing mechanics: diaphragm contracts (inhalation), intercostal muscles assist in deep breathing. Alveoli maximize surface area for gas exchange. Hemoglobin in red blood cells carries oxygen; oxygen level signals breathing rate adjustment. Tissue cells generate CO2 (metabolic waste) which diffuses into blood and returns to lungs. Partial pressure gradients drive gas movement across membranes.", animation_type: "reveal",
                 key_points: ["Surface area maximization", "Diffusion gradient mechanics", "Hemoglobin-oxygen interaction", "Breathing rate regulation"]
             },
             {
-                heading: "Nervous System: Rapid Communication and Control",
-                content: "Central nervous system (brain + spinal cord) processes information; peripheral nervous system (nerves) connects to body. Sensory neurons transmit information to CNS; motor neurons send commands to muscles/glands. Synaptic transmission: neurotransmitters cross synapse, binding to receptors on receiving neuron. Some neurotransmitters excite (increase firing likelihood); others inhibit. Complex behaviors emerge from billions of neurons each making thousands of connections.",
+                heading: "Nervous System: Rapid Communication and Control", content: "Central nervous system (brain + spinal cord) processes information; peripheral nervous system (nerves) connects to body. Sensory neurons transmit information to CNS; motor neurons send commands to muscles/glands. Synaptic transmission: neurotransmitters cross synapse, binding to receptors on receiving neuron. Some neurotransmitters excite (increase firing likelihood); others inhibit. Complex behaviors emerge from billions of neurons each making thousands of connections.", animation_type: "reveal",
                 key_points: ["Reflex arcs bypass brain for speed", "Synaptic plasticity enables learning", "Neurotransmitter imbalance causes diseases", "Neural communication electrical + chemical"]
             }
         ],
@@ -134,18 +131,15 @@ export const SEED_TOPICS_SCIENCES_EXTENDED: Topic[] = [
         },
         section_2_detailed_explanations: [
             {
-                heading: "Functional Groups and Reaction Types",
-                content: "Functional groups are specific atom arrangements determining how molecule reacts. Alkenes (C=C) undergo addition reactions. Alcohols (OH group) can oxidize to aldehydes/ketones or form esters. Carboxylic acids (COOH) react with alcohols forming esters. Halogenoalkanes (C-X bonds) undergo substitution. Each functional group has characteristic reactivity patterns. Recognition of functional groups enables prediction of reaction products.",
+                heading: "Functional Groups and Reaction Types", content: "Functional groups are specific atom arrangements determining how molecule reacts. Alkenes (C=C) undergo addition reactions. Alcohols (OH group) can oxidize to aldehydes/ketones or form esters. Carboxylic acids (COOH) react with alcohols forming esters. Halogenoalkanes (C-X bonds) undergo substitution. Each functional group has characteristic reactivity patterns. Recognition of functional groups enables prediction of reaction products.", animation_type: "reveal",
                 key_points: ["Functional groups determine chemistry", "Same functional group = similar reactions", "Different functional groups = different reactivity", "Position of functional group affects reactivity"]
             },
             {
-                heading: "Reaction Mechanisms: Understanding the Process",
-                content: "Reactions don't occur in one step; they proceed through intermediate stages. Mechanisms show: bond breaking/formation, electron movement, intermediate structures, rate-determining steps. Curly arrows indicate electron movement: double arrows = electron pair movement; half arrows = single electron movement. Understanding mechanisms enables predicting reaction conditions, controlling selectivity, and explaining observed products.",
+                heading: "Reaction Mechanisms: Understanding the Process", content: "Reactions don't occur in one step; they proceed through intermediate stages. Mechanisms show: bond breaking/formation, electron movement, intermediate structures, rate-determining steps. Curly arrows indicate electron movement: double arrows = electron pair movement; half arrows = single electron movement. Understanding mechanisms enables predicting reaction conditions, controlling selectivity, and explaining observed products.", animation_type: "reveal",
                 key_points: ["Mechanisms require electron movement arrows", "Intermediates are reactive species", "Rate-determining step controls overall speed", "Conditions affect which mechanism operates"]
             },
             {
-                heading: "Synthesis Strategy and Retrosynthesis",
-                content: "Complex molecules synthesized by sequences of simpler reactions. Retrosynthesis: work backward from target molecule identifying precursors. Each disconnection represents a known reaction. Building forward from available starting materials uses retrosynthetic analysis to plan route. Consideration: available reagents, reaction selectivity (which bond reacts?), protecting groups (temporarily blocking reactive sites), and yield optimization.",
+                heading: "Synthesis Strategy and Retrosynthesis", content: "Complex molecules synthesized by sequences of simpler reactions. Retrosynthesis: work backward from target molecule identifying precursors. Each disconnection represents a known reaction. Building forward from available starting materials uses retrosynthetic analysis to plan route. Consideration: available reagents, reaction selectivity (which bond reacts?), protecting groups (temporarily blocking reactive sites), and yield optimization.", animation_type: "reveal",
                 key_points: ["Retrosynthesis works backward", "Selectivity crucial", "Convergent synthesis more efficient than linear", "Protecting groups enable complex synthesis"]
             }
         ],

@@ -38,20 +38,17 @@ export const SEED_MATHS_COMPREHENSIVE: Topic[] = [
     },
     section_2_detailed_explanations: [
       {
-        heading: "Index Laws & Manipulation",
-        content: "The rules: (1) aᵐ × aⁿ = aᵐ⁺ⁿ [multiply = add powers]. (2) aᵐ ÷ aⁿ = aᵐ⁻ⁿ [divide = subtract powers]. (3) (aᵐ)ⁿ = aᵐⁿ [power of power = multiply]. (4) a⁰ = 1 [anything to power 0 is 1]. (5) a⁻ⁿ = 1/aⁿ [negative power = reciprocal]. (6) a^(1/n) = ⁿ√a [fractional index = root]. These laws are universal—use them to simplify any expression!",
+        heading: "Index Laws & Manipulation", content: "The rules: (1) aᵐ × aⁿ = aᵐ⁺ⁿ [multiply = add powers]. (2) aᵐ ÷ aⁿ = aᵐ⁻ⁿ [divide = subtract powers]. (3) (aᵐ)ⁿ = aᵐⁿ [power of power = multiply]. (4) a⁰ = 1 [anything to power 0 is 1]. (5) a⁻ⁿ = 1/aⁿ [negative power = reciprocal]. (6) a^(1/n) = ⁿ√a [fractional index = root]. These laws are universal—use them to simplify any expression!", animation_type: "reveal",
         diagram_description: "Visual flowchart showing which law to apply based on operation type. Color-coded examples for each law. Table showing pattern of powers (3¹, 3², 3³... and backward to 3⁻¹, 3⁻², etc.)",
         key_points: ["Memorize the 6 main laws", "Watch for negative and fractional powers", "Always simplify—don't leave multiple indices", "Check dimensions match (can't add 2² + 3³ directly)"]
       },
       {
-        heading: "Negative & Fractional Indices",
-        content: "a⁻ⁿ means 1/aⁿ. So 2⁻³ = 1/2³ = 1/8. Fractional: a^(m/n) = ⁿ√(aᵐ). So 8^(2/3) = ³√(8²) = ³√64 = 4. Or think: 8^(1/3) = ³√8 = 2, then square it: 2² = 4. Most common: square root (a^(1/2)), cube root (a^(1/3)), fourth root (a^(1/4)).",
+        heading: "Negative & Fractional Indices", content: "a⁻ⁿ means 1/aⁿ. So 2⁻³ = 1/2³ = 1/8. Fractional: a^(m/n) = ⁿ√(aᵐ). So 8^(2/3) = ³√(8²) = ³√64 = 4. Or think: 8^(1/3) = ³√8 = 2, then square it: 2² = 4. Most common: square root (a^(1/2)), cube root (a^(1/3)), fourth root (a^(1/4)).", animation_type: "reveal",
         diagram_description: "Number line showing 3⁻², 3⁻¹, 3⁰, 3¹, 3² with values (1/9, 1/3, 1, 3, 9). Separate grid showing fractional powers with visual representations (halving triangle subdivisions for square roots, cube divisions for cube roots).",
         key_points: ["Negative power = reciprocal", "Fractional power = root", "a^(1/2) = √a (square root)", "a^(1/3) = ³√a (cube root)", "Can combine: a^(-3/2) = 1/(a^(3/2)) = 1/((√a)³)"]
       },
       {
-        heading: "Standard Form: From Atoms to Space",
-        content: "Standard form A × 10ⁿ where 1 ≤ A < 10. Moving decimal: right by k places → power -k. Left by k places → power +k. Examples: 5000 = 5 × 10³. 0.003 = 3 × 10⁻³. To add/subtract: convert to same power of 10, do arithmetic, convert back. To multiply/divide: multiply/divide A values and apply power laws to 10ⁿ.",
+        heading: "Standard Form: From Atoms to Space", content: "Standard form A × 10ⁿ where 1 ≤ A < 10. Moving decimal: right by k places → power -k. Left by k places → power +k. Examples: 5000 = 5 × 10³. 0.003 = 3 × 10⁻³. To add/subtract: convert to same power of 10, do arithmetic, convert back. To multiply/divide: multiply/divide A values and apply power laws to 10ⁿ.", interactive_type: "atomic", animation_type: "pulse",
         diagram_description: "Number line showing positions of numbers in standard form. Spider diagram of examples: atomic radius (≈10⁻¹⁰), blood cell (≈10⁻⁶), human height (≈10⁰), Earth diameter (≈10⁷), distance to star (≈10¹⁶). Calculator screen showing standard form entry/output.",
         key_points: ["1 ≤ A < 10 (A can't be ≥10 or <1)", "Use positive powers for big numbers", "Use negative powers for small numbers", "Count decimal places carefully when converting"]
       }
@@ -173,20 +170,17 @@ export const SEED_MATHS_COMPREHENSIVE: Topic[] = [
     },
     section_2_detailed_explanations: [
       {
-        heading: "Arithmetic Sequences & nth Term",
-        content: "Pattern: a, a+d, a+2d, a+3d, ... nth term formula: aₙ = a + (n-1)d where a = first term, d = common difference. To find d: subtract any two consecutive terms. To find a: it's the first term. Sum of first n terms: Sₙ = n/2(2a + (n-1)d) or Sₙ = n/2(first + last).",
+        heading: "Arithmetic Sequences & nth Term", content: "Pattern: a, a+d, a+2d, a+3d, ... nth term formula: aₙ = a + (n-1)d where a = first term, d = common difference. To find d: subtract any two consecutive terms. To find a: it's the first term. Sum of first n terms: Sₙ = n/2(2a + (n-1)d) or Sₙ = n/2(first + last).", animation_type: "reveal",
         diagram_description: "Number line showing arithmetic sequence (3,7,11,15,19...) with differences marked d=4 between each. Table showing n, term, and aₙ formula check. Graph showing linear pattern.",
         key_points: ["Identify d from any two consecutive terms", "Use aₙ = a + (n-1)d to find specific terms", "Sum formula: average first and last, multiply by count"]
       },
       {
-        heading: "Geometric Sequences & nth Term",
-        content: "Pattern: a, ar, ar², ar³, ... nth term formula: aₙ = a × r^(n-1) where a = first term, r = common ratio. To find r: divide any term by previous. Sum of first n terms: Sₙ = a(1-rⁿ)/(1-r) if r≠1. If |r|<1 (geometric series converges), sum to infinity: S∞ = a/(1-r).",
+        heading: "Geometric Sequences & nth Term", content: "Pattern: a, ar, ar², ar³, ... nth term formula: aₙ = a × r^(n-1) where a = first term, r = common ratio. To find r: divide any term by previous. Sum of first n terms: Sₙ = a(1-rⁿ)/(1-r) if r≠1. If |r|<1 (geometric series converges), sum to infinity: S∞ = a/(1-r).", animation_type: "reveal",
         diagram_description: "Exponential growth pattern shown (1,2,4,8,16... with r=2). Table showing n, term, ratio check. Graph showing exponential curve. Separate example of decay (|r|<1).",
         key_points: ["Find r by dividing consecutive terms", "aₙ = a × r^(n-1)", "Use sum formula for finite series", "Infinite sum only if |r| < 1"]
       },
       {
-        heading: "Real-World Applications",
-        content: "Arithmetic: rent increases, salary increments, straight-line depreciation. Geometric: compound interest (r = 1+rate), population/bacterial growth, radioactive decay, investment returns. Spreadsheets make calculations easy—use for complex scenarios.",
+        heading: "Real-World Applications", content: "Arithmetic: rent increases, salary increments, straight-line depreciation. Geometric: compound interest (r = 1+rate), population/bacterial growth, radioactive decay, investment returns. Spreadsheets make calculations easy—use for complex scenarios.", animation_type: "reveal",
         diagram_description: "Side-by-side scenarios: savings account balance over years (arithmetic formula vs compound interest formula showing difference), bacterial population doubling hourly, investment portfolio growth.",
         key_points: ["Compound interest is geometric with r = 1 + annual rate", "Population growth/decay follow geometric patterns", "Spreadsheets enable what-if scenarios"]
       }
@@ -300,14 +294,12 @@ export const SEED_MATHS_COMPREHENSIVE: Topic[] = [
     },
     section_2_detailed_explanations: [
       {
-        heading: "Polynomial Division & Long Division Method",
-        content: "Divide polynomial P(x) by divisor d(x). Set up like long division: divide leading term of P by leading term of d to get first quotient term, multiply and subtract, repeat. Process continues until remainder degree < divisor degree. Result: P(x) = d(x) × Q(x) + R, where Q = quotient, R = remainder.",
+        heading: "Polynomial Division & Long Division Method", content: "Divide polynomial P(x) by divisor d(x). Set up like long division: divide leading term of P by leading term of d to get first quotient term, multiply and subtract, repeat. Process continues until remainder degree < divisor degree. Result: P(x) = d(x) × Q(x) + R, where Q = quotient, R = remainder.", animation_type: "reveal",
         diagram_description: "Side-by-side comparison: long division of numbers (e.g., 456÷12) and polynomial division (e.g., x³+2x²-5x+6 by x-2). Step-by-step working shown.",
         key_points: ["Arrange terms in descending powers", "Divide leading terms first", "Subtract result, bring down next term", "Continue until degree(R) < degree(divisor)"]
       },
       {
-        heading: "Remainder & Factor Theorems",
-        content: "Remainder Theorem: If P(x) divided by (x-a), remainder = P(a). Factor Theorem: (x-a) is factor of P(x) if and only if P(a) = 0. Use these to check factors quickly without full division. Example: Is (x-2) factor of x³ + 2x² - 5x + 6? Check: P(2) = 8 + 8 - 10 + 6 = 12 ≠ 0, so NO.",
+        heading: "Remainder & Factor Theorems", content: "Remainder Theorem: If P(x) divided by (x-a), remainder = P(a). Factor Theorem: (x-a) is factor of P(x) if and only if P(a) = 0. Use these to check factors quickly without full division. Example: Is (x-2) factor of x³ + 2x² - 5x + 6? Check: P(2) = 8 + 8 - 10 + 6 = 12 ≠ 0, so NO.", animation_type: "reveal",
         diagram_description: "Flowchart: given polynomial P(x) and possible factor (x-a), calculate P(a), if 0 then it's a factor, else it's not. Multiple examples shown with calculations.",
         key_points: ["Remainder Theorem: R = P(a), evaluate at a", "Factor Theorem: P(a) = 0 ⟹ (x-a) is factor", "Use to quickly eliminate or confirm factors"]
       }
@@ -393,14 +385,12 @@ export const SEED_MATHS_COMPREHENSIVE: Topic[] = [
     },
     section_2_detailed_explanations: [
       {
-        heading: "Vector Notation & Operations",
-        content: "Column vector: (a, b) or (a, b, c) in 3D. Magnitude: |v| = √(a² + b² + c²). Addition: add components. Subtraction: subtract components. Scalar multiplication: multiply all components by scalar. Parallel vectors: one is scalar multiple of other.",
+        heading: "Vector Notation & Operations", content: "Column vector: (a, b) or (a, b, c) in 3D. Magnitude: |v| = √(a² + b² + c²). Addition: add components. Subtraction: subtract components. Scalar multiplication: multiply all components by scalar. Parallel vectors: one is scalar multiple of other.", animation_type: "reveal",
         diagram_description: "2D and 3D coordinate systems showing vectors as arrows from origin. Examples of vector addition (tip-to-tail) and subtraction shown geometrically. Magnitude calculation illustrated.",
         key_points: ["Magnitude = √(sum of squares of components)", "Add/multiply component-wise", "Parallel: k×v for scalar k"]
       },
       {
-        heading: "Scalar Product & Angles",
-        content: "For vectors a = (a₁, a₂, a₃) and b = (b₁, b₂, b₃): a·b = a₁b₁ + a₂b₂ + a₃b₃ (dot product formula). Also: a·b = |a||b|cos(θ) where θ is angle between them. If a·b = 0, vectors are perpendicular. Use to check if lines are perpendicular.",
+        heading: "Scalar Product & Angles", content: "For vectors a = (a₁, a₂, a₃) and b = (b₁, b₂, b₃): a·b = a₁b₁ + a₂b₂ + a₃b₃ (dot product formula). Also: a·b = |a||b|cos(θ) where θ is angle between them. If a·b = 0, vectors are perpendicular. Use to check if lines are perpendicular.", interactive_type: "geometry", animation_type: "graph-draw",
         diagram_description: "3D vectors showing angle θ between them. Dot product calculation alongside. Examples showing perpendicular check.",
         key_points: ["Dot product = sum of products of components", "a·b = |a||b|cos(θ)", "Perpendicular if dot product = 0"]
       }
@@ -487,14 +477,12 @@ export const SEED_MATHS_COMPREHENSIVE: Topic[] = [
     },
     section_2_detailed_explanations: [
       {
-        heading: "Binomial Distribution & Calculations",
-        content: "X ~ B(n, p): P(X = k) = C(n,k) × p^k × (1-p)^(n-k). Mean = np. Variance = np(1-p). Use tables for standard cases or calculator for others. Conditions: fixed n, two outcomes, independent trials, constant p.",
+        heading: "Binomial Distribution & Calculations", content: "X ~ B(n, p): P(X = k) = C(n,k) × p^k × (1-p)^(n-k). Mean = np. Variance = np(1-p). Use tables for standard cases or calculator for others. Conditions: fixed n, two outcomes, independent trials, constant p.", animation_type: "reveal",
         diagram_description: "Binomial probability histogram for various n, p values. Bell curve overlay showing normal approximation for large n. Table of binomial coefficients.",
         key_points: ["Check conditions: independent, binary, constant p", "Use C(n,k) for combinations", "Mean = np, Variance = np(1-p)", "Normal approximation when np > 5 and n(1-p) > 5"]
       },
       {
-        heading: "Poisson Distribution & Applications",
-        content: "X ~ Po(λ): P(X = k) = e^(-λ) × λ^k / k!. Mean = λ. Variance = λ (special: mean = variance). Use when events are rare, independent, in fixed interval. Approximates binomial when n large, p small, np moderate.",
+        heading: "Poisson Distribution & Applications", content: "X ~ Po(λ): P(X = k) = e^(-λ) × λ^k / k!. Mean = λ. Variance = λ (special: mean = variance). Use when events are rare, independent, in fixed interval. Approximates binomial when n large, p small, np moderate.", animation_type: "reveal",
         diagram_description: "Poisson histograms for λ = 1, 3, 5, 10. Comparison with binomial for n=20, p=0.05 (λ=1) showing convergence. Poisson table for common λ values.",
         key_points: ["X ~ Po(λ) for rare events", "Mean = Variance = λ", "Use tables or calculator for e^(-λ)", "Poisson ≈ Binomial when n large, p small"]
       }
@@ -598,20 +586,17 @@ export const SEED_MATHS_COMPREHENSIVE: Topic[] = [
     },
     section_2_detailed_explanations: [
       {
-        heading: "Power Rule & Basic Differentiation",
-        content: "For f(x) = xⁿ, then f'(x) = nxⁿ⁻¹. Constants differentiate to 0. Example: f(x) = 3x⁴ - 2x² + 5, then f'(x) = 12x³ - 4x. Trig: d/dx(sin x) = cos x, d/dx(cos x) = -sin x. Exponential: d/dx(eˣ) = eˣ. Logarithm: d/dx(ln x) = 1/x.",
+        heading: "Power Rule & Basic Differentiation", content: "For f(x) = xⁿ, then f'(x) = nxⁿ⁻¹. Constants differentiate to 0. Example: f(x) = 3x⁴ - 2x² + 5, then f'(x) = 12x³ - 4x. Trig: d/dx(sin x) = cos x, d/dx(cos x) = -sin x. Exponential: d/dx(eˣ) = eˣ. Logarithm: d/dx(ln x) = 1/x.", animation_type: "reveal",
         diagram_description: "Function graph alongside its derivative graph. Shows where f'(x) > 0 (increasing), < 0 (decreasing), = 0 (stationary). Table of derivatives for polynomial, trig, exponential, log.",
         key_points: ["Power rule: multiply by power, reduce power by 1", "Constants vanish", "Memorize trig/exp/log derivatives", "Constant multiple: k × f'(x)"]
       },
       {
-        heading: "Chain Rule & Composite Functions",
-        content: "If y = f(g(x)), then dy/dx = f'(g(x)) × g'(x). Example: y = (3x² + 1)⁵. Let u = 3x² + 1, so y = u⁵. du/dx = 6x, dy/du = 5u⁴. Chain: dy/dx = 5u⁴ × 6x = 30x(3x² + 1)⁴.",
+        heading: "Chain Rule & Composite Functions", content: "If y = f(g(x)), then dy/dx = f'(g(x)) × g'(x). Example: y = (3x² + 1)⁵. Let u = 3x² + 1, so y = u⁵. du/dx = 6x, dy/du = 5u⁴. Chain: dy/dx = 5u⁴ × 6x = 30x(3x² + 1)⁴.", interactive_type: "none", animation_type: "none",
         diagram_description: "Chain rule diagram showing flow: input → inner function → outer function → derivative chain. Worked example with substitution shown step-by-step.",
         key_points: ["Identify inner and outer functions", "Differentiate outer, keep inner", "Multiply by derivative of inner", "Chain can repeat for triple nesting"]
       },
       {
-        heading: "Optimization & Curve Sketching",
-        content: "To find max/min: (1) Find f'(x), (2) Set f'(x) = 0, solve for x, (3) Test sign of f'(x) around critical points. If f' changes from + to -, it's max. Minus to + is min. Sketch: plot critical points, intercepts, asymptotes, check behavior as x → ±∞.",
+        heading: "Optimization & Curve Sketching", content: "To find max/min: (1) Find f'(x), (2) Set f'(x) = 0, solve for x, (3) Test sign of f'(x) around critical points. If f' changes from + to -, it's max. Minus to + is min. Sketch: plot critical points, intercepts, asymptotes, check behavior as x → ±∞.", animation_type: "reveal",
         diagram_description: "Curve with stationary points marked as peaks/troughs. Sign analysis table showing f' positive/negative in regions. Second derivative test (f''(x) > 0 = min, < 0 = max) illustrated.",
         key_points: ["Set f'(x) = 0 to find critical points", "Use sign analysis or second derivative test", "Check endpoints if domain restricted"]
       }
@@ -726,14 +711,12 @@ export const SEED_MATHS_COMPREHENSIVE: Topic[] = [
     },
     section_2_detailed_explanations: [
       {
-        heading: "Power Rule for Integration",
-        content: "∫xⁿ dx = xⁿ⁺¹/(n+1) + C (n ≠ -1). Example: ∫3x² dx = x³ + C. Special case: ∫1/x dx = ln|x| + C. Integrals of trig: ∫sin(x) dx = -cos(x) + C, ∫cos(x) dx = sin(x) + C. Exponential: ∫eˣ dx = eˣ + C.",
+        heading: "Power Rule for Integration", content: "∫xⁿ dx = xⁿ⁺¹/(n+1) + C (n ≠ -1). Example: ∫3x² dx = x³ + C. Special case: ∫1/x dx = ln|x| + C. Integrals of trig: ∫sin(x) dx = -cos(x) + C, ∫cos(x) dx = sin(x) + C. Exponential: ∫eˣ dx = eˣ + C.", interactive_type: "none", animation_type: "none",
         diagram_description: "Reverse of power rule shown visually. Table of integrals for polynomial, trig, exponential, log. Graph showing one function and its antiderivatives (family of curves).",
         key_points: ["Power rule: add 1 to power, divide by new power", "Add + C for indefinite integrals", "Memorize trig/exp/log integrals", "Constant multiples: k∫f(x)dx"]
       },
       {
-        heading: "Definite Integrals & Area",
-        content: "∫ₐᵇf(x)dx = [F(x)]ₐᵇ = F(b) - F(a). This computes area between curve y=f(x) and x-axis from x=a to x=b (if f≥0). If f<0 in parts, subtract negative areas or use absolute values. Area between two curves: ∫ₐᵇ(top - bottom)dx.",
+        heading: "Definite Integrals & Area", content: "∫ₐᵇf(x)dx = [F(x)]ₐᵇ = F(b) - F(a). This computes area between curve y=f(x) and x-axis from x=a to x=b (if f≥0). If f<0 in parts, subtract negative areas or use absolute values. Area between two curves: ∫ₐᵇ(top - bottom)dx.", animation_type: "reveal",
         diagram_description: "Coordinate plane with curve and shaded area under it from x=a to x=b. Annotation showing F(b) - F(a). Separate diagram showing area between two curves, top and bottom labeled.",
         key_points: ["Definite integral gives exact number (area)", "F(b) - F(a) is key formula", "Watch signs if area below x-axis", "Between curves: integrate (top - bottom)"]
       }

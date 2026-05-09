@@ -28,8 +28,7 @@ export const SEED_MATHS_EXTENDED_3: Topic[] = [
     },
     section_2_detailed_explanations: [
       {
-        heading: "Three-Figure Bearings",
-        content: "Measured clockwise from North. North=000, East=090, South=180, West=270. Always write 3 digits.",
+        heading: "Three-Figure Bearings", content: "Measured clockwise from North. North=000, East=090, South=180, West=270. Always write 3 digits.", interactive_type: "none", animation_type: "none",
         diagram_description: "Compass rose showing cardinal directions and angles",
         key_points: ["Clockwise from North", "Always 3 digits", "North=000 or 360"]
       }
@@ -98,8 +97,7 @@ export const SEED_MATHS_EXTENDED_3: Topic[] = [
     },
     section_2_detailed_explanations: [
       {
-        heading: "Simple Versus Compound",
-        content: "Simple: fixed amount each year. Compound: previous interest earns interest. A=P(1+r)^n for compound.",
+        heading: "Simple Versus Compound", content: "Simple: fixed amount each year. Compound: previous interest earns interest. A=P(1+r)^n for compound.", interactive_type: "none", animation_type: "none",
         diagram_description: "Graph comparing linear (simple) vs exponential (compound) growth",
         key_points: ["Simple: arithmet ically increasing", "Compound: exponentially increasing"]
       }
@@ -170,14 +168,12 @@ export const SEED_MATHS_EXTENDED_3: Topic[] = [
     },
     section_2_detailed_explanations: [
       {
-        heading: "Sampling and Bias",
-        content: "Random samples avoid bias. Non-random methods favor certain outcomes. Sample size matters.",
+        heading: "Sampling and Bias", content: "Random samples avoid bias. Non-random methods favor certain outcomes. Sample size matters.", interactive_type: "none", animation_type: "none",
         diagram_description: "Comparison of biased and unbiased sampling methods",
         key_points: ["Random minimizes bias", "Large samples more reliable"]
       },
       {
-        heading: "Correlation Not Causation",
-        content: "Correlation shows relationship but not cause and effect. Confounding variables matter.",
+        heading: "Correlation Not Causation", content: "Correlation shows relationship but not cause and effect. Confounding variables matter.", interactive_type: "none", animation_type: "none",
         diagram_description: "Examples of correlation without causation",
         key_points: ["Correlation does not prove causation", "Look for confounding factors"]
       }

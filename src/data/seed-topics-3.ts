@@ -30,18 +30,15 @@ export const SEED_TOPICS_PART3: Topic[] = [
         },
         section_2_detailed_explanations: [
             {
-                heading: "Collecting Like Terms",
-                content: "You can only add or subtract terms that have exactly the same variables with the same powers. For example, 2x + 3x = 5x, but 2x + 3y cannot be simplified. Watch out for signs! 5x - 2x = 3x.",
+                heading: "Collecting Like Terms", content: "You can only add or subtract terms that have exactly the same variables with the same powers. For example, 2x + 3x = 5x, but 2x + 3y cannot be simplified. Watch out for signs! 5x - 2x = 3x.", interactive_type: "none", animation_type: "none",
                 key_points: ["x + x = 2x", "x × x = x²", "Only add terms with matching letters/powers", "Sign belongs to the term it proceeds"]
             },
             {
-                heading: "Expanding Brackets",
-                content: "To expand a single bracket, multiply the term outside by everything inside: 3(x + 4) = 3x + 12. For double brackets (FOIL method): (x + 2)(x + 3) = x² + 3x + 2x + 6 = x² + 5x + 6.",
+                heading: "Expanding Brackets", content: "To expand a single bracket, multiply the term outside by everything inside: 3(x + 4) = 3x + 12. For double brackets (FOIL method): (x + 2)(x + 3) = x² + 3x + 2x + 6 = x² + 5x + 6.", interactive_type: "none", animation_type: "none",
                 key_points: ["Single bracket: Multiply outside term by ALL inside terms", "Double bracket: FOIL (First, Outside, Inside, Last)", "Simplify after expanding double brackets"]
             },
             {
-                heading: "Factorising",
-                content: "Factorising is the opposite of expanding — putting into brackets. Find the highest common factor (HCF) of numbers and letters. Example: 6x + 9 = 3(2x + 3). For quadratics like x² + 5x + 6, find two numbers that multiply to 6 and add to 5 (2 and 3) → (x + 2)(x + 3).",
+                heading: "Factorising", content: "Factorising is the opposite of expanding — putting into brackets. Find the highest common factor (HCF) of numbers and letters. Example: 6x + 9 = 3(2x + 3). For quadratics like x² + 5x + 6, find two numbers that multiply to 6 and add to 5 (2 and 3) → (x + 2)(x + 3).", animation_type: "reveal",
                 key_points: ["Look for HCF of numbers first", "Check for common letters", "Quadratics: Multiply to end number, add to middle number", "Always check by expanding"]
             }
         ],
@@ -139,18 +136,15 @@ export const SEED_TOPICS_PART3: Topic[] = [
         },
         section_2_detailed_explanations: [
             {
-                heading: "Structure of the Atom",
-                content: "Atoms have a central nucleus containing protons (positive) and neutrons (neutral). Electrons (negative) orbit the nucleus in shells. Atoms are neutral because protons = electrons. Radius is ~0.1nm (1x10⁻¹⁰m).",
+                heading: "Structure of the Atom", content: "Atoms have a central nucleus containing protons (positive) and neutrons (neutral). Electrons (negative) orbit the nucleus in shells. Atoms are neutral because protons = electrons. Radius is ~0.1nm (1x10⁻¹⁰m).", interactive_type: "atomic", animation_type: "pulse",
                 key_points: ["Proton: Mass 1, Charge +1", "Neutron: Mass 1, Charge 0", "Electron: Mass very small (~1/2000), Charge -1", "Nucleus contains almost all the mass"]
             },
             {
-                heading: "History of the Atom",
-                content: "The model changed over time: 1) Dalton (Solid spheres), 2) JJ Thomson (Plum Pudding - ball of positive charge with electrons stuck in), 3) Rutherford (Alpha scattering - discovered nucleus), 4) Bohr (Electron shells), 5) Chadwick (Neutrons).",
+                heading: "History of the Atom", content: "The model changed over time: 1) Dalton (Solid spheres), 2) JJ Thomson (Plum Pudding - ball of positive charge with electrons stuck in), 3) Rutherford (Alpha scattering - discovered nucleus), 4) Bohr (Electron shells), 5) Chadwick (Neutrons).", interactive_type: "atomic", animation_type: "pulse",
                 key_points: ["Plum Pudding was disproved by Alpha Scattering", "Rutherford showed atom is mostly empty space", "Bohr added shells/energy levels"]
             },
             {
-                heading: "The Periodic Table",
-                content: "Arranged by atomic number. Groups (columns) = electrons in outer shell. Periods (rows) = number of shells. Group 1 (Alkali metals) get MORE reactive down the group. Group 7 (Halogens) get LESS reactive down the group. Group 0 (Noble gases) are unreactive (full outer shell).",
+                heading: "The Periodic Table", content: "Arranged by atomic number. Groups (columns) = electrons in outer shell. Periods (rows) = number of shells. Group 1 (Alkali metals) get MORE reactive down the group. Group 7 (Halogens) get LESS reactive down the group. Group 0 (Noble gases) are unreactive (full outer shell).", animation_type: "reveal",
                 key_points: ["Mendeleev left gaps for undiscovered elements", "Metals on left, non-metals on right", "Elements in same grep have similar properties"]
             }
         ],
@@ -233,18 +227,15 @@ export const SEED_TOPICS_PART3: Topic[] = [
         },
         section_2_detailed_explanations: [
             {
-                heading: "The Inspector's Role",
-                content: "Goole is not a normal police inspector; he is a moral force (possibly supernatural). His name 'Goole' sounds like 'Ghoul'. He controls the pace, interrupts characters, and acts as Priestley's mouthpiece. His final speech warns of 'fire and blood and anguish' if society doesn't change.",
+                heading: "The Inspector's Role", content: "Goole is not a normal police inspector; he is a moral force (possibly supernatural). His name 'Goole' sounds like 'Ghoul'. He controls the pace, interrupts characters, and acts as Priestley's mouthpiece. His final speech warns of 'fire and blood and anguish' if society doesn't change.", animation_type: "reveal",
                 key_points: ["Mouthpiece for Priestley", "Omniscient (all-knowing)", "Moral teacher", "Catalyst for change"]
             },
             {
-                heading: "Social Responsibility",
-                content: "The play argues that we are all responsible for each other. The Birlings represent different failures of responsibility: Mr Birling (employer), Sheila (jealousy), Gerald (exploitation), Mrs Birling (charity refusal), Eric (abuse). Sheila and Eric accept responsibility; the parents do not.",
+                heading: "Social Responsibility", content: "The play argues that we are all responsible for each other. The Birlings represent different failures of responsibility: Mr Birling (employer), Sheila (jealousy), Gerald (exploitation), Mrs Birling (charity refusal), Eric (abuse). Sheila and Eric accept responsibility; the parents do not.", animation_type: "reveal",
                 key_points: ["'We are members of one body'", "Chain of events theory", "Contrast between generations", "Eva Smith represents the working class"]
             },
             {
-                heading: "Context: 1912 vs 1945",
-                content: "Written in 1945 (end of WWII, rise of Labour/Welfare State) but set in 1912 (Edwardian era, rigid class system, pre-WWI). Priestley uses dramatic irony (e.g. Birling saying the Titanic is 'unsinkable') to make the 1912 capitalist views look foolish to a 1945 audience.",
+                heading: "Context: 1912 vs 1945", content: "Written in 1945 (end of WWII, rise of Labour/Welfare State) but set in 1912 (Edwardian era, rigid class system, pre-WWI). Priestley uses dramatic irony (e.g. Birling saying the Titanic is 'unsinkable') to make the 1912 capitalist views look foolish to a 1945 audience.", animation_type: "reveal",
                 key_points: ["Audience knows wars/Titanic happened", "Birling looks foolish/arrogant", "Call for post-war social change", "Class system critique"]
             }
         ],

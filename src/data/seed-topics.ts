@@ -28,18 +28,15 @@ export const SEED_TOPICS: Topic[] = [
         },
         section_2_detailed_explanations: [
             {
-                heading: "Place Value and Ordering",
-                content: "Every digit in a number has a place value. In the number 3,456.78, the 3 is in the thousands column, 4 in hundreds, 5 in tens, 6 in ones, 7 in tenths, and 8 in hundredths. To compare decimals, align decimal points and compare digit by digit from left to right.",
+                heading: "Place Value and Ordering", content: "Every digit in a number has a place value. In the number 3,456.78, the 3 is in the thousands column, 4 in hundreds, 5 in tens, 6 in ones, 7 in tenths, and 8 in hundredths. To compare decimals, align decimal points and compare digit by digit from left to right.", animation_type: "reveal",
                 key_points: ["Digits to the left of the decimal point are whole numbers", "Each place is 10× the place to its right", "Use inequality symbols: < means less than, > means greater than"]
             },
             {
-                heading: "Order of Operations (BIDMAS)",
-                content: "BIDMAS tells us the order: Brackets first, then Indices (powers/roots), then Division and Multiplication (left to right), finally Addition and Subtraction (left to right). For example: 3 + 4 × 2 = 3 + 8 = 11, NOT 14.",
+                heading: "Order of Operations (BIDMAS)", content: "BIDMAS tells us the order: Brackets first, then Indices (powers/roots), then Division and Multiplication (left to right), finally Addition and Subtraction (left to right). For example: 3 + 4 × 2 = 3 + 8 = 11, NOT 14.", animation_type: "reveal",
                 key_points: ["Always work brackets first", "Multiplication and division have equal priority", "Work left to right for operations of equal priority"]
             },
             {
-                heading: "Operations with Fractions",
-                content: "To add/subtract fractions, find a common denominator. To multiply, multiply numerators and denominators. To divide, multiply by the reciprocal. Always simplify your answer.",
+                heading: "Operations with Fractions", content: "To add/subtract fractions, find a common denominator. To multiply, multiply numerators and denominators. To divide, multiply by the reciprocal. Always simplify your answer.", interactive_type: "none", animation_type: "none",
                 key_points: ["Common denominator needed for +/-", "Multiply: top × top, bottom × bottom", "Divide: flip second fraction and multiply", "Always simplify to lowest terms"]
             }
         ],
@@ -135,18 +132,15 @@ export const SEED_TOPICS: Topic[] = [
         },
         section_2_detailed_explanations: [
             {
-                heading: "Animal and Plant Cells",
-                content: "Both animal and plant cells are eukaryotic. They share: nucleus (contains DNA), cell membrane, cytoplasm, mitochondria, and ribosomes. Plant cells additionally have: cell wall (cellulose), permanent vacuole (filled with cell sap), and chloroplasts (for photosynthesis).",
+                heading: "Animal and Plant Cells", content: "Both animal and plant cells are eukaryotic. They share: nucleus (contains DNA), cell membrane, cytoplasm, mitochondria, and ribosomes. Plant cells additionally have: cell wall (cellulose), permanent vacuole (filled with cell sap), and chloroplasts (for photosynthesis).", animation_type: "reveal",
                 key_points: ["Both types have nucleus, membrane, cytoplasm, mitochondria, ribosomes", "Plant cells also have cell wall, vacuole, chloroplasts", "Not all plant cells have chloroplasts (e.g., root cells)"]
             },
             {
-                heading: "Prokaryotic Cells (Bacteria)",
-                content: "Prokaryotic cells are much smaller (1-5 μm vs 10-100 μm) and simpler. They have: cell membrane, cytoplasm, ribosomes (smaller), cell wall, and a single DNA loop (not enclosed in a nucleus). Some have plasmids (small rings of extra DNA) and flagella (tail for movement).",
+                heading: "Prokaryotic Cells (Bacteria)", content: "Prokaryotic cells are much smaller (1-5 μm vs 10-100 μm) and simpler. They have: cell membrane, cytoplasm, ribosomes (smaller), cell wall, and a single DNA loop (not enclosed in a nucleus). Some have plasmids (small rings of extra DNA) and flagella (tail for movement).", animation_type: "reveal",
                 key_points: ["No true nucleus — DNA floats freely", "Much smaller than eukaryotic cells", "May have plasmids and flagella", "Cell wall is NOT made of cellulose"]
             },
             {
-                heading: "Microscopy and Magnification",
-                content: "Magnification = Image size ÷ Actual size. Light microscopes magnify up to ×1500 with a resolution of 200nm. Electron microscopes magnify up to ×2,000,000 with resolution of 0.2nm. Units: 1mm = 1000μm, 1μm = 1000nm.",
+                heading: "Microscopy and Magnification", content: "Magnification = Image size ÷ Actual size. Light microscopes magnify up to ×1500 with a resolution of 200nm. Electron microscopes magnify up to ×2,000,000 with resolution of 0.2nm. Units: 1mm = 1000μm, 1μm = 1000nm.", animation_type: "reveal",
                 key_points: ["Formula: M = I ÷ A (magnification = image ÷ actual)", "Light microscopes use light; electron microscopes use electrons", "Electron microscopes reveal sub-cellular detail", "Always convert units before calculating"]
             }
         ],
@@ -235,18 +229,15 @@ export const SEED_TOPICS: Topic[] = [
         },
         section_2_detailed_explanations: [
             {
-                heading: "Lady Macbeth's Introduction (Act 1, Scene 5)",
-                content: "Lady Macbeth first appears reading Macbeth's letter about the witches' prophecy. She immediately begins planning Duncan's murder, calling on spirits to 'unsex me here' — asking to be stripped of feminine qualities. She calls Macbeth 'too full o' th' milk of human kindness', suggesting he is too gentle for murder. This establishes her as ambitious, manipulative, and willing to reject her femininity for power.",
+                heading: "Lady Macbeth's Introduction (Act 1, Scene 5)", content: "Lady Macbeth first appears reading Macbeth's letter about the witches' prophecy. She immediately begins planning Duncan's murder, calling on spirits to 'unsex me here' — asking to be stripped of feminine qualities. She calls Macbeth 'too full o' th' milk of human kindness', suggesting he is too gentle for murder. This establishes her as ambitious, manipulative, and willing to reject her femininity for power.", animation_type: "reveal",
                 key_points: ["'Unsex me here' — rejects femininity, links to gender theme", "'Fill me from the crown to the toe top-full of direst cruelty' — wants to be unnaturally cruel", "She is the driving force behind the murder plot", "Shakespeare uses imperative verbs showing her control"]
             },
             {
-                heading: "The Murder and Manipulation (Act 1, Scene 7 & Act 2)",
-                content: "When Macbeth hesitates, Lady Macbeth questions his masculinity: 'When you durst do it, then you were a man.' She is practical — she plans the details, drugs the guards, and is frustrated when Macbeth brings the daggers back. She says 'A little water clears us of this deed' — showing her initial lack of guilt. Her strength here contrasts with her later breakdown.",
+                heading: "The Murder and Manipulation (Act 1, Scene 7 & Act 2)", content: "When Macbeth hesitates, Lady Macbeth questions his masculinity: 'When you durst do it, then you were a man.' She is practical — she plans the details, drugs the guards, and is frustrated when Macbeth brings the daggers back. She says 'A little water clears us of this deed' — showing her initial lack of guilt. Her strength here contrasts with her later breakdown.", animation_type: "reveal",
                 key_points: ["Manipulates through questioning his manhood", "'Look like th' innocent flower, but be the serpent under't' — deception motif", "She is pragmatic and composed during the murder", "Dramatic irony: 'a little water' foreshadows her obsessive handwashing later"]
             },
             {
-                heading: "Lady Macbeth's Decline (Act 5, Scene 1)",
-                content: "By Act 5, Lady Macbeth is sleepwalking, obsessively washing her hands: 'Out, damned spot!' The doctor says she needs a priest, not a physician — suggesting her illness is spiritual guilt. She speaks in prose (not verse), reflecting her mental disintegration. Her death (reported offstage) symbolises how guilt destroys those who pursue power through evil.",
+                heading: "Lady Macbeth's Decline (Act 5, Scene 1)", content: "By Act 5, Lady Macbeth is sleepwalking, obsessively washing her hands: 'Out, damned spot!' The doctor says she needs a priest, not a physician — suggesting her illness is spiritual guilt. She speaks in prose (not verse), reflecting her mental disintegration. Her death (reported offstage) symbolises how guilt destroys those who pursue power through evil.", animation_type: "reveal",
                 key_points: ["'Out, damned spot!' — guilt has consumed her", "Handwashing = trying to cleanse guilt (contrast with Act 2)", "Prose instead of verse = breakdown of order and control", "Her offstage death may suggest she is no longer important to Macbeth"]
             }
         ],

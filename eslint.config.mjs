@@ -9,7 +9,7 @@ const eslintConfig = defineConfig([
     files: ["**/*.ts", "**/*.tsx"],
     rules: {
       "react-hooks/set-state-in-effect": "off",
-    }
+      }
   },
   {
     files: ["**/*.js", "**/*.mjs"],
