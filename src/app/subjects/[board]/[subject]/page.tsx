@@ -1,4 +1,5 @@
 "use client";
+import { useState } from "react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import { SUBJECTS } from "@/lib/constants";
@@ -21,6 +22,7 @@ export default function SubjectPage() {
     const quizzes = SEED_QUIZZES.filter((q) => q.subject === subjectId && q.exam_board === board);
 
     const { user } = useAppStore();
+    const [viewMode, setViewMode] = useState<"grid" | "path">("path");
 
     if (!subject) {
         return (
@@ -79,12 +81,29 @@ export default function SubjectPage() {
 
                 {/* Topics */}
                 <div className="mb-16">
-                    <div className="flex items-center gap-3 mb-8">
-                        <h2 className="text-2xl font-bold">📖 Topics</h2>
-                        <span className="text-xs font-bold px-2 py-1 rounded-full bg-[var(--bg-card)] border border-[var(--border)] opacity-70">{topics.length}</span>
+                    <div className="flex items-center justify-between mb-8">
+                        <div className="flex items-center gap-3">
+                            <h2 className="text-2xl font-bold">📖 Topics</h2>
+                            <span className="text-xs font-bold px-2 py-1 rounded-full bg-[var(--bg-card)] border border-[var(--border)] opacity-70">{topics.length}</span>
+                        </div>
+                        <div className="flex bg-[var(--bg-card)] p-1 rounded-xl border border-[var(--border)]">
+                            <button
+                                onClick={() => setViewMode("path")}
+                                className={`px-4 py-1.5 rounded-lg text-xs font-bold transition-all ${viewMode === "path" ? "bg-[var(--primary)] text-white shadow-md" : "opacity-60 hover:opacity-100"}`}
+                            >
+                                🗺️ Learning Path
+                            </button>
+                            <button
+                                onClick={() => setViewMode("grid")}
+                                className={`px-4 py-1.5 rounded-lg text-xs font-bold transition-all ${viewMode === "grid" ? "bg-[var(--primary)] text-white shadow-md" : "opacity-60 hover:opacity-100"}`}
+                            >
+                                📱 Grid
+                            </button>
+                        </div>
                     </div>
 
                     {topics.length > 0 ? (
+                        viewMode === "grid" ? (
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                             {topics.map((topic, i) => (
                                 <Link
@@ -108,13 +127,13 @@ export default function SubjectPage() {
                                     </h3>
 
                                     <p className="text-sm mb-6 flex-grow line-clamp-3 opacity-80">
-                                        {/* @ts-ignore - Manifest items might be missing full content structure */}
+                                        {/* @ts-expect-error - Manifest items might be missing full content structure */}
                                         {topic.section_1_key_concepts?.overview || "Click to view this topic."}
                                     </p>
 
                                     <div className="mt-auto pt-4 border-t border-[var(--border)] flex items-center justify-between text-xs opacity-70">
                                         <span className="flex items-center gap-1">
-                                            {/* @ts-ignore */}
+                                            {/* @ts-expect-error: Topic meta doesn't have full content structure */}
                                             📝 {topic.section_1_key_concepts?.learning_objectives?.length || 0} objectives
                                         </span>
                                         <span className="uppercase font-semibold tracking-wider text-[10px]">
@@ -124,6 +143,49 @@ export default function SubjectPage() {
                                 </Link>
                             ))}
                         </div>
+                        ) : (
+                            <div className="space-y-4 max-w-2xl mx-auto py-10 relative">
+                                {/* Connection Line */}
+                                <div className="absolute left-6 md:left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-[var(--primary)] to-[var(--border)] -translate-x-1/2 opacity-20 hidden md:block" />
+
+                                {topics.map((topic, i) => {
+                                    const isCompleted = user?.progress[topic.id]?.completed;
+                                    const isEven = i % 2 === 0;
+
+                                    return (
+                                        <div key={topic.id} className={`relative flex items-center gap-8 ${isEven ? "md:flex-row-reverse" : ""}`}>
+                                            <div className="flex-1 hidden md:block" />
+
+                                            {/* Node */}
+                                            <div className={`w-12 h-12 rounded-full border-4 flex items-center justify-center z-10 shrink-0 transition-all ${isCompleted ? "bg-emerald-500 border-emerald-100 text-white scale-110" : "bg-[var(--bg)] border-[var(--border)] text-[var(--text-muted)]"}`}>
+                                                {isCompleted ? "✓" : i + 1}
+                                            </div>
+
+                                            {/* Content */}
+                                            <Link
+                                                href={`/learn/${topic.exam_board}/${topic.subject.replace(/_/g, "-")}/${topic.id}`}
+                                                className={`flex-1 glass-card p-6 group hover:border-[var(--primary)] transition-all ${isCompleted ? "border-emerald-500/30" : ""}`}
+                                            >
+                                                <div className="flex justify-between items-center mb-2">
+                                                    <span className="text-[10px] font-black uppercase tracking-widest opacity-60">{topic.topic_number}</span>
+                                                    <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-[var(--bg)] border border-[var(--border)]">
+                                                        {topic.tier_level === "both" ? "F&H" : topic.tier_level.charAt(0).toUpperCase()}
+                                                    </span>
+                                                </div>
+                                                <h3 className="font-bold group-hover:text-[var(--primary)] transition-colors line-clamp-1">{topic.topic_title}</h3>
+                                            </Link>
+                                        </div>
+                                    )
+                                })}
+
+                                <div className="text-center pt-8">
+                                    <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[var(--gradient-primary)] text-white font-bold shadow-xl">
+                                        <span>🏁</span>
+                                        <span>Grade 9 Achieved!</span>
+                                    </div>
+                                </div>
+                            </div>
+                        )
                     ) : (
                         <div className="glass-card p-12 text-center opacity-70">
                             <div className="text-4xl mb-4">🏗️</div>

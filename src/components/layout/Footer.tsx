@@ -2,65 +2,56 @@ import Link from "next/link";
 
 export function Footer() {
     return (
-        <footer
-            className="border-t py-8 mt-16"
-            style={{ borderColor: "var(--border)", background: "var(--bg-card)" }}
-        >
+        <footer className="border-t border-[var(--border)] py-16 bg-[var(--bg-card)]">
             <div className="container">
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-                    {/* Brand */}
-                    <div>
-                        <div className="flex items-center gap-2 font-bold text-lg mb-3">
-                            <span>🎓</span>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mb-12">
+                    <div className="col-span-2 md:col-span-1">
+                        <Link href="/" className="flex items-center gap-2 font-bold text-xl mb-4">
+                            <span className="text-2xl">🎓</span>
                             <span className="gradient-text">GCSE Mastery Hub</span>
-                        </div>
-                        <p className="text-sm" style={{ color: "var(--text-muted)" }}>
-                            Free GCSE revision for Year 10 students. AQA & Edexcel subjects with gamification and AI-powered learning.
+                        </Link>
+                        <p className="text-sm opacity-60 leading-relaxed">
+                            The ultimate interactive learning platform for GCSE Year 10. Master your subjects, track your progress, and ace your exams.
                         </p>
                     </div>
 
-                    {/* Subjects */}
                     <div>
-                        <h4 className="font-semibold mb-3 text-sm uppercase tracking-wider" style={{ color: "var(--text-muted)" }}>
-                            Subjects
-                        </h4>
-                        <ul className="space-y-2 text-sm">
-                            <li><Link href="/subjects/aqa/combined-science" className="hover:text-[var(--primary)] transition-colors">Combined Science</Link></li>
-                            <li><Link href="/subjects/edexcel/maths" className="hover:text-[var(--primary)] transition-colors">Maths</Link></li>
-                            <li><Link href="/subjects/aqa/english-literature" className="hover:text-[var(--primary)] transition-colors">English Literature</Link></li>
-                            <li><Link href="/subjects/aqa/history" className="hover:text-[var(--primary)] transition-colors">History</Link></li>
-                        </ul>
-                    </div>
-
-                    {/* Quick Links */}
-                    <div>
-                        <h4 className="font-semibold mb-3 text-sm uppercase tracking-wider" style={{ color: "var(--text-muted)" }}>
-                            Quick Links
-                        </h4>
-                        <ul className="space-y-2 text-sm">
+                        <h4 className="font-bold mb-4">Platform</h4>
+                        <ul className="space-y-2 text-sm opacity-70">
+                            <li><Link href="/subjects" className="hover:text-[var(--primary)] transition-colors">Subjects</Link></li>
                             <li><Link href="/quiz" className="hover:text-[var(--primary)] transition-colors">Quizzes</Link></li>
-                            <li><Link href="/my-progress" className="hover:text-[var(--primary)] transition-colors">My Progress</Link></li>
-                            <li><Link href="/profile" className="hover:text-[var(--primary)] transition-colors">Profile & Shop</Link></li>
-                            <li><Link href="/admin" className="hover:text-[var(--primary)] transition-colors">Admin CMS</Link></li>
+                            <li><Link href="/exams" className="hover:text-[var(--primary)] transition-colors">Exam Simulator</Link></li>
+                            <li><Link href="/leaderboard" className="hover:text-[var(--primary)] transition-colors">Leaderboard</Link></li>
                         </ul>
                     </div>
 
-                    {/* Info */}
                     <div>
-                        <h4 className="font-semibold mb-3 text-sm uppercase tracking-wider" style={{ color: "var(--text-muted)" }}>
-                            Built With
-                        </h4>
-                        <ul className="space-y-2 text-sm" style={{ color: "var(--text-muted)" }}>
-                            <li>Next.js 15 + TypeScript</li>
-                            <li>Tailwind CSS + Framer Motion</li>
-                            <li>Firebase + Zustand</li>
-                            <li>100% Free to Use</li>
+                        <h4 className="font-bold mb-4">Company</h4>
+                        <ul className="space-y-2 text-sm opacity-70">
+                            <li><Link href="/about" className="hover:text-[var(--primary)] transition-colors">About Us</Link></li>
+                            <li><Link href="/contact" className="hover:text-[var(--primary)] transition-colors">Contact</Link></li>
+                            <li><Link href="/privacy" className="hover:text-[var(--primary)] transition-colors">Privacy Policy</Link></li>
+                            <li><Link href="/terms" className="hover:text-[var(--primary)] transition-colors">Terms of Service</Link></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 className="font-bold mb-4">Resources</h4>
+                        <ul className="space-y-2 text-sm opacity-70">
+                            <li><Link href="#" className="hover:text-[var(--primary)] transition-colors">Study Tips</Link></li>
+                            <li><Link href="#" className="hover:text-[var(--primary)] transition-colors">Past Papers</Link></li>
+                            <li><Link href="#" className="hover:text-[var(--primary)] transition-colors">Community</Link></li>
                         </ul>
                     </div>
                 </div>
 
-                <div className="mt-8 pt-6 border-t text-center text-sm" style={{ borderColor: "var(--border)", color: "var(--text-muted)" }}>
-                    <p>© {new Date().getFullYear()} GCSE Mastery Hub. Made with 💜 for GCSE students everywhere.</p>
+                <div className="pt-8 border-t border-[var(--border)] flex flex-col md:flex-row justify-between items-center gap-4 text-xs opacity-50">
+                    <div>© {new Date().getFullYear()} GCSE Mastery Hub. All rights reserved.</div>
+                    <div className="flex gap-6">
+                        <Link href="#" className="hover:text-white transition-colors">Twitter</Link>
+                        <Link href="#" className="hover:text-white transition-colors">Instagram</Link>
+                        <Link href="#" className="hover:text-white transition-colors">TikTok</Link>
+                    </div>
                 </div>
             </div>
         </footer>

@@ -4,18 +4,28 @@ import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Providers } from "@/components/Providers";
+import { CookieConsent } from "@/components/compliance/CookieConsent";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  title: "GCSE Mastery Hub — Your Free GCSE Revision Platform",
+  title: {
+    default: "GCSE Mastery Hub — Your Free GCSE Revision Platform",
+    template: "%s | GCSE Mastery Hub",
+  },
   description: "Master your GCSEs with free interactive lessons, quizzes, and AI-powered revision for AQA & Edexcel subjects. Built for Year 10 students.",
   keywords: ["GCSE", "revision", "AQA", "Edexcel", "Year 10", "free", "quizzes", "learning"],
   authors: [{ name: "GCSE Mastery Hub" }],
+  manifest: "/manifest.json",
   openGraph: {
     title: "GCSE Mastery Hub",
     description: "Free GCSE revision with gamification, quizzes, and AI-powered learning",
     type: "website",
+  },
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "GCSE Hub",
   },
 };
 
@@ -39,6 +49,7 @@ export default function RootLayout({
             <main className="flex-1">{children}</main>
             <Footer />
           </div>
+          <CookieConsent />
         </Providers>
       </body>
     </html>

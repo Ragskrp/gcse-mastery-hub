@@ -73,29 +73,35 @@ export const SEED_TOPICS_HUMANITIES_EXTENDED: Topic[] = [
         ],
         section_4_practice_questions: {
             foundation: [
-                { question: "Define colonialism.", marks: 2 },
-                { question: "Name three driving factors behind migration.", marks: 3 },
-                { question: "What was the 'civilizing mission'?", marks: 2 },
-                { question: "Give example of extractive colonial economy.", marks: 2 }
+                { id: "cm_f1", question: "Define colonialism.", type: "short_answer", correct_answer: "Policy of acquiring control over another country", explanation: "Includes occupying it with settlers and exploiting it economically.", marks: 2, difficulty: "foundation" },
+                { id: "cm_f2", question: "Name three driving factors behind migration.", type: "short_answer", correct_answer: "War, famine, economic opportunity", explanation: "Push and pull factors.", marks: 3, difficulty: "foundation" },
+                { id: "cm_f3", question: "What was the 'civilizing mission'?", type: "short_answer", correct_answer: "Justification for colonialism based on supposed superiority", explanation: "Used to justify European rule.", marks: 2, difficulty: "foundation" },
+                { id: "cm_f4", question: "Give example of extractive colonial economy.", type: "short_answer", correct_answer: "Mining, plantations", explanation: "Resources sent to the colonizer.", marks: 2, difficulty: "foundation" }
             ],
             higher: [
-                { question: "Analyze relationship between colonialism and migration.", marks: 5 },
-                { question: "Evaluate justifications used for imperial expansion.", marks: 5 },
-                { question: "Compare impacts of different colonial systems.", marks: 6 },
-                { question: "Discuss long-term consequences of colonialism.", marks: 5 }
+                { id: "cm_h1", question: "Analyze relationship between colonialism and migration.", type: "essay", correct_answer: "Various", explanation: "Forced vs voluntary movement.", marks: 5, difficulty: "higher" },
+                { id: "cm_h2", question: "Evaluate justifications used for imperial expansion.", type: "essay", correct_answer: "Various", explanation: "Economic, political, religious.", marks: 5, difficulty: "higher" },
+                { id: "cm_h3", question: "Compare impacts of different colonial systems.", type: "essay", correct_answer: "Various", explanation: "Direct vs indirect rule.", marks: 6, difficulty: "higher" },
+                { id: "cm_h4", question: "Discuss long-term consequences of colonialism.", type: "essay", correct_answer: "Various", explanation: "Economic and political legacy.", marks: 5, difficulty: "higher" }
             ]
         },
         section_5_exam_guidance: {
             command_words: ["Analyze economic systems", "Evaluate ideological justifications", "Compare impacts", "Explain causal relationships"],
             common_mistakes: ["Accepting colonialist narratives uncritically", "Ignoring economic exploitation", "Oversimplifying colonizer/colonized binary", "Forgetting about resistance movements"],
-            tips: ["Use specific examples", "Question ideological justifications", "Center colonized perspectives", "Examine structural impacts"]
+            exam_tips: ["Use specific examples", "Question ideological justifications", "Center colonized perspectives", "Examine structural impacts"]
         },
-        section_6_additional_resources: [
-            { title: "Colonialism and Imperialism Timeline", type: "interactive", url: "https://www.colonial-history-map.io" },
-            { title: "Primary Sources on Colonial Era", type: "article", url: "https://www.colonial-sources.org" },
-            { title: "Documentary: Colonial Systems", type: "video", url: "https://www.historical-documentaries.com" }
-        ],
+        section_6_additional_resources: {
+            resources: [
+                { title: "Colonialism and Imperialism Timeline", type: "interactive", url: "https://www.colonial-history-map.io", description: "Interactive timeline." },
+                { title: "Primary Sources on Colonial Era", type: "article", url: "https://www.colonial-sources.org", description: "Source documents." },
+                { title: "Documentary: Colonial Systems", type: "video", url: "https://www.historical-documentaries.com", description: "Documentary film." }
+            ]
+        },
         section_7_assessment_answers: {
+            answers: [
+                { question_id: "cm_f1", model_answer: "Colonialism is the policy of acquiring control over another country.", mark_breakdown: ["1 mark for definition"], examiner_tip: "Focus on control." }
+            ],
+            grade_boundaries: { grade_9: 90, grade_7: 75, grade_5: 55, grade_4: 45 },
             practice_answers: ["[Sample answers provided]"],
             marking_rubric: ["0-1 marks: Limited analysis", "2-3 marks: Basic understanding", "4-5 marks: Strong causal analysis", "6+ marks: Sophisticated analysis of structural impacts"]
         }
@@ -173,29 +179,35 @@ export const SEED_TOPICS_HUMANITIES_EXTENDED: Topic[] = [
         ],
         section_4_practice_questions: {
             foundation: [
-                { question: "Define innovation.", marks: 2 },
-                { question: "What is an MVP?", marks: 2 },
-                { question: "Name three startup funding sources.", marks: 2 },
-                { question: "What is intellectual property?", marks: 2 }
+                { id: "in_f1", question: "Define innovation.", type: "short_answer", correct_answer: "Implementing new ideas", explanation: "Can be products or processes.", marks: 2, difficulty: "foundation" },
+                { id: "in_f2", question: "What is an MVP?", type: "short_answer", correct_answer: "Minimum Viable Product", explanation: "Used to test market demand.", marks: 2, difficulty: "foundation" },
+                { id: "in_f3", question: "Name three startup funding sources.", type: "short_answer", correct_answer: "Angel investors, VC, crowdfunding", explanation: "Ways to raise capital.", marks: 2, difficulty: "foundation" },
+                { id: "in_f4", question: "What is intellectual property?", type: "short_answer", correct_answer: "Creations of the mind", explanation: "Includes patents and trademarks.", marks: 2, difficulty: "foundation" }
             ],
             higher: [
-                { question: "Compare incremental and disruptive innovation strategies.", marks: 5 },
-                { question: "Analyze challenges in scaling a successful startup.", marks: 5 },
-                { question: "Evaluate IP protection approaches for tech companies.", marks: 5 },
-                { question: "Discuss relationship between innovation and business success.", marks: 6 }
+                { id: "in_h1", question: "Compare incremental and disruptive innovation strategies.", type: "essay", correct_answer: "Various", explanation: "Small improvements vs market shifts.", marks: 5, difficulty: "higher" },
+                { id: "in_h2", question: "Analyze challenges in scaling a successful startup.", type: "essay", correct_answer: "Various", explanation: "Hiring, infrastructure, funding.", marks: 5, difficulty: "higher" },
+                { id: "in_h3", question: "Evaluate IP protection approaches for tech companies.", type: "essay", correct_answer: "Various", explanation: "Patents vs speed to market.", marks: 5, difficulty: "higher" },
+                { id: "in_h4", question: "Discuss relationship between innovation and business success.", type: "essay", correct_answer: "Various", explanation: "Staying competitive.", marks: 6, difficulty: "higher" }
             ]
         },
         section_5_exam_guidance: {
             command_words: ["Analyze funding requirements", "Evaluate IP strategies", "Compare innovation types", "Discuss scaling challenges"],
             common_mistakes: ["Confusing startup with traditional business", "Ignoring team importance", "Underestimating cash flow needs", "Missing failure case studies"],
-            tips: ["Use startup examples throughout", "Reference investor perspectives", "Discuss risk factors", "Compare different innovation approaches"]
+            exam_tips: ["Use startup examples throughout", "Reference investor perspectives", "Discuss risk factors", "Compare different innovation approaches"]
         },
-        section_6_additional_resources: [
-            { title: "Startup Lifecycle Simulator", type: "interactive", url: "https://www.startup-simulator.io" },
-            { title: "IP Protection Guide", type: "article", url: "https://www.ip-protection-guide.com" },
-            { title: "Entrepreneur Interviews", type: "video", url: "https://www.entrepreneur-stories.io" }
-        ],
+        section_6_additional_resources: {
+            resources: [
+                { title: "Startup Lifecycle Simulator", type: "interactive", url: "https://www.startup-simulator.io", description: "Business simulator." },
+                { title: "IP Protection Guide", type: "article", url: "https://www.ip-protection-guide.com", description: "Legal guide." },
+                { title: "Entrepreneur Interviews", type: "video", url: "https://www.entrepreneur-stories.io", description: "Interviews." }
+            ]
+        },
         section_7_assessment_answers: {
+            answers: [
+                { question_id: "in_f1", model_answer: "Innovation is the implementation of new ideas.", mark_breakdown: ["1 mark for definition"], examiner_tip: "Focus on implementation." }
+            ],
+            grade_boundaries: { grade_9: 90, grade_7: 75, grade_5: 55, grade_4: 45 },
             practice_answers: ["[Sample answers provided]"],
             marking_rubric: ["0-1 marks: Minimal understanding", "2-3 marks: Basic concepts", "4-5 marks: Strong analysis", "6+ marks: Sophisticated integration of examples"]
         }

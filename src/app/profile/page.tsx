@@ -2,13 +2,12 @@
 import { useAppStore, DEFAULT_USER } from "@/lib/store";
 import { BADGES, SHOP_ITEMS } from "@/lib/constants";
 import { getXPProgress, formatNumber } from "@/lib/utils";
-import { GIRL_AVATARS, DECORATIONS, getUnlockedAvatars, getUnlockedDecorations } from "@/lib/avatars";
+import { DECORATIONS, getUnlockedAvatars, getUnlockedDecorations } from "@/lib/avatars";
 import { useState } from "react";
 
 export default function ProfilePage() {
-    const { user, isAuthenticated, setUser, addCoins, purchaseItem, setAvatar, addDecoration, removeDecoration } = useAppStore();
+    const { user, isAuthenticated, setUser, purchaseItem, setAvatar, setTheme, addDecoration, removeDecoration } = useAppStore();
     const [tab, setTab] = useState<"stats" | "customize" | "badges" | "shop">("stats");
-    const [showAvatarGrid, setShowAvatarGrid] = useState(false);
 
     // Quick demo login
     if (!isAuthenticated || !user) {
@@ -114,14 +113,14 @@ export default function ProfilePage() {
                             {user.profile.level < 5 ? (
                                 <div className="text-center p-8 opacity-70">
                                     <p className="text-sm mb-2">🔒 Decorations unlock at Level 5</p>
-                                    <p className="text-xs">You're at Level {user.profile.level}. {5 - user.profile.level} more levels to go!</p>
+                                    <p className="text-xs">You&apos;re at Level {user.profile.level}. {5 - user.profile.level} more levels to go!</p>
                                 </div>
                             ) : (
                                 <div className="space-y-4">
                                     <div className="p-6 rounded-lg text-center" style={{ background: "var(--bg-card)" }}>
                                         <div className="text-6xl relative inline-block">
                                             {user.profile.avatar}
-                                            {user.profile.decorations && user.profile.decorations.map((decoId, idx) => {
+                                            {user.profile.decorations && user.profile.decorations.map((decoId) => {
                                                 const deco = DECORATIONS.find(d => d.id === decoId);
                                                 if (!deco) return null;
                                                 const positions: Record<string, string> = {
@@ -233,7 +232,15 @@ export default function ProfilePage() {
                                         <div className="font-bold text-sm">{item.name}</div>
                                         <div className="text-xs mb-2" style={{ color: "var(--text-muted)" }}>{item.description}</div>
                                         {owned ? (
-                                            <span className="text-xs font-bold text-emerald-500">✅ Owned</span>
+                                            <div className="space-y-2">
+                                                <span className="text-[10px] font-bold text-emerald-500 block">OWNED</span>
+                                                <button
+                                                    onClick={() => setTheme(item.id)}
+                                                    className={`text-[10px] font-bold px-3 py-1 rounded-lg border transition-all ${user.profile.theme === item.id ? "bg-[var(--primary)] text-white border-[var(--primary)]" : "border-[var(--border)] hover:border-[var(--primary)]"}`}
+                                                >
+                                                    {user.profile.theme === item.id ? "Active" : "Apply"}
+                                                </button>
+                                            </div>
                                         ) : (
                                             <button disabled={!canAfford} onClick={() => purchaseItem(item.id, item.price)}
                                                 className={`text-xs font-bold px-3 py-1.5 rounded-lg transition-all ${canAfford ? "btn-primary text-xs py-1.5 px-3" : "opacity-40 cursor-not-allowed"}`}

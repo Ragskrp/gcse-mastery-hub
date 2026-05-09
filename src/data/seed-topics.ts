@@ -98,6 +98,12 @@ export const SEED_TOPICS: Topic[] = [
             ],
             grade_boundaries: { grade_9: 90, grade_7: 75, grade_5: 55, grade_4: 45 }
         },
+        revision_notes_long: "The concept of number structure is the bedrock of all mathematical understanding. In the Edexcel specification, mastery of N1 (Structure and Calculation) requires not just the ability to perform basic arithmetic, but a deep conceptual understanding of why these operations work. For example, when adding fractions, the requirement for a common denominator arises from the need to have a standard 'unit' of measure before aggregation can occur. Similarly, the Order of Operations (BIDMAS) isn't an arbitrary rule but a logical hierarchy that ensures mathematical expressions remain unambiguous globally.\n\nStudents often struggle with the transition from integers to decimals and fractions. It is important to visualize these as points on a continuous number line rather than isolated entities. A strong grasp of place value allows for easier estimation, which is a key skill in higher-tier papers where complex multi-step calculations can lead to calculation errors. Always estimate your answer first—if you are adding 0.4 and 0.5 and get 0.09, your estimation (approx 1) should immediately alert you to a decimal point error.",
+        expert_tips_detailed: [
+            "Use the 'cross-multiplication' method only as a check for fraction addition; understanding common denominators is better for algebraic fractions later.",
+            "In your exam, write down every single step of BIDMAS. If you skip a step and make a mistake, you lose all marks. If you show the steps, you gain method marks.",
+            "Practise converting between fractions, decimals, and percentages (FDP) until it becomes second nature. These are the most common 'easy' marks in Paper 1."
+        ],
         view_count: 0, avg_score: 0, completion_rate: 0,
         created_at: new Date().toISOString(), updated_at: new Date().toISOString()
     },
@@ -191,6 +197,13 @@ export const SEED_TOPICS: Topic[] = [
             ],
             grade_boundaries: { grade_9: 92, grade_7: 76, grade_5: 56, grade_4: 46 }
         },
+        revision_notes_long: "Cell Biology (B1) is the starting point for the AQA Combined Science Biology specification. All life begins with cells, and understanding their sub-cellular structures is essential for later topics like Bioenergetics and Inheritance. Eukaryotic cells, which include all animal and plant cells, are characterized by their membrane-bound nucleus. In contrast, prokaryotic cells (bacteria) represent a more ancient, simpler form of life without a true nucleus. \n\nOne of the most frequently examined areas is the comparison between light and electron microscopy. While light microscopes are limited by the wavelength of light (approx 200nm resolution), electron microscopes use beams of electrons with much shorter wavelengths, allowing us to see organelles like ribosomes and the internal structure of mitochondria. Mastery of the 'MIA' triangle (Magnification = Image / Actual) is mandatory, as is the ability to convert between millimetres, micrometres (µm), and nanometres (nm). Always double-check your units before starting a calculation.",
+        expert_tips_detailed: [
+            "When asked to compare cells, always use words like 'whereas' or 'however' to directly link the two items. E.g., 'Plant cells have a cell wall, whereas animal cells do not.'",
+            "Memorize the magnification formula: M = I/A. A common trick is giving the image size in cm and the actual size in µm—always convert both to mm first.",
+            "Don't just say 'mitochondria make energy'. The correct phrase is 'mitochondria are the site of aerobic respiration which releases energy'."
+        ],
+        scientific_context: "The discovery of cells was only possible after the invention of the microscope in the 17th century by Robert Hooke and Antonie van Leeuwenhoek. Today, electron microscopy allows us to study the protein structures on the surface of viruses, which is critical for vaccine development.",
         view_count: 0, avg_score: 0, completion_rate: 0,
         created_at: new Date().toISOString(), updated_at: new Date().toISOString()
     },
@@ -283,6 +296,13 @@ export const SEED_TOPICS: Topic[] = [
             ],
             grade_boundaries: { grade_9: 88, grade_7: 72, grade_5: 52, grade_4: 42 }
         },
+        revision_notes_long: "Lady Macbeth serves as the psychological catalyst for the tragedy of Macbeth. In the AQA English Literature Paper 1, students must go beyond simply describing her actions and instead analyze how Shakespeare constructs her as a vehicle for specific themes: Ambition, Gender, and the Supernatural. Her character arc is a descent from absolute certainty and control to utter fragmentation and madness. Initially, she is the 'masculine' force in the relationship, manipulating Macbeth by attacking his 'milk of human kindness' and his 'manhood'. However, once the crown is secured, the weight of the regicide (killing a king) shifts. Macbeth becomes increasingly detached and brutal, while Lady Macbeth is consumed by the physical manifestation of her guilt—the 'damned spot'.\n\nTo achieve a Grade 9, you must discuss the 'Divine Right of Kings' and the 'Great Chain of Being'. By encouraging the murder of Duncan, Lady Macbeth isn't just committing a crime; she is subverting the natural order of the universe, which is why her own mind eventually 'unsexes' its own sanity.",
+        expert_tips_detailed: [
+            "Use the word 'machiavellian' to describe Lady Macbeth's initial manipulation; it shows you understand the political philosophy of the era.",
+            "Contrast her use of blank verse (iambic pentameter) in Act 1 with her use of prose in Act 5. This structural shift highlights her mental collapse.",
+            "Link Lady Macbeth to the Witches. Many critics argue she is a 'fourth witch' because of her command over spirits in Act 1 Scene 5."
+        ],
+        historical_significance: "The play was written shortly after the Gunpowder Plot of 1605. Lady Macbeth's warning to 'look like the innocent flower, but be the serpent under't' would have resonated deeply with a Jacobean audience terrified of hidden traitors.",
         view_count: 0, avg_score: 0, completion_rate: 0,
         created_at: new Date().toISOString(), updated_at: new Date().toISOString()
     }

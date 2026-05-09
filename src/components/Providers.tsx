@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 
 export function Providers({ children }: { children: React.ReactNode }) {
     const darkMode = useAppStore((s) => s.darkMode);
+    const theme = useAppStore((s) => s.user?.profile.theme);
     const [mounted, setMounted] = useState(false);
 
     useEffect(() => {
@@ -13,8 +14,13 @@ export function Providers({ children }: { children: React.ReactNode }) {
     useEffect(() => {
         if (mounted) {
             document.documentElement.classList.toggle("dark", darkMode);
+            if (theme) {
+                document.documentElement.setAttribute("data-theme", theme);
+            } else {
+                document.documentElement.removeAttribute("data-theme");
+            }
         }
-    }, [darkMode, mounted]);
+    }, [darkMode, theme, mounted]);
 
     if (!mounted) {
         // We still render children to allow SEO, but suppress any client-side specific rendering inside components

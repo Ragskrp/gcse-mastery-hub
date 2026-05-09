@@ -25,6 +25,7 @@ interface AppState {
     addQuizAttempt: (attempt: QuizAttempt) => void;
     logout: () => void;
     setAvatar: (avatarEmoji: string) => void;
+    setTheme: (themeId: string) => void;
     addDecoration: (decorationId: string) => void;
     removeDecoration: (decorationId: string) => void;
 }
@@ -56,7 +57,7 @@ const DEFAULT_USER: UserData = {
 
 export const useAppStore = create<AppState>()(
     persist(
-        (set, get) => ({
+        (set) => ({
             user: null,
             isAuthenticated: false,
             isLoading: true,
@@ -78,6 +79,20 @@ export const useAppStore = create<AppState>()(
                             profile: {
                                 ...state.user.profile,
                                 coins: state.user.profile.coins + amount,
+                            },
+                        },
+                    };
+                }),
+
+            setTheme: (themeId) =>
+                set((state) => {
+                    if (!state.user) return state;
+                    return {
+                        user: {
+                            ...state.user,
+                            profile: {
+                                ...state.user.profile,
+                                theme: themeId,
                             },
                         },
                     };

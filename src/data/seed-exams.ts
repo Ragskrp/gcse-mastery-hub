@@ -43,7 +43,8 @@ export const MOCK_EXAMS: MockExam[] = [
                 question: "Angles on a straight line add to...?",
                 marks: 1,
                 type: "multiple_choice",
-                options: ["90°", "180°", "270°", "360°"]
+                options: ["90°", "180°", "270°", "360°"],
+                correct_answer: "180°"
             },
             {
                 id: "q5",
@@ -479,7 +480,8 @@ export const MOCK_EXAMS: MockExam[] = [
                 question: "Which organelle controls the activities of the cell?",
                 marks: 1,
                 type: "multiple_choice",
-                options: ["Mitochondria", "Nucleus", "Ribosome", "Cytoplasm"]
+                options: ["Mitochondria", "Nucleus", "Ribosome", "Cytoplasm"],
+                correct_answer: "Nucleus"
             },
             {
                 id: "q2",

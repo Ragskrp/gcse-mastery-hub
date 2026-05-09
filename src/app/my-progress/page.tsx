@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useAppStore } from "@/lib/store";
 import { SUBJECTS } from "@/lib/constants";
 import { getXPProgress, formatNumber, getGradeFromPercentage } from "@/lib/utils";
+import { TOPIC_MANIFEST } from "@/lib/content";
 
 export default function MyProgressPage() {
     const { user, isAuthenticated } = useAppStore();
@@ -21,7 +22,7 @@ export default function MyProgressPage() {
 
     const xpProg = getXPProgress(user.profile.xp);
     const completedTopics = Object.values(user.progress).filter((p) => p.completed).length;
-    const totalTopics = Object.keys(user.progress).length;
+    const totalTopicsCount = TOPIC_MANIFEST.length;
     const avgScore = user.quiz_history.length > 0 ? Math.round(user.quiz_history.reduce((a, q) => a + q.percentage, 0) / user.quiz_history.length) : 0;
 
     return (
@@ -33,7 +34,7 @@ export default function MyProgressPage() {
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
                     <div className="glass-card p-5 text-center"><div className="text-3xl font-bold gradient-text">{user.profile.level}</div><p className="text-sm" style={{ color: "var(--text-muted)" }}>Level</p></div>
                     <div className="glass-card p-5 text-center"><div className="text-3xl font-bold text-yellow-500">{formatNumber(user.profile.coins)}</div><p className="text-sm" style={{ color: "var(--text-muted)" }}>Coins</p></div>
-                    <div className="glass-card p-5 text-center"><div className="text-3xl font-bold text-emerald-500">{completedTopics}</div><p className="text-sm" style={{ color: "var(--text-muted)" }}>Topics Done</p></div>
+                    <div className="glass-card p-5 text-center"><div className="text-3xl font-bold text-emerald-500">{completedTopics}/{totalTopicsCount}</div><p className="text-sm" style={{ color: "var(--text-muted)" }}>Topics Done</p></div>
                     <div className="glass-card p-5 text-center"><div className="text-3xl font-bold text-purple-500">{avgScore}%</div><p className="text-sm" style={{ color: "var(--text-muted)" }}>Avg Quiz</p></div>
                 </div>
 
@@ -47,19 +48,25 @@ export default function MyProgressPage() {
                 {/* Subject Progress */}
                 <h2 className="text-xl font-bold mb-5">📚 Subject Progress</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
-                    {SUBJECTS.map((sub) => (
-                        <Link key={sub.id} href={`/subjects/${sub.board}/${sub.id.replace(/_/g, "-")}`} className="glass-card p-5 group">
-                            <div className="flex items-center gap-3 mb-3">
-                                <span className="text-2xl">{sub.icon}</span>
-                                <div className="flex-1">
-                                    <div className="font-bold group-hover:text-[var(--primary)] transition-colors">{sub.name}</div>
-                                    <div className="text-xs" style={{ color: "var(--text-muted)" }}>{sub.board.toUpperCase()}</div>
+                    {SUBJECTS.map((sub) => {
+                        const subjectTopics = TOPIC_MANIFEST.filter(t => t.subject === sub.id && t.exam_board === sub.board);
+                        const completedCount = subjectTopics.filter(t => user.progress[t.id]?.completed).length;
+                        const progressPercent = subjectTopics.length > 0 ? Math.round((completedCount / subjectTopics.length) * 100) : 0;
+
+                        return (
+                            <Link key={sub.id} href={`/subjects/${sub.board}/${sub.id.replace(/_/g, "-")}`} className="glass-card p-5 group">
+                                <div className="flex items-center gap-3 mb-3">
+                                    <span className="text-2xl">{sub.icon}</span>
+                                    <div className="flex-1">
+                                        <div className="font-bold group-hover:text-[var(--primary)] transition-colors">{sub.name}</div>
+                                        <div className="text-xs" style={{ color: "var(--text-muted)" }}>{sub.board.toUpperCase()}</div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="progress-bar"><div className="progress-fill" style={{ width: "0%" }} /></div>
-                            <p className="text-xs mt-2" style={{ color: "var(--text-muted)" }}>0% complete</p>
-                        </Link>
-                    ))}
+                                <div className="progress-bar"><div className="progress-fill" style={{ width: `${progressPercent}%` }} /></div>
+                                <p className="text-xs mt-2" style={{ color: "var(--text-muted)" }}>{progressPercent}% complete</p>
+                            </Link>
+                        );
+                    })}
                 </div>
 
                 {/* Recent Quiz History */}

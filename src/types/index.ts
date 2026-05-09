@@ -74,31 +74,32 @@ export interface Section4PracticeQuestions {
 }
 
 export interface ExamGuidance {
-  command_words: { word: string; meaning: string }[];
+  command_words: (string | { word: string; meaning: string })[];
   exam_tips: string[];
   common_mistakes: string[];
-  mark_scheme_notes: string[];
-  time_allocation: string;
+  mark_scheme_notes?: string[];
+  time_allocation?: string;
 }
 
 export interface AdditionalResource {
   title: string;
-  type: "video" | "article" | "worksheet" | "interactive";
+  type: "video" | "article" | "worksheet" | "interactive" | "visualization";
   url?: string;
   description: string;
 }
 
 export interface Section6AdditionalResources {
   resources: AdditionalResource[];
-  further_reading: string[];
-  revision_checklist: string[];
+  further_reading?: string[];
+  revision_checklist?: string[];
+  real_world_applications?: string[];
 }
 
 export interface AssessmentAnswer {
   question_id: string;
   model_answer: string;
-  mark_breakdown: string[];
-  examiner_tip: string;
+  mark_breakdown?: string[];
+  examiner_tip?: string;
 }
 
 export interface Section7AssessmentAnswers {
@@ -109,6 +110,8 @@ export interface Section7AssessmentAnswers {
     grade_5: number;
     grade_4: number;
   };
+  practice_answers?: string[];
+  marking_rubric?: string[];
 }
 
 // ---- Topic (Full Document) ----
@@ -126,11 +129,16 @@ export interface Topic {
   section_5_exam_guidance: ExamGuidance;
   section_6_additional_resources: Section6AdditionalResources;
   section_7_assessment_answers: Section7AssessmentAnswers;
-  view_count: number;
-  avg_score: number;
-  completion_rate: number;
-  created_at: string;
-  updated_at: string;
+  // Professional Content Additions for AdSense / High Value
+  revision_notes_long?: string;
+  expert_tips_detailed?: string[];
+  scientific_context?: string;
+  historical_significance?: string;
+  view_count?: number;
+  avg_score?: number;
+  completion_rate?: number;
+  created_at?: string;
+  updated_at?: string;
 }
 
 // ---- Quiz ----
@@ -266,6 +274,7 @@ export interface MockExamQuestion {
   marks: number;
   type: "short_answer" | "long_answer" | "multiple_choice";
   options?: string[]; // For multiple choice
+  correct_answer?: string; // Key for MCQ grading
 }
 
 export interface MockExam {

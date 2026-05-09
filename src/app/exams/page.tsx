@@ -1,13 +1,11 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import { useAppStore } from "@/lib/store";
 import { SUBJECTS } from "@/lib/constants";
 
 import { MOCK_EXAMS } from "@/data/seed-exams";
 
 export default function ExamsPage() {
-    const { user } = useAppStore();
     const [selectedSubject, setSelectedSubject] = useState<string>("all");
 
     const filteredExams = selectedSubject === "all"

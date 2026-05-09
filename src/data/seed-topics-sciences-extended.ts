@@ -73,29 +73,35 @@ export const SEED_TOPICS_SCIENCES_EXTENDED: Topic[] = [
         ],
         section_4_practice_questions: {
             foundation: [
-                { question: "Label the heart chambers and major blood vessels.", marks: 3 },
-                { question: "Describe one complete cycle of blood circulation.", marks: 3 },
-                { question: "Explain how gas exchange occurs in alveoli.", marks: 3 },
-                { question: "What is a synapse?", marks: 2 }
+                { id: "hb_f1", question: "Label the heart chambers and major blood vessels.", type: "short_answer", correct_answer: "Atria, Ventricles, Aorta, Vena Cava", explanation: "Four chambers and main vessels.", marks: 3, difficulty: "foundation" },
+                { id: "hb_f2", question: "Describe one complete cycle of blood circulation.", type: "short_answer", correct_answer: "Heart -> Lungs -> Heart -> Body -> Heart", explanation: "Double circulatory system.", marks: 3, difficulty: "foundation" },
+                { id: "hb_f3", question: "Explain how gas exchange occurs in alveoli.", type: "short_answer", correct_answer: "Diffusion across thin walls", explanation: "Oxygen in, carbon dioxide out.", marks: 3, difficulty: "foundation" },
+                { id: "hb_f4", question: "What is a synapse?", type: "short_answer", correct_answer: "Gap between neurons", explanation: "Signals cross via neurotransmitters.", marks: 2, difficulty: "foundation" }
             ],
             higher: [
-                { question: "Analyze how exercise affects integrated cardiovascular and respiratory function.", marks: 5 },
-                { question: "Evaluate factors determining neural signal transmission speed.", marks: 4 },
-                { question: "Compare sympathetic vs. parasympathetic nervous system effects.", marks: 5 },
-                { question: "Discuss how system dysfunction leads to disease.", marks: 6 }
+                { id: "hb_h1", question: "Analyze how exercise affects integrated cardiovascular and respiratory function.", type: "essay", correct_answer: "Increased rate and depth", explanation: "Meeting oxygen demand.", marks: 5, difficulty: "higher" },
+                { id: "hb_h2", question: "Evaluate factors determining neural signal transmission speed.", type: "essay", correct_answer: "Myelination, diameter", explanation: "Insulation and resistance.", marks: 4, difficulty: "higher" },
+                { id: "hb_h3", question: "Compare sympathetic vs. parasympathetic nervous system effects.", type: "essay", correct_answer: "Fight/flight vs Rest/digest", explanation: "Opposing effects.", marks: 5, difficulty: "higher" },
+                { id: "hb_h4", question: "Discuss how system dysfunction leads to disease.", type: "essay", correct_answer: "Various", explanation: "e.g. Heart failure, asthma.", marks: 6, difficulty: "higher" }
             ]
         },
         section_5_exam_guidance: {
             command_words: ["Label diagrams", "Explain integration", "Analyze feedback", "Evaluate homeostatic mechanisms"],
             common_mistakes: ["Confusing arteries/veins", "Missing integration aspects", "Incomplete pathway descriptions", "Ignoring feedback mechanisms"],
-            tips: ["Draw and label key diagrams", "Show system interactions", "Include feedback loops", "Use metric units for measurements"]
+            exam_tips: ["Draw and label key diagrams", "Show system interactions", "Include feedback loops", "Use metric units for measurements"]
         },
-        section_6_additional_resources: [
-            { title: "Interactive Human Body System Explorer", type: "interactive", url: "https://www.human-body-explorer.io" },
-            { title: "3D Circulatory System Animation", type: "video", url: "https://www.youtube.com/human-systems" },
-            { title: "ECG and Heart Physiology", type: "interactive", url: "https://www.cardiac-physiology.com" }
-        ],
+        section_6_additional_resources: {
+            resources: [
+                { title: "Interactive Human Body System Explorer", type: "interactive", url: "https://www.human-body-explorer.io", description: "Body systems tool." },
+                { title: "3D Circulatory System Animation", type: "video", url: "https://www.youtube.com/human-systems", description: "Animation of heart." },
+                { title: "ECG and Heart Physiology", type: "interactive", url: "https://www.cardiac-physiology.com", description: "ECG tool." }
+            ]
+        },
         section_7_assessment_answers: {
+            answers: [
+                { question_id: "hb_f1", model_answer: "Atria, Ventricles, Aorta, Vena Cava.", mark_breakdown: ["1 mark for chambers", "1 mark for vessels"], examiner_tip: "Label clearly." }
+            ],
+            grade_boundaries: { grade_9: 90, grade_7: 75, grade_5: 55, grade_4: 45 },
             practice_answers: ["[Sample answers provided]"],
             marking_rubric: ["0-1 marks: Significant gaps", "2-3 marks: Basic understanding", "4-5 marks: Good integration", "6+ marks: Excellent system analysis"]
         }
@@ -168,29 +174,35 @@ export const SEED_TOPICS_SCIENCES_EXTENDED: Topic[] = [
         ],
         section_4_practice_questions: {
             foundation: [
-                { question: "Define functional group.", marks: 2 },
-                { question: "Name three common functional groups.", marks: 2 },
-                { question: "What do curly arrows represent in mechanisms?", marks: 2 },
-                { question: "Give example of addition reaction.", marks: 2 }
+                { id: "oc_f1", question: "Define functional group.", type: "short_answer", correct_answer: "Atom/group responsible for properties", explanation: "Determines chemical reactivity.", marks: 2, difficulty: "foundation" },
+                { id: "oc_f2", question: "Name three common functional groups.", type: "short_answer", correct_answer: "Alcohol, Alkyne, Carboxylic Acid", explanation: "Common groups in organic chemistry.", marks: 2, difficulty: "foundation" },
+                { id: "oc_f3", question: "What do curly arrows represent in mechanisms?", type: "short_answer", correct_answer: "Movement of electron pair", explanation: "Shows bond breaking/making.", marks: 2, difficulty: "foundation" },
+                { id: "oc_f4", question: "Give example of addition reaction.", type: "short_answer", correct_answer: "Ethene + Bromine", explanation: "Double bond opens up.", marks: 2, difficulty: "foundation" }
             ],
             higher: [
-                { question: "Show mechanism for bromination of benzene.", marks: 5 },
-                { question: "Analyze why some carbocations more stable than others.", marks: 4 },
-                { question: "Plan two-step synthesis for target molecule.", marks: 6 },
-                { question: "Explain how reaction conditions affect selectivity.", marks: 5 }
+                { id: "oc_h1", question: "Show mechanism for bromination of benzene.", type: "essay", correct_answer: "Electrophilic substitution", explanation: "Requires Lewis acid catalyst.", marks: 5, difficulty: "higher" },
+                { id: "oc_h2", question: "Analyze why some carbocations more stable than others.", type: "essay", correct_answer: "Inductive effect of alkyl groups", explanation: "Tertiary > Secondary > Primary.", marks: 4, difficulty: "higher" },
+                { id: "oc_h3", question: "Plan two-step synthesis for target molecule.", type: "essay", correct_answer: "Various", explanation: "Retrosynthetic approach.", marks: 6, difficulty: "higher" },
+                { id: "oc_h4", question: "Explain how reaction conditions affect selectivity.", type: "essay", correct_answer: "Temperature, solvent", explanation: "Kinetic vs Thermodynamic control.", marks: 5, difficulty: "higher" }
             ]
         },
         section_5_exam_guidance: {
             command_words: ["Show mechanism", "Explain selectivity", "Plan synthesis", "Predict product"],
             common_mistakes: ["Incorrect electron movement", "Missing intermediates", "Wrong carbocation stability", "Incomplete mechanisms"],
-            tips: ["Always show curly arrows", "Include all intermediates", "Consider stability", "Think retrosynthetically"]
+            exam_tips: ["Always show curly arrows", "Include all intermediates", "Consider stability", "Think retrosynthetically"]
         },
-        section_6_additional_resources: [
-            { title: "Organic Reaction Mechanism Visualizer", type: "interactive", url: "https://www.organic-mechanisms.io" },
-            { title: "Synthesis Problem Database", type: "interactive", url: "https://www.synthesis-practice.com" },
-            { title: "Functional Group Properties Chart", type: "article", url: "https://www.functional-groups-guide.io" }
-        ],
+        section_6_additional_resources: {
+            resources: [
+                { title: "Organic Reaction Mechanism Visualizer", type: "interactive", url: "https://www.organic-mechanisms.io", description: "Mechanism tool." },
+                { title: "Synthesis Problem Database", type: "interactive", url: "https://www.synthesis-practice.com", description: "Practice synthesis." },
+                { title: "Functional Group Properties Chart", type: "article", url: "https://www.functional-groups-guide.io", description: "Ref chart." }
+            ]
+        },
         section_7_assessment_answers: {
+            answers: [
+                { question_id: "oc_f1", model_answer: "A functional group is an atom or group responsible for properties.", mark_breakdown: ["1 mark for definition"], examiner_tip: "Think reactivity." }
+            ],
+            grade_boundaries: { grade_9: 90, grade_7: 75, grade_5: 55, grade_4: 45 },
             practice_answers: ["[Sample answers provided]"],
             marking_rubric: ["0-1 marks: Incomplete mechanism", "2-3 marks: Basic mechanism shown", "4-5 marks: Clear mechanism with intermediates", "6+ marks: Complete mechanism with explanation"]
         }
