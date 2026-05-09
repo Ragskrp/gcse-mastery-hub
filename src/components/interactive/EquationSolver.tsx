@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 export function EquationSolver() {
     const [leftSide, setLeftSide] = useState(12); // e.g. 2x + 4
     const [rightSide, setRightSide] = useState(12); // e.g. 12
-    const [xValue, setXValue] = useState(4); // Solution x = 4
     const [steps, setSteps] = useState<string[]>([]);
     const [solved, setSolved] = useState(false);
 

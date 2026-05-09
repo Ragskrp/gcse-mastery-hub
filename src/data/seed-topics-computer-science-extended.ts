@@ -149,7 +149,9 @@ export const SEED_TOPICS_COMPUTER_SCIENCE_EXTENDED: Topic[] = [
       answers: [
         {
           question_id: "pq1",
-          model_answer: "Supervised learning: algorithms trained on labeled data pairs (input-output examples) to learn mapping function, used for classification/regression predictions. Unsupervised learning: algorithms find hidden patterns in unlabeled data through clustering or dimensionality reduction."
+          model_answer: "Supervised learning: algorithms trained on labeled data pairs (input-output examples) to learn mapping function, used for classification/regression predictions. Unsupervised learning: algorithms find hidden patterns in unlabeled data through clustering or dimensionality reduction.",
+          mark_breakdown: ["1 mark for supervised explanation", "1 mark for unsupervised explanation"],
+          examiner_tip: "Be sure to mention labeled vs unlabeled data."
         }
       ],
       grade_boundaries: { grade_9: 90, grade_7: 75, grade_5: 60, grade_4: 50 }
@@ -173,7 +175,7 @@ export const SEED_TOPICS_COMPUTER_SCIENCE_EXTENDED: Topic[] = [
       key_terms: [
         { term: "Encryption", definition: "Encoding data so only authorized parties with key can read", importance: "Essential for data protection in transit and storage" },
         { term: "Malware", definition: "Malicious software designed to damage systems or steal data", importance: "Major cybersecurity threat; includes viruses, trojans, ransomware" },
-        { term: "Social Engineering", meaning: "Manipulating people to divulge sensitive information", importance: "Often more effective than technical attacks; exploits human psychology" },
+        { term: "Social Engineering", definition: "Manipulating people to divulge sensitive information", importance: "Often more effective than technical attacks; exploits human psychology" },
         { term: "Zero-Day Vulnerability", definition: "Unknown security flaw; software developers unaware beforehand", importance: "Particularly dangerous; no patch exists before attacks occur" }
       ],
       learning_objectives: [
@@ -298,7 +300,9 @@ export const SEED_TOPICS_COMPUTER_SCIENCE_EXTENDED: Topic[] = [
       answers: [
         {
           question_id: "pq1",
-          model_answer: "Symmetric encryption uses same key for encryption and decryption (fast, suitable for bulk data). Asymmetric uses different keys: public key for encryption, private key for decryption (solves key distribution but slower). Asymmetric enables digital signatures and authentication."
+          model_answer: "Symmetric encryption (Private Key): Same secret key used for encryption and decryption. Both parties must share and keep the key secure. Faster, better for large data volumes. Asymmetric encryption (Public Key): Uses a key pair. Public key encrypts, private key decrypts. Overcomes key exchange risk. Essential for digital signatures and secure web (HTTPS).",
+          mark_breakdown: ["1 mark for symmetric explanation", "1 mark for asymmetric explanation"],
+          examiner_tip: "Think about the key management issue."
         }
       ],
       grade_boundaries: { grade_9: 90, grade_7: 75, grade_5: 60, grade_4: 50 }

@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import { MOCK_EXAMS } from "@/data/seed-exams";
-import { MockExam } from "@/types";
 
 export default function ExamPage() {
     const params = useParams();
@@ -107,19 +106,56 @@ export default function ExamPage() {
 
     // Render Submitted Screen
     if (status === "submitted") {
-        return (
-            <div className="container py-20 max-w-2xl text-center">
-                <div className="glass-card p-10 fade-in-up">
-                    <div className="text-6xl mb-6">✅</div>
-                    <h1 className="text-3xl font-bold mb-2">Exam Submitted!</h1>
-                    <p className="mb-8 opacity-80">Great effort! Your exam has been completed.</p>
+        const mcqQuestions = exam.questions.filter(q => q.type === "multiple_choice");
+        const mcqCount = mcqQuestions.length;
+        let mcqCorrect = 0;
 
-                    <div className="bg-emerald-500/10 border border-emerald-500/20 p-6 rounded-xl mb-8">
-                        <h3 className="font-bold text-emerald-500 mb-2">Self-Assessment</h3>
-                        <p className="text-sm">Since this is an open-answer exam, automatic grading is limited. Review your answers against the mark scheme provided in the Topics section.</p>
+        mcqQuestions.forEach(q => {
+            if (answers[q.id] && answers[q.id] === q.correct_answer) {
+                mcqCorrect++;
+            }
+        });
+
+        return (
+            <div className="container py-20 max-w-3xl text-center">
+                <div className="glass-card p-10 fade-in-up">
+                    <div className="text-6xl mb-6">🏁</div>
+                    <h1 className="text-3xl font-bold mb-2">Exam Complete!</h1>
+                    <p className="mb-8 opacity-80">You have successfully submitted {exam.title}.</p>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+                        <div className="p-6 rounded-2xl bg-[var(--bg)] border border-[var(--border)]">
+                            <h3 className="text-sm font-bold uppercase tracking-widest opacity-60 mb-2">MCQ Score</h3>
+                            <div className="text-4xl font-black gradient-text">{mcqCorrect}/{mcqCount}</div>
+                            <p className="text-xs mt-2 opacity-70">Automatic grading for multiple choice</p>
+                        </div>
+                        <div className="p-6 rounded-2xl bg-[var(--bg)] border border-[var(--border)]">
+                            <h3 className="text-sm font-bold uppercase tracking-widest opacity-60 mb-2">Written Questions</h3>
+                            <div className="text-4xl font-black text-amber-500">{exam.questions.length - mcqCount}</div>
+                            <p className="text-xs mt-2 opacity-70">Requires self-assessment vs mark scheme</p>
+                        </div>
                     </div>
 
-                    <Link href="/exams" className="btn-primary w-full py-3">Return to Exam Hub</Link>
+                    <div className="text-left bg-[var(--primary)]/5 border border-[var(--primary)]/20 p-8 rounded-2xl mb-8">
+                        <h3 className="font-bold mb-4 flex items-center gap-2">
+                            <span>📚</span> Recommended Review Topics
+                        </h3>
+                        <div className="space-y-3">
+                            <div className="p-3 bg-white dark:bg-white/5 rounded-xl border border-[var(--border)] flex justify-between items-center">
+                                <span className="font-medium text-sm">Key Concepts in {exam.subject.replace(/_/g, " ")}</span>
+                                <Link href="/subjects" className="text-xs font-bold text-[var(--primary)] hover:underline">Review →</Link>
+                            </div>
+                            <div className="p-3 bg-white dark:bg-white/5 rounded-xl border border-[var(--border)] flex justify-between items-center">
+                                <span className="font-medium text-sm">Exam Technique & Time Management</span>
+                                <Link href="/subjects" className="text-xs font-bold text-[var(--primary)] hover:underline">Review →</Link>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="flex flex-col sm:flex-row gap-4">
+                        <Link href="/exams" className="btn-secondary flex-1 justify-center">Back to Hall</Link>
+                        <Link href="/my-progress" className="btn-primary flex-1 justify-center">View Progress</Link>
+                    </div>
                 </div>
             </div>
         );

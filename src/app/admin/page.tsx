@@ -1,5 +1,7 @@
 "use client";
 import { useState } from "react";
+import { TOPIC_MANIFEST } from "@/lib/content";
+import { SEED_QUIZZES } from "@/data/seed-quizzes";
 
 export default function AdminPage() {
     const [jsonInput, setJsonInput] = useState("");
@@ -23,8 +25,8 @@ export default function AdminPage() {
 
                 {/* Stats Overview */}
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
-                    <div className="glass-card p-5 text-center"><div className="text-2xl font-bold gradient-text">8</div><p className="text-sm" style={{ color: "var(--text-muted)" }}>Topics</p></div>
-                    <div className="glass-card p-5 text-center"><div className="text-2xl font-bold gradient-text">8</div><p className="text-sm" style={{ color: "var(--text-muted)" }}>Quizzes</p></div>
+                    <div className="glass-card p-5 text-center"><div className="text-2xl font-bold gradient-text">{TOPIC_MANIFEST.length}</div><p className="text-sm" style={{ color: "var(--text-muted)" }}>Topics</p></div>
+                    <div className="glass-card p-5 text-center"><div className="text-2xl font-bold gradient-text">{SEED_QUIZZES.length}</div><p className="text-sm" style={{ color: "var(--text-muted)" }}>Quizzes</p></div>
                     <div className="glass-card p-5 text-center"><div className="text-2xl font-bold gradient-text">0</div><p className="text-sm" style={{ color: "var(--text-muted)" }}>Users</p></div>
                     <div className="glass-card p-5 text-center"><div className="text-2xl font-bold gradient-text">0</div><p className="text-sm" style={{ color: "var(--text-muted)" }}>Views Today</p></div>
                 </div>

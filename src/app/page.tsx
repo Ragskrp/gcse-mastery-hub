@@ -17,11 +17,14 @@ import { SEED_TOPICS_FRENCH_EXTENDED } from "@/data/seed-topics-french-extended"
 import { SEED_TOPICS_RELIGIOUS_STUDIES_EXTENDED } from "@/data/seed-topics-religious-studies-extended";
 import { SEED_TOPICS_GEOGRAPHY_EXTENDED } from "@/data/seed-topics-geography-extended";
 import { SEED_TOPICS_COMPUTER_SCIENCE_EXTENDED } from "@/data/seed-topics-computer-science-extended";
+import { TOPIC_MANIFEST } from "@/lib/content";
+import { AdSlot } from "@/components/ads/AdSlot";
+import { StreakBanner } from "@/components/gamification/StreakBanner";
 
 const ALL_TOPICS = [...SEED_TOPICS, ...SEED_TOPICS_PART2, ...SEED_TOPICS_PART3, ...SEED_TOPICS_PART4, ...SEED_TOPICS_PART5, ...SEED_MATHS_EXTENDED, ...SEED_TOPICS_ENGLISH_EXTENDED, ...SEED_TOPICS_HUMANITIES_EXTENDED, ...SEED_TOPICS_SCIENCES_EXTENDED, ...SEED_TOPICS_FRENCH_EXTENDED, ...SEED_TOPICS_RELIGIOUS_STUDIES_EXTENDED, ...SEED_TOPICS_GEOGRAPHY_EXTENDED, ...SEED_TOPICS_COMPUTER_SCIENCE_EXTENDED];
 
 export default function HomePage() {
-  const { user, isAuthenticated } = useAppStore();
+  const { user } = useAppStore();
   const mounted = useMounted();
 
   return (
@@ -30,6 +33,7 @@ export default function HomePage() {
       <section className="hero-mesh relative py-20 md:py-32 overflow-hidden">
         <div className="container relative z-10">
           <div className="max-w-3xl mx-auto text-center">
+            <StreakBanner />
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium mb-6 fade-in-up" style={{ background: "var(--bg-card)", border: "1px solid var(--border)" }}>
               <span className="pulse-dot"></span>
               <span>100% Free — No subscription required</span>
@@ -76,6 +80,45 @@ export default function HomePage() {
         {/* Floating decorative elements */}
         <div className="absolute top-20 left-10 w-72 h-72 rounded-full opacity-10 blur-3xl pointer-events-none" style={{ background: "var(--gradient-primary)" }} />
         <div className="absolute bottom-20 right-10 w-60 h-60 rounded-full opacity-10 blur-3xl pointer-events-none" style={{ background: "var(--gradient-secondary)" }} />
+      </section>
+
+      {/* ===== RECOMMENDED SECTION ===== */}
+      <section className="py-16 bg-[var(--bg)]">
+        <div className="container">
+          <AdSlot slot="home_top_banner" />
+        </div>
+        <div className="container">
+          <div className="flex items-center justify-between mb-10">
+            <div>
+              <h2 className="text-3xl font-bold mb-2">✨ Recommended <span className="gradient-text">for You</span></h2>
+              <p className="opacity-70">Based on popular GCSE topics this week</p>
+            </div>
+            <Link href="/subjects" className="hidden sm:block text-[var(--primary)] font-bold hover:underline">
+              View All Topics →
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {TOPIC_MANIFEST.filter(t => ["edexcel_maths_differentiation_basics", "aqa_combined_science_bio_cell_biology", "aqa_computer_science_ai_machine_learning"].includes(t.id)).map((topic) => (
+              <Link
+                key={topic.id}
+                href={`/learn/${topic.exam_board}/${topic.subject.replace(/_/g, "-")}/${topic.id}`}
+                className="glass-card p-6 border-l-4 border-l-[var(--primary)] group"
+              >
+                <span className="text-[10px] font-bold uppercase tracking-widest opacity-60 mb-2 block">
+                  {topic.subject.replace(/_/g, " ")} · {topic.exam_board.toUpperCase()}
+                </span>
+                <h3 className="text-lg font-bold mb-3 group-hover:text-[var(--primary)] transition-colors">
+                  {topic.topic_title}
+                </h3>
+                <div className="flex items-center gap-2 text-xs font-semibold text-[var(--primary)]">
+                  <span>Start Learning</span>
+                  <span className="group-hover:translate-x-1 transition-transform">→</span>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
       </section>
 
       {/* ===== SUBJECTS GRID ===== */}
@@ -206,6 +249,9 @@ export default function HomePage() {
 
       {/* ===== FEATURES SECTION ===== */}
       <section className="py-16 md:py-24">
+        <div className="container">
+          <AdSlot slot="home_middle_rectangle" />
+        </div>
         <div className="container">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">

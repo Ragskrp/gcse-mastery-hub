@@ -73,30 +73,37 @@ export const SEED_TOPICS_ENGLISH_EXTENDED: Topic[] = [
         ],
         section_4_practice_questions: {
             foundation: [
-                { question: "What is Romanticism in literature?", marks: 2 },
-                { question: "Name three Romantic poets we studied.", marks: 1 },
-                { question: "Identify one theme common in Romantic poetry.", marks: 2 },
-                { question: "What poetic technique does Wordsworth use frequently?", marks: 2 }
+                { id: "rp_f1", question: "What is Romanticism in literature?", type: "short_answer", correct_answer: "Movement emphasizing emotion", explanation: "Romanticism values emotion over reason.", marks: 2, difficulty: "foundation" },
+                { id: "rp_f2", question: "Name three Romantic poets we studied.", type: "short_answer", correct_answer: "Wordsworth, Keats, Byron", explanation: "Key figures of the movement.", marks: 1, difficulty: "foundation" },
+                { id: "rp_f3", question: "Identify one theme common in Romantic poetry.", type: "short_answer", correct_answer: "Nature", explanation: "Nature is a central theme.", marks: 2, difficulty: "foundation" },
+                { id: "rp_f4", question: "What poetic technique does Wordsworth use frequently?", type: "short_answer", correct_answer: "Imagery", explanation: "He uses vivid natural imagery.", marks: 2, difficulty: "foundation" }
             ],
             higher: [
-                { question: "Compare Wordsworth and Byron's views on nature and society.", marks: 5 },
-                { question: "Analyze how Keats uses the nightingale as extended metaphor.", marks: 5 },
-                { question: "Evaluate the extent to which Romantic poetry was revolutionary.", marks: 6 },
-                { question: "How do biographical contexts shape the works of these poets?", marks: 5 }
+                { id: "rp_h1", question: "Compare Wordsworth and Byron's views on nature and society.", type: "essay", correct_answer: "Various", explanation: "Requires comparative analysis.", marks: 5, difficulty: "higher" },
+                { id: "rp_h2", question: "Analyze how Keats uses the nightingale as extended metaphor.", type: "essay", correct_answer: "Various", explanation: "Keats uses sensory detail.", marks: 5, difficulty: "higher" },
+                { id: "rp_h3", question: "Evaluate the extent to which Romantic poetry was revolutionary.", type: "essay", correct_answer: "Various", explanation: "Consider social and artistic shifts.", marks: 6, difficulty: "higher" },
+                { id: "rp_h4", question: "How do biographical contexts shape the works of these poets?", type: "essay", correct_answer: "Various", explanation: "Life events influenced themes.", marks: 5, difficulty: "higher" }
             ]
         },
         section_5_exam_guidance: {
             command_words: ["Analyze (break down techniques)", "Compare (find similarities and differences)", "Evaluate (judge importance/effectiveness)", "Discuss (explore various perspectives)"],
             common_mistakes: ["Forgetting biographical context", "Description without analysis", "Missing connection to Romantic period", "Ignoring historical significance"],
-            tips: ["Always reference specific lines and techniques", "Connect individual poems to broader Romantic principles", "Consider how historical period influenced these poets", "Reference visual art and music of the period"]
+            exam_tips: ["Always reference specific lines and techniques", "Connect individual poems to broader Romantic principles", "Consider how historical period influenced these poets", "Reference visual art and music of the period"]
         },
-        section_6_additional_resources: [
-            { title: "YouTube: Romantic Poetry Crashed Course", type: "video", url: "https://www.youtube.com/watch?v=romantic-poetry" },
-            { title: "Interactive: Wordsworth's Lake District Tour", type: "interactive", url: "https://www.historical-tours.io/wordsworth-lake-district" },
-            { title: "BBC Bitesize: Romantic Period", type: "article", url: "https://www.bbc.co.uk/bitesize" },
-            { title: "Poetry Reading: Keats Collection", type: "audio", url: "https://www.audiopoetry.org/keats" }
-        ],
+        section_6_additional_resources: {
+            resources: [
+                { title: "YouTube: Romantic Poetry Crashed Course", type: "video", url: "https://www.youtube.com/watch?v=romantic-poetry", description: "Video overview" },
+                { title: "Interactive: Wordsworth's Lake District Tour", type: "interactive", url: "https://www.historical-tours.io/wordsworth-lake-district", description: "Interactive tour" },
+                { title: "BBC Bitesize: Romantic Period", type: "article", url: "https://www.bbc.co.uk/bitesize", description: "Bitesize guide" }
+            ],
+            further_reading: [],
+            revision_checklist: []
+        },
         section_7_assessment_answers: {
+            answers: [
+                { question_id: "rp_f1", model_answer: "Romanticism was a movement emphasizing emotion, nature, and imagination.", mark_breakdown: ["1 mark for emotion", "1 mark for nature/imagination"], examiner_tip: "Mention the rejection of industrialization if possible." }
+            ],
+            grade_boundaries: { grade_9: 90, grade_7: 75, grade_5: 55, grade_4: 45 },
             practice_answers: ["[Sample answers provided]"],
             marking_rubric: [
                 "0-1 marks: Limited understanding",
@@ -175,29 +182,37 @@ export const SEED_TOPICS_ENGLISH_EXTENDED: Topic[] = [
         ],
         section_4_practice_questions: {
             foundation: [
-                { question: "Define Gothic literature.", marks: 2 },
-                { question: "List three typical Gothic settings.", marks: 2 },
-                { question: "What is an unreliable narrator?", marks: 2 },
-                { question: "Give example of psychological horror from set text.", marks: 2 }
+                { id: "gt_f1", question: "Define Gothic literature.", type: "short_answer", correct_answer: "Tradition featuring darkness and suspense", explanation: "Focuses on macabre and mysterious.", marks: 2, difficulty: "foundation" },
+                { id: "gt_f2", question: "List three typical Gothic settings.", type: "short_answer", correct_answer: "Castle, forest, mansion", explanation: "Isolation is key.", marks: 2, difficulty: "foundation" },
+                { id: "gt_f3", question: "What is an unreliable narrator?", type: "short_answer", correct_answer: "Narrator whose credibility is doubted", explanation: "Creates suspense and doubt.", marks: 2, difficulty: "foundation" },
+                { id: "gt_f4", question: "Give example of psychological horror from set text.", type: "short_answer", correct_answer: "Various", explanation: "Depends on text.", marks: 2, difficulty: "foundation" }
             ],
             higher: [
-                { question: "Analyze how two Gothic texts use setting differently.", marks: 5 },
-                { question: "Evaluate effectiveness of supernatural elements in creating horror.", marks: 5 },
-                { question: "Discuss how Gothic texts comment on their historical period.", marks: 6 },
-                { question: "Compare psychological and physical horror in Gothic tradition.", marks: 5 }
+                { id: "gt_h1", question: "Analyze how two Gothic texts use setting differently.", type: "essay", correct_answer: "Various", explanation: "Comparison of setting use.", marks: 5, difficulty: "higher" },
+                { id: "gt_h2", question: "Evaluate effectiveness of supernatural elements in creating horror.", type: "essay", correct_answer: "Various", explanation: "Assessing impact on reader.", marks: 5, difficulty: "higher" },
+                { id: "gt_h3", question: "Discuss how Gothic texts comment on their historical period.", type: "essay", correct_answer: "Various", explanation: "Contextual analysis.", marks: 6, difficulty: "higher" },
+                { id: "gt_h4", question: "Compare psychological and physical horror in Gothic tradition.", type: "essay", correct_answer: "Various", explanation: "Internal vs external threats.", marks: 5, difficulty: "higher" }
             ]
         },
         section_5_exam_guidance: {
             command_words: ["Analyze atmosphere", "Examine characterization", "Evaluate narrative technique", "Compare Gothic elements"],
             common_mistakes: ["Confusing Gothic with just scary", "Ignoring symbolic meaning", "Analysis without text reference", "Missing historical context"],
-            tips: ["Discuss specific atmospheric techniques", "Connect plot to character psychology", "Consider when text was written", "Analyze unreliable narration carefully"]
+            exam_tips: ["Discuss specific atmospheric techniques", "Connect plot to character psychology", "Consider when text was written", "Analyze unreliable narration carefully"]
         },
-        section_6_additional_resources: [
-            { title: "Gothic Literature Analysis Guide", type: "article", url: "https://www.gothic-lit-guide.com" },
-            { title: "Victorian Gothic & Modernity", type: "video", url: "https://www.youtube.com/gothic-victorian" },
-            { title: "Interactive Gothic Atmosphere Explorer", type: "interactive", url: "https://www.literary-atmosphere-tool.io" }
-        ],
+        section_6_additional_resources: {
+            resources: [
+                { title: "Gothic Literature Analysis Guide", type: "article", url: "https://www.gothic-lit-guide.com", description: "Analysis guide" },
+                { title: "Victorian Gothic & Modernity", type: "video", url: "https://www.youtube.com/gothic-victorian", description: "Video lecture" },
+                { title: "Interactive Gothic Atmosphere Explorer", type: "interactive", url: "https://www.literary-atmosphere-tool.io", description: "Interactive tool" }
+            ],
+            further_reading: [],
+            revision_checklist: []
+        },
         section_7_assessment_answers: {
+            answers: [
+                { question_id: "gt_f1", model_answer: "Gothic literature is a tradition featuring darkness, suspense, and psychological terror.", mark_breakdown: ["1 mark for darkness/suspense", "1 mark for terror"], examiner_tip: "Focus on the atmosphere." }
+            ],
+            grade_boundaries: { grade_9: 90, grade_7: 75, grade_5: 55, grade_4: 45 },
             practice_answers: ["[Sample answers provided]"],
             marking_rubric: ["0-1 marks: Minimal engagement", "2-3 marks: Basic analysis", "4-5 marks: Solid technique identification", "6+ marks: Sophisticated psychological analysis"]
         }
@@ -275,29 +290,37 @@ export const SEED_TOPICS_ENGLISH_EXTENDED: Topic[] = [
         ],
         section_4_practice_questions: {
             foundation: [
-                { question: "What is netspeak?", marks: 2 },
-                { question: "Name two platforms and describe language differences.", marks: 3 },
-                { question: "What makes a post go 'viral'?", marks: 2 },
-                { question: "What is multimodal communication?", marks: 2 }
+                { id: "dm_f1", question: "What is netspeak?", type: "short_answer", correct_answer: "Online language conventions", explanation: "Includes abbreviations and emojis.", marks: 2, difficulty: "foundation" },
+                { id: "dm_f2", question: "Name two platforms and describe language differences.", type: "short_answer", correct_answer: "Twitter (short), Instagram (visual)", explanation: "Platform design shapes language.", marks: 3, difficulty: "foundation" },
+                { id: "dm_f3", question: "What makes a post go 'viral'?", type: "short_answer", correct_answer: "Sharing and engagement", explanation: "Rapid spread through networks.", marks: 2, difficulty: "foundation" },
+                { id: "dm_f4", question: "What is multimodal communication?", type: "short_answer", correct_answer: "Combining text, image, sound", explanation: "Uses multiple modes of expression.", marks: 2, difficulty: "foundation" }
             ],
             higher: [
-                { question: "Analyze manipulation techniques in targeted online advertising.", marks: 5 },
-                { question: "Evaluate how algorithms shape language discourse.", marks: 5 },
-                { question: "Compare communication effectiveness: traditional vs. digital media.", marks: 6 },
-                { question: "Discuss benefits and dangers of online communication's speed.", marks: 5 }
+                { id: "dm_h1", question: "Analyze manipulation techniques in targeted online advertising.", type: "essay", correct_answer: "Various", explanation: "Consider algorithmic influence.", marks: 5, difficulty: "higher" },
+                { id: "dm_h2", question: "Evaluate how algorithms shape language discourse.", type: "essay", correct_answer: "Various", explanation: "Filtering and curation impact.", marks: 5, difficulty: "higher" },
+                { id: "dm_h3", question: "Compare communication effectiveness: traditional vs. digital media.", type: "essay", correct_answer: "Various", explanation: "Reach, speed, and depth.", marks: 6, difficulty: "higher" },
+                { id: "dm_h4", question: "Discuss benefits and dangers of online communication's speed.", type: "essay", correct_answer: "Various", explanation: "Information vs misinformation.", marks: 5, difficulty: "higher" }
             ]
         },
         section_5_exam_guidance: {
             command_words: ["Analyze platform language", "Compare multimodal elements", "Evaluate persuasion techniques", "Discuss digital impact on language"],
             common_mistakes: ["Ignoring visual elements in analysis", "Treating text only", "Missing platform context", "Not considering user intent"],
-            tips: ["Always discuss image-text relationship", "Reference platform conventions", "Analyze emotional appeals", "Consider algorithmic curation"]
+            exam_tips: ["Always discuss image-text relationship", "Reference platform conventions", "Analyze emotional appeals", "Consider algorithmic curation"]
         },
-        section_6_additional_resources: [
-            { title: "Digital Rhetoric Analysis Guide", type: "article", url: "https://www.digital-rhetoric.io" },
-            { title: "Social Media Language Evolution", type: "video", url: "https://www.youtube.com/digital-language" },
-            { title: "Multimodal Analysis Tool", type: "interactive", url: "https://www.multimodal-analyzer.com" }
-        ],
+        section_6_additional_resources: {
+            resources: [
+                { title: "Digital Rhetoric Analysis Guide", type: "article", url: "https://www.digital-rhetoric.io", description: "Rhetoric guide" },
+                { title: "Social Media Language Evolution", type: "video", url: "https://www.youtube.com/digital-language", description: "Evolution video" },
+                { title: "Multimodal Analysis Tool", type: "interactive", url: "https://www.multimodal-analyzer.com", description: "Multimodal tool" }
+            ],
+            further_reading: [],
+            revision_checklist: []
+        },
         section_7_assessment_answers: {
+            answers: [
+                { question_id: "dm_f1", model_answer: "Netspeak refers to online language conventions like abbreviations.", mark_breakdown: ["1 mark for definition", "1 mark for example"], examiner_tip: "Think about how speed affects language." }
+            ],
+            grade_boundaries: { grade_9: 90, grade_7: 75, grade_5: 55, grade_4: 45 },
             practice_answers: ["[Sample answers provided]"],
             marking_rubric: ["0-1 marks: Superficial analysis", "2-3 marks: Basic technique identification", "4-5 marks: Clear multimodal analysis", "6+ marks: Sophisticated understanding of digital rhetoric"]
         }

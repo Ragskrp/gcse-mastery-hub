@@ -21,11 +21,12 @@ import { Topic } from "@/types";
 
 const ALL_TOPICS = [...SEED_TOPICS, ...SEED_TOPICS_PART2, ...SEED_TOPICS_PART3, ...SEED_TOPICS_PART4, ...SEED_TOPICS_PART5, ...SEED_MATHS_EXTENDED, ...SEED_TOPICS_ENGLISH_EXTENDED, ...SEED_TOPICS_HUMANITIES_EXTENDED, ...SEED_TOPICS_SCIENCES_EXTENDED, ...SEED_TOPICS_FRENCH_EXTENDED, ...SEED_TOPICS_RELIGIOUS_STUDIES_EXTENDED, ...SEED_TOPICS_GEOGRAPHY_EXTENDED, ...SEED_TOPICS_COMPUTER_SCIENCE_EXTENDED];
 
-// Helper to determine if we should fall back to seed data (development mode) or use JSON fetch
-const USE_STATIC_JSON = true;
 
 import { getTopicById } from "@/lib/content";
 import { useEffect } from "react";
+import { VirtualTutor } from "@/components/interactive/VirtualTutor";
+import { AdSlot } from "@/components/ads/AdSlot";
+import { ShareModal } from "@/components/gamification/ShareModal";
 
 const SECTION_LABELS = [
     { num: 1, label: "Key Concepts", icon: "🔑" },
@@ -41,6 +42,7 @@ export default function TopicPage() {
     const params = useParams();
     const topicId = params.topicId as string;
     const [openSections, setOpenSections] = useState<number[]>([1]);
+    const [showShare, setShowShare] = useState(false);
     const { completeSection, completeTopic, addCoins, addXP } = useAppStore();
 
     // State for Async Loading
@@ -92,7 +94,7 @@ export default function TopicPage() {
         completeTopic(topic.id, 100);
         addCoins(COIN_REWARDS.TOPIC_COMPLETE);
         addXP(XP_REWARDS.TOPIC_COMPLETE);
-        alert(`🎉 Topic Complete! +${COIN_REWARDS.TOPIC_COMPLETE} coins, +${XP_REWARDS.TOPIC_COMPLETE} XP`);
+        setShowShare(true);
     };
 
     return (
@@ -118,6 +120,8 @@ export default function TopicPage() {
                     <p style={{ color: "var(--text-muted)" }}>{topic.section_1_key_concepts.overview}</p>
                 </div>
 
+                <AdSlot slot="topic_top" />
+
                 {/* 7 Sections */}
                 <div className="space-y-3">
                     {SECTION_LABELS.map(({ num, label, icon }) => (
@@ -138,6 +142,8 @@ export default function TopicPage() {
                     ))}
                 </div>
 
+                <AdSlot slot="topic_bottom" />
+
                 {/* Complete Button */}
                 <div className="text-center mt-10">
                     <button onClick={handleComplete} className="btn-primary text-base px-10 py-3.5">
@@ -145,6 +151,17 @@ export default function TopicPage() {
                     </button>
                 </div>
             </div>
+
+            {/* Virtual Tutor */}
+            <VirtualTutor topic={topic} />
+
+            {showShare && (
+                <ShareModal
+                    title="Topic Mastered! 🎉"
+                    text={`I just completed "${topic.topic_title}" on GCSE Mastery Hub! Leveling up my ${topic.subject.replace(/_/g, " ")} skills. 🚀`}
+                    onClose={() => setShowShare(false)}
+                />
+            )}
         </div>
     );
 }
@@ -308,8 +325,14 @@ function Section5({ data }: { data: Topic["section_5_exam_guidance"] }) {
                 <div className="space-y-2">
                     {data.command_words.map((cw, i) => (
                         <div key={i} className="p-3 rounded-lg" style={{ border: "1px solid var(--border)" }}>
-                            <span className="font-bold text-[var(--primary)]">{cw.word}:</span>{" "}
-                            <span style={{ color: "var(--text-muted)" }}>{cw.meaning}</span>
+                            {typeof cw === "string" ? (
+                                <span style={{ color: "var(--text-muted)" }}>{cw}</span>
+                            ) : (
+                                <>
+                                    <span className="font-bold text-[var(--primary)]">{cw.word}:</span>{" "}
+                                    <span style={{ color: "var(--text-muted)" }}>{cw.meaning}</span>
+                                </>
+                            )}
                         </div>
                     ))}
                 </div>
@@ -351,17 +374,19 @@ function Section6({ data }: { data: Topic["section_6_additional_resources"] }) {
                     ))}
                 </div>
             </div>
-            <div>
-                <h4 className="font-bold mb-3">✅ Revision Checklist</h4>
-                <div className="space-y-2">
-                    {data.revision_checklist.map((item, i) => (
-                        <label key={i} className="flex items-center gap-3 p-2 rounded-lg hover:bg-[rgba(102,126,234,0.05)] cursor-pointer transition-colors">
-                            <input type="checkbox" className="w-4 h-4 accent-[var(--primary)]" />
-                            <span className="text-sm">{item}</span>
-                        </label>
-                    ))}
+            {data.revision_checklist && data.revision_checklist.length > 0 && (
+                <div>
+                    <h4 className="font-bold mb-3">✅ Revision Checklist</h4>
+                    <div className="space-y-2">
+                        {data.revision_checklist.map((item, i) => (
+                            <label key={i} className="flex items-center gap-3 p-2 rounded-lg hover:bg-[rgba(102,126,234,0.05)] cursor-pointer transition-colors">
+                                <input type="checkbox" className="w-4 h-4 accent-[var(--primary)]" />
+                                <span className="text-sm">{item}</span>
+                            </label>
+                        ))}
+                    </div>
                 </div>
-            </div>
+            )}
         </div>
     );
 }
@@ -387,12 +412,16 @@ function Section7({ data }: { data: Topic["section_7_assessment_answers"] }) {
                         <div key={i} className="p-4 rounded-xl" style={{ border: "1px solid var(--border)" }}>
                             <p className="font-medium mb-2" style={{ color: "#10b981" }}>Model Answer:</p>
                             <p className="text-sm mb-3" style={{ color: "var(--text-muted)" }}>{a.model_answer}</p>
-                            <div className="text-xs space-y-1 mb-2" style={{ color: "var(--text-muted)" }}>
-                                {a.mark_breakdown.map((m, j) => <div key={j}>• {m}</div>)}
-                            </div>
-                            <div className="text-xs italic p-2 rounded-lg" style={{ background: "rgba(245,158,11,0.05)", color: "#f59e0b" }}>
-                                💡 Examiner tip: {a.examiner_tip}
-                            </div>
+                            {a.mark_breakdown && (
+                                <div className="text-xs space-y-1 mb-2" style={{ color: "var(--text-muted)" }}>
+                                    {a.mark_breakdown.map((m, j) => <div key={j}>• {m}</div>)}
+                                </div>
+                            )}
+                            {a.examiner_tip && (
+                                <div className="text-xs italic p-2 rounded-lg" style={{ background: "rgba(245,158,11,0.05)", color: "#f59e0b" }}>
+                                    💡 Examiner tip: {a.examiner_tip}
+                                </div>
+                            )}
                         </div>
                     ))}
                 </div>

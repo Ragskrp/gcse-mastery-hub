@@ -34,6 +34,31 @@
   --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.4);
 }
 
+[data-theme="theme_ocean"] {
+  --primary: #0ea5e9;
+  --gradient-primary: linear-gradient(135deg, #0ea5e9 0%, #2563eb 100%);
+}
+
+[data-theme="theme_sunset"] {
+  --primary: #f97316;
+  --gradient-primary: linear-gradient(135deg, #f97316 0%, #be123c 100%);
+}
+
+[data-theme="theme_forest"] {
+  --primary: #22c55e;
+  --gradient-primary: linear-gradient(135deg, #22c55e 0%, #15803d 100%);
+}
+
+[data-theme="theme_galaxy"] {
+  --primary: #a855f7;
+  --gradient-primary: linear-gradient(135deg, #a855f7 0%, #4c1d95 100%);
+}
+
+[data-theme="theme_neon"] {
+  --primary: #ec4899;
+  --gradient-primary: linear-gradient(135deg, #ec4899 0%, #7c3aed 100%);
+}
+
 html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
