@@ -32,18 +32,15 @@ export const SEED_TOPICS_HUMANITIES_EXTENDED: Topic[] = [
         },
         section_2_detailed_explanations: [
             {
-                heading: "Colonial Systems and Economic Exploitation",
-                content: "Colonial powers established extractive systems: raw materials from colonies, manufactured goods sent back, profits to colonizers. Slave trade exemplifies extremes of economic exploitation. Agricultural systems transformed: plantation slavery in Americas, indentured labor in Asian colonies, settler colonialism in Africa. Colonial economies remained subordinate, dependent on colonial power. Infrastructure developed to facilitate extraction, not local development.",
+                heading: "Colonial Systems and Economic Exploitation", content: "Colonial powers established extractive systems: raw materials from colonies, manufactured goods sent back, profits to colonizers. Slave trade exemplifies extremes of economic exploitation. Agricultural systems transformed: plantation slavery in Americas, indentured labor in Asian colonies, settler colonialism in Africa. Colonial economies remained subordinate, dependent on colonial power. Infrastructure developed to facilitate extraction, not local development.", animation_type: "reveal",
                 key_points: ["Economics drove colonial expansion", "Extraction systems impoverished colonies", "Labor systems ranged from wage labor to slavery", "Infrastructure served extraction, not development"]
             },
             {
-                heading: "Migration Causes and Global Patterns",
-                content: "Major migrations driven by: economic opportunity (Irish to America), religious persecution (Jews escaping pogroms), environmental disaster (Irish Famine), political upheaval (German revolutions), colonial labor demands (indentured laborers to Caribbean). Migration transformed destination societies: demographic changes, cultural fusion, labor competition, political tensions. Transnational communities maintained homeland connections while building new identities.",
+                heading: "Migration Causes and Global Patterns", content: "Major migrations driven by: economic opportunity (Irish to America), religious persecution (Jews escaping pogroms), environmental disaster (Irish Famine), political upheaval (German revolutions), colonial labor demands (indentured laborers to Caribbean). Migration transformed destination societies: demographic changes, cultural fusion, labor competition, political tensions. Transnational communities maintained homeland connections while building new identities.", animation_type: "reveal",
                 key_points: ["'Push' factors: hardship, persecution, conflict", "'Pull' factors: economic opportunity, political freedom", "Diasporic communities maintain transnational ties", "Migration patterns reflect power inequalities"]
             },
             {
-                heading: "Ideological Justifications for Empire",
-                content: "Colonizers justified expansion through: 'civilizing mission' ideology (spreading 'superior' civilization), religious conversion missions, scientific racism (pseudoscientific racial hierarchy), Social Darwinism (survival of fittest justifying domination), and 'white man's burden' (claimed moral duty to govern non-Western peoples). These ideologies obscured exploitative reality. Resistance often framed as 'civilized' response to 'barbaric' rebellion.",
+                heading: "Ideological Justifications for Empire", content: "Colonizers justified expansion through: 'civilizing mission' ideology (spreading 'superior' civilization), religious conversion missions, scientific racism (pseudoscientific racial hierarchy), Social Darwinism (survival of fittest justifying domination), and 'white man's burden' (claimed moral duty to govern non-Western peoples). These ideologies obscured exploitative reality. Resistance often framed as 'civilized' response to 'barbaric' rebellion.", animation_type: "reveal",
                 key_points: ["Pseudoscientific racism justified domination", "Christian mission intertwined with colonialism", "Newspapers/literature spread imperial ideology", "Resistance narratives delegitimized in colonialist accounts"]
             }
         ],
@@ -138,18 +135,15 @@ export const SEED_TOPICS_HUMANITIES_EXTENDED: Topic[] = [
         },
         section_2_detailed_explanations: [
             {
-                heading: "Innovation Types and Management",
-                content: "Innovation ranges from incremental (improving existing products) to radical/disruptive (creating entirely new categories). Sources: R&D departments, customer feedback, employee suggestions, acquisitions of startups. Innovation requires: idea generation, screening/evaluation, development, testing, commercialization. Organizational culture supporting risk-taking and experimentation crucial. Many innovations fail; companies must balance exploration with exploitation of existing business.",
+                heading: "Innovation Types and Management", content: "Innovation ranges from incremental (improving existing products) to radical/disruptive (creating entirely new categories). Sources: R&D departments, customer feedback, employee suggestions, acquisitions of startups. Innovation requires: idea generation, screening/evaluation, development, testing, commercialization. Organizational culture supporting risk-taking and experimentation crucial. Many innovations fail; companies must balance exploration with exploitation of existing business.", animation_type: "reveal",
                 key_points: ["Incremental vs. disruptive innovation", "Internal vs. external innovation sources", "Innovation funnel filters and develops ideas", "Failed innovations can provide learning value"]
             },
             {
-                heading: "Startup Lifecycle and Scaling Challenges",
-                content: "Startups progress through stages: ideation, MVP launch, market validation, growth, scaling, maturity. Early stages emphasize learning and adaptation; later stages focus on operational efficiency. Scaling requires: capital investment, talent recruitment, operational systems, supply chain expansion. Common scaling challenges: maintaining company culture during rapid growth, managing investor expectations, avoiding burnout, adapting to market changes.",
+                heading: "Startup Lifecycle and Scaling Challenges", content: "Startups progress through stages: ideation, MVP launch, market validation, growth, scaling, maturity. Early stages emphasize learning and adaptation; later stages focus on operational efficiency. Scaling requires: capital investment, talent recruitment, operational systems, supply chain expansion. Common scaling challenges: maintaining company culture during rapid growth, managing investor expectations, avoiding burnout, adapting to market changes.", animation_type: "reveal",
                 key_points: ["Each stage has distinct challenges", "Capital requirements increase with growth", "Team building critical for scaling", "Culture risk during rapid expansion"]
             },
             {
-                heading: "Intellectual Property and Competitive Advantage",
-                content: "Patents protect novel inventions for limited periods. Trademarks protect brand identity. Copyrights protect creative works. Trade secrets protected through contracts and confidentiality. Tech companies heavily rely on IP protection; pharmaceuticals dependent on patent exclusivity. IP strategy includes: aggressive patenting, licensing to others, defensive patents preventing competitors. IP litigation can exceed development costs. Open-source models challenge traditional IP approaches.",
+                heading: "Intellectual Property and Competitive Advantage", content: "Patents protect novel inventions for limited periods. Trademarks protect brand identity. Copyrights protect creative works. Trade secrets protected through contracts and confidentiality. Tech companies heavily rely on IP protection; pharmaceuticals dependent on patent exclusivity. IP strategy includes: aggressive patenting, licensing to others, defensive patents preventing competitors. IP litigation can exceed development costs. Open-source models challenge traditional IP approaches.", animation_type: "reveal",
                 key_points: ["Multiple IP protection types", "Patent duration limited", "Litigation expensive and time-consuming", "Open-source challenges traditional IP"]
             }
         ],

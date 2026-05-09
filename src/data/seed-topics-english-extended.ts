@@ -32,18 +32,15 @@ export const SEED_TOPICS_ENGLISH_EXTENDED: Topic[] = [
         },
         section_2_detailed_explanations: [
             {
-                heading: "Wordsworth & Nature as Spiritual Source",
-                content: "William Wordsworth revolutionized poetry by elevating nature and childhood memory to spiritual importance. His philosophy of 'emotion recollected in tranquility' shaped Romantic verse. Works like 'Daffodils' use natural imagery to trigger profound emotional and philosophical reflection. Nature becomes not backdrop but central character conveying truth and beauty.",
+                heading: "Wordsworth & Nature as Spiritual Source", content: "William Wordsworth revolutionized poetry by elevating nature and childhood memory to spiritual importance. His philosophy of 'emotion recollected in tranquility' shaped Romantic verse. Works like 'Daffodils' use natural imagery to trigger profound emotional and philosophical reflection. Nature becomes not backdrop but central character conveying truth and beauty.", animation_type: "reveal",
                 key_points: ["Nature as spiritual teacher", "Childhood innocence as ideal state", "Everyday language in poetry", "Memory and time as themes"]
             },
             {
-                heading: "Keats & Sensory Beauty",
-                content: "John Keats focused on beauty, sensory experience, and mortality. His concept of 'Negative Capability' — tolerating uncertainty without irritation — defines his mature work. Poems like 'To a Nightingale' and 'La Belle Dame sans Merci' merge sensory pleasure with melancholy awareness of transience. His odes rank among greatest achievements in English poetry.",
+                heading: "Keats & Sensory Beauty", content: "John Keats focused on beauty, sensory experience, and mortality. His concept of 'Negative Capability' — tolerating uncertainty without irritation — defines his mature work. Poems like 'To a Nightingale' and 'La Belle Dame sans Merci' merge sensory pleasure with melancholy awareness of transience. His odes rank among greatest achievements in English poetry.", animation_type: "reveal",
                 key_points: ["Beauty and mortality interwoven", "Sensory detail and imagery", "Classical forms (odes) with personal emotion", "Limited lifespan (died age 25) influences themes"]
             },
             {
-                heading: "Byron & Heroic Individualism",
-                content: "Lord Byron embodied Romantic individualism and rebellion. His poem 'Childe Harold's Pilgrimage' features alienated hero questioning society. Byron's scandalous personal life intertwined with artistic reputation. His satire 'Don Juan' combines mockery of Romantic excess with social commentary, offering counterpoint to Wordsworth and Keats.",
+                heading: "Byron & Heroic Individualism", content: "Lord Byron embodied Romantic individualism and rebellion. His poem 'Childe Harold's Pilgrimage' features alienated hero questioning society. Byron's scandalous personal life intertwined with artistic reputation. His satire 'Don Juan' combines mockery of Romantic excess with social commentary, offering counterpoint to Wordsworth and Keats.", animation_type: "reveal",
                 key_points: ["Byronic hero: cynical, passionate outsider", "Personal biography as literary subject", "Satire and social criticism", "Controversial reputation enhancing mystique"]
             }
         ],
@@ -141,18 +138,15 @@ export const SEED_TOPICS_ENGLISH_EXTENDED: Topic[] = [
         },
         section_2_detailed_explanations: [
             {
-                heading: "Traditional Gothic Setting & Atmosphere",
-                content: "Gothic literature relies on foreboding settings: crumbling castles, dark forests, isolated mansions. Physical environment mirrors internal psychological states. Settings create claustrophobia, exposing characters' inner darkness. Atmospheric techniques include: gothic architecture as maze-like entrapment, weather reflecting emotional turmoil, darkness concealing secrets and threats.",
+                heading: "Traditional Gothic Setting & Atmosphere", content: "Gothic literature relies on foreboding settings: crumbling castles, dark forests, isolated mansions. Physical environment mirrors internal psychological states. Settings create claustrophobia, exposing characters' inner darkness. Atmospheric techniques include: gothic architecture as maze-like entrapment, weather reflecting emotional turmoil, darkness concealing secrets and threats.", animation_type: "reveal",
                 key_points: ["Decaying settings reflect decay of mind/morality", "Isolation enables darkness to flourish", "Architecture becomes character in itself", "Time periods often historical/distant settings"]
             },
             {
-                heading: "Psychological Horror & Internal Evil",
-                content: "Modern Gothic shifts from external supernatural threats to internal psychological terror. Characters battle inner demons: repressed desires, madness, hidden identities. The 'monster' becomes manifestation of character's psychological state. Unreliable narrators make readers question reality. Texts explore Freudian concepts of id/superego struggle, Victorian repression exploding into chaos.",
+                heading: "Psychological Horror & Internal Evil", content: "Modern Gothic shifts from external supernatural threats to internal psychological terror. Characters battle inner demons: repressed desires, madness, hidden identities. The 'monster' becomes manifestation of character's psychological state. Unreliable narrators make readers question reality. Texts explore Freudian concepts of id/superego struggle, Victorian repression exploding into chaos.", animation_type: "reveal",
                 key_points: ["Evil originates from human psychology", "Mental illness and madness as themes", "Doubles representing fragmented identity", "Narration becomes unreliable as mind deteriorates"]
             },
             {
-                heading: "Gothic as Social Commentary",
-                content: "Gothic literature embodies era's social anxieties. Victorian Gothic responds to Industrial Revolution, scientific advancement, changing social roles. Supernatural violations of 'natural order' reflect fears of modernity. Gothic women challenge Victorian ideal of passive femininity. Monsters represent social outsiders: the poor, the foreign, the sexually transgressive.",
+                heading: "Gothic as Social Commentary", content: "Gothic literature embodies era's social anxieties. Victorian Gothic responds to Industrial Revolution, scientific advancement, changing social roles. Supernatural violations of 'natural order' reflect fears of modernity. Gothic women challenge Victorian ideal of passive femininity. Monsters represent social outsiders: the poor, the foreign, the sexually transgressive.", animation_type: "reveal",
                 key_points: ["Reflects historical fears and anxieties", "Challenges social norms through transgression", "Questions progress and rationality", "Uses marginalized characters as Gothic threats"]
             }
         ],
@@ -249,18 +243,15 @@ export const SEED_TOPICS_ENGLISH_EXTENDED: Topic[] = [
         },
         section_2_detailed_explanations: [
             {
-                heading: "Platform-Specific Language Conventions",
-                content: "Each digital platform develops distinct discourse norms. Twitter's 280-character limit encourages conciseness; Instagram emphasizes visual with minimal text; TikTok combines video, sound, text for rapid messaging. Linguistic features vary: formality levels, emoji use, hashtag conventions, response speed expectations. Users code-switch between platforms, adopting appropriate register for audience.",
+                heading: "Platform-Specific Language Conventions", content: "Each digital platform develops distinct discourse norms. Twitter's 280-character limit encourages conciseness; Instagram emphasizes visual with minimal text; TikTok combines video, sound, text for rapid messaging. Linguistic features vary: formality levels, emoji use, hashtag conventions, response speed expectations. Users code-switch between platforms, adopting appropriate register for audience.", animation_type: "reveal",
                 key_points: ["Character limits shape sentence structure", "Visual hierarchy influences text placement", "Platform culture determines acceptable language", "Users maintain multiple persona/registers"]
             },
             {
-                heading: "Multimodal Communication & Image-Text Relationships",
-                content: "Digital texts rarely consist of words alone. Image-text combination creates new meanings impossible with text alone. Memes combine image, text, and cultural reference for compact communication. Infographics use layout, color, typography, and data visualization alongside minimal text. Videos integrate verbal language, visual composition, sound design, editing. Analysis requires examining how modes interact, reinforce, or complicate each other.",
+                heading: "Multimodal Communication & Image-Text Relationships", content: "Digital texts rarely consist of words alone. Image-text combination creates new meanings impossible with text alone. Memes combine image, text, and cultural reference for compact communication. Infographics use layout, color, typography, and data visualization alongside minimal text. Videos integrate verbal language, visual composition, sound design, editing. Analysis requires examining how modes interact, reinforce, or complicate each other.", animation_type: "reveal",
                 key_points: ["Image and text create symbiotic meanings", "Layout and typography carry meaning", "Visual design influences interpretation", "Modes can support or contradict each other"]
             },
             {
-                heading: "Manipulation & Persuasion in Digital Spaces",
-                content: "Digital media enables sophisticated persuasion through targeted advertising, algorithmic curation, and microtargeting. Clickbait uses sensational headlines to drive engagement. Filter bubbles and echo chambers reinforce existing beliefs through algorithmic selection. Deep fakes combine authentic-looking video with manipulated content. Understanding digital persuasion requires recognizing emotional appeals, statistics manipulation, source credibility questions.",
+                heading: "Manipulation & Persuasion in Digital Spaces", content: "Digital media enables sophisticated persuasion through targeted advertising, algorithmic curation, and microtargeting. Clickbait uses sensational headlines to drive engagement. Filter bubbles and echo chambers reinforce existing beliefs through algorithmic selection. Deep fakes combine authentic-looking video with manipulated content. Understanding digital persuasion requires recognizing emotional appeals, statistics manipulation, source credibility questions.", animation_type: "reveal",
                 key_points: ["Algorithms select content reinforcing biases", "Emotional language drives engagement", "Visual effects enhance credibility illusions", "Targeted messaging creates filter bubbles"]
             }
         ],

@@ -30,18 +30,15 @@ export const SEED_TOPICS_PART5: Topic[] = [
         },
         section_2_detailed_explanations: [
             {
-                heading: "Simplifying Ratios",
-                content: "A ratio like 8:12 is simplified by finding the HCF (4) and dividing both parts: 8÷4:12÷4 = 2:3. Ratios can compare any quantities: 4:5 could mean 4 apples to 5 oranges. Always express in simplest form (whole numbers, no decimals).",
+                heading: "Simplifying Ratios", content: "A ratio like 8:12 is simplified by finding the HCF (4) and dividing both parts: 8÷4:12÷4 = 2:3. Ratios can compare any quantities: 4:5 could mean 4 apples to 5 oranges. Always express in simplest form (whole numbers, no decimals).", animation_type: "reveal",
                 key_points: ["Find HCF of both numbers", "Divide both by HCF", "Result is simplified ratio", "Use colons between parts"]
             },
             {
-                heading: "Dividing Quantities in a Ratio",
-                content: "If you divide £360 in the ratio 3:5, there are 3+5=8 parts total. One part = £360÷8 = £45. So 3 parts = £45×3 = £135, and 5 parts = £45×5 = £225. Check: £135+£225 = £360 ✓",
+                heading: "Dividing Quantities in a Ratio", content: "If you divide £360 in the ratio 3:5, there are 3+5=8 parts total. One part = £360÷8 = £45. So 3 parts = £45×3 = £135, and 5 parts = £45×5 = £225. Check: £135+£225 = £360 ✓", interactive_type: "none", animation_type: "none",
                 key_points: ["Add ratio parts to get total parts", "Divide quantity by total parts", "Multiply by each ratio part", "Always check sum equals original"]
             },
             {
-                heading: "Direct vs Inverse Proportion",
-                content: "Direct (y = kx): If x doubles, y doubles. Example: Cost = Price × Quantity. Graph is straight line through origin. Inverse (y = k/x): If x doubles, y halves. Example: Time = Distance ÷ Speed. Graph is a curve.",
+                heading: "Direct vs Inverse Proportion", content: "Direct (y = kx): If x doubles, y doubles. Example: Cost = Price × Quantity. Graph is straight line through origin. Inverse (y = k/x): If x doubles, y halves. Example: Time = Distance ÷ Speed. Graph is a curve.", animation_type: "reveal",
                 key_points: ["Direct: Straight line through origin", "Inverse: Curve (hyperbola)", "Use k for constant of proportionality"]
             }
         ],
@@ -136,18 +133,15 @@ export const SEED_TOPICS_PART5: Topic[] = [
         },
         section_2_detailed_explanations: [
             {
-                heading: "Basic Probability",
-                content: "Probability = (Number of favorable outcomes) / (Total number of outcomes). For a fair die: P(rolling a 3) = 1/6. Probabilities are written as fractions, decimals, or percentages. A probability always lies between 0 and 1. P(not happening) = 1 - P(happening).",
+                heading: "Basic Probability", content: "Probability = (Number of favorable outcomes) / (Total number of outcomes). For a fair die: P(rolling a 3) = 1/6. Probabilities are written as fractions, decimals, or percentages. A probability always lies between 0 and 1. P(not happening) = 1 - P(happening).", animation_type: "reveal",
                 key_points: ["Count favorable outcomes", "Count total outcomes", "Simplify the fraction", "All probabilities sum to 1"]
             },
             {
-                heading: "Independent Events & Tree Diagrams",
-                content: "For independent events (coin flip, then die roll): P(A and B) = P(A) × P(B). Tree diagrams show branches for each outcome. Multiply along branches, add across them.",
+                heading: "Independent Events & Tree Diagrams", content: "For independent events (coin flip, then die roll): P(A and B) = P(A) × P(B). Tree diagrams show branches for each outcome. Multiply along branches, add across them.", interactive_type: "none", animation_type: "none",
                 key_points: ["Independent: One doesn't affect the other", "Multiply probabilities along path", "Add probabilities for 'or' questions"]
             },
             {
-                heading: "Relative Frequency & Experimental Probability",
-                content: "Relative Frequency = (Number of times event occurred) / (Total number of trials). If we flip a coin 100 times and get 52 heads, relative frequency = 52/100 = 0.52 (close to theoretical 0.5).",
+                heading: "Relative Frequency & Experimental Probability", content: "Relative Frequency = (Number of times event occurred) / (Total number of trials). If we flip a coin 100 times and get 52 heads, relative frequency = 52/100 = 0.52 (close to theoretical 0.5).", interactive_type: "none", animation_type: "none",
                 key_points: ["Relative frequency changes as trials increase", "Larger sample = closer to theoretical", "Used when theoretical can't be calculated"]
             }
         ],
@@ -239,18 +233,15 @@ export const SEED_TOPICS_PART5: Topic[] = [
         },
         section_2_detailed_explanations: [
             {
-                heading: "Averages (Measures of Central Tendency)",
-                content: "Mean: Add all values, divide by count (affected by outliers). Median: Sort values, take middle (n+1)/2 position for n values. Mode: Most frequent value (useful for non-numeric data). For [2, 3, 3, 5, 8]: Mean=4.2, Median=3, Mode=3, Range=6.",
+                heading: "Averages (Measures of Central Tendency)", content: "Mean: Add all values, divide by count (affected by outliers). Median: Sort values, take middle (n+1)/2 position for n values. Mode: Most frequent value (useful for non-numeric data). For [2, 3, 3, 5, 8]: Mean=4.2, Median=3, Mode=3, Range=6.", animation_type: "reveal",
                 key_points: ["Mean: Sum ÷ Count", "Median: Middle value", "Mode: Most frequent", "Choose based on data type"]
             },
             {
-                heading: "Data Representation",
-                content: "Pie Charts: Division into sectors (angles proportional to frequency). Bar Charts: Heights show frequency (works for categories). Histograms: Like bar charts but shows continuous data with no gaps. Frequency Polygon: Line graph connecting midpoints of class intervals.",
+                heading: "Data Representation", content: "Pie Charts: Division into sectors (angles proportional to frequency). Bar Charts: Heights show frequency (works for categories). Histograms: Like bar charts but shows continuous data with no gaps. Frequency Polygon: Line graph connecting midpoints of class intervals.", animation_type: "reveal",
                 key_points: ["Pie chart angle = (frequency/total) × 360°", "Bar chart x-axis can be labels", "Histogram x-axis is continuous", "Always label axes and include units"]
             },
             {
-                heading: "Grouped Data",
-                content: "For large datasets, group into classes. Estimate mean using class midpoints. For [0-10, 11-20]: Use midpoints 5 and 15.5 to calculate mean. Cannot find exact median but can estimate.",
+                heading: "Grouped Data", content: "For large datasets, group into classes. Estimate mean using class midpoints. For [0-10, 11-20]: Use midpoints 5 and 15.5 to calculate mean. Cannot find exact median but can estimate.", interactive_type: "none", animation_type: "none",
                 key_points: ["Use midpoint for each class", "Multiply by frequency", "Sum and divide by total frequency"]
             }
         ],
@@ -340,18 +331,15 @@ export const SEED_TOPICS_PART5: Topic[] = [
         },
         section_2_detailed_explanations: [
             {
-                heading: "Processes of Erosion",
-                content: "1) Hydraulic Action: Air compressed into cracks. 2) Abrasion: Rocks scrape bed. 3) Attrition: Rocks hit each other (become rounder/smaller). 4) Solution: Chemical dissolving (chalk/limestone).",
+                heading: "Processes of Erosion", content: "1) Hydraulic Action: Air compressed into cracks. 2) Abrasion: Rocks scrape bed. 3) Attrition: Rocks hit each other (become rounder/smaller). 4) Solution: Chemical dissolving (chalk/limestone).", interactive_type: "none", animation_type: "none",
                 key_points: ["Learn the 4 types", "Hydraulic = Water Power", "Abrasion = Sandpaper", "Attrition = Rocks vs Rocks"]
             },
             {
-                heading: "Landform Formation: Old Harry Rocks",
-                content: "Crack -> Cave (Hydraulic Action widens crack). Cave -> Arch (breaks through headland). Arch -> Stack (roof collapses due to gravity). Stack -> Stump (eroded by waves).",
+                heading: "Landform Formation: Old Harry Rocks", content: "Crack -> Cave (Hydraulic Action widens crack). Cave -> Arch (breaks through headland). Arch -> Stack (roof collapses due to gravity). Stack -> Stump (eroded by waves).", interactive_type: "none", animation_type: "none",
                 key_points: ["Crack-Cave-Arch-Stack-Stump", "Process takes thousands of years", "Happens on headlands"]
             },
             {
-                heading: "Coastal Management",
-                content: "Hard Engineering: Sea Walls (expensive, ugly, effective), Groynes (stops longshore drift, creates beach). Soft Engineering: Beach Nourishment (adds sand, looks natural), Managed Retreat (let nature take course, cheap but land lost).",
+                heading: "Coastal Management", content: "Hard Engineering: Sea Walls (expensive, ugly, effective), Groynes (stops longshore drift, creates beach). Soft Engineering: Beach Nourishment (adds sand, looks natural), Managed Retreat (let nature take course, cheap but land lost).", animation_type: "reveal",
                 key_points: ["Hard = Concrete/Structures", "Soft = Working with nature", "Evaluate costs vs benefits"]
             }
         ],
@@ -423,13 +411,11 @@ export const SEED_TOPICS_PART5: Topic[] = [
         },
         section_2_detailed_explanations: [
             {
-                heading: "Search Algorithms",
-                content: "Linear Search: Start at index 0, check match. If no, move to index 1. Repeat. Works on ANY list. Slow for big lists. Binary Search: 1) Find middle item. 2) If match, stop. 3) If item < middle, discard right half. 4) If item > middle, discard left half. REPEAT on remaining list. List MUST be sorted. Very fast.",
+                heading: "Search Algorithms", content: "Linear Search: Start at index 0, check match. If no, move to index 1. Repeat. Works on ANY list. Slow for big lists. Binary Search: 1) Find middle item. 2) If match, stop. 3) If item < middle, discard right half. 4) If item > middle, discard left half. REPEAT on remaining list. List MUST be sorted. Very fast.", animation_type: "reveal",
                 key_points: ["Linear = Simple, Slow, Unsorted lists ok", "Binary = Complex, Fast, Must be SORTED"]
             },
             {
-                heading: "Sorting Algorithms",
-                content: "Bubble Sort: Compare adjacent pairs, swap if wrong order. Repeat passes until no swaps. Slowest. Merge Sort: Split list in half recursively until size 1. Merge back together in order. Fastest (Divide & Conquer). Insertion Sort: Take one item, insert into correct position in sorted part.",
+                heading: "Sorting Algorithms", content: "Bubble Sort: Compare adjacent pairs, swap if wrong order. Repeat passes until no swaps. Slowest. Merge Sort: Split list in half recursively until size 1. Merge back together in order. Fastest (Divide & Conquer). Insertion Sort: Take one item, insert into correct position in sorted part.", animation_type: "reveal",
                 key_points: ["Bubble = Swapping pairs", "Merge = Splitting and merging", "Insertion = Placing one by one"]
             }
         ],

@@ -37,14 +37,12 @@ export const SEED_MATHS_EXTENDED_2: Topic[] = [
     },
     section_2_detailed_explanations: [
       {
-        heading: "Simplifying Surds",
-        content: "Look for perfect square factors. √18 = √(9 × 2) = √9 × √2 = 3√2. √50 = √(25 × 2) = 5√2. √72 = √(36 × 2) = 6√2. Always extract all perfect squares. Combine like surds: 2√3 + 4√3 = 6√3 (only when number under root is same).",
+        heading: "Simplifying Surds", content: "Look for perfect square factors. √18 = √(9 × 2) = √9 × √2 = 3√2. √50 = √(25 × 2) = 5√2. √72 = √(36 × 2) = 6√2. Always extract all perfect squares. Combine like surds: 2√3 + 4√3 = 6√3 (only when number under root is same).", animation_type: "reveal",
         diagram_description: "Factor tree showing √18 breaking into √9 × √2, then to 3√2. Multiple examples of simplification. Visual showing like surds combine, unlike surds don't.",
         key_points: ["Find largest perfect square factor", "Extract it outside root", "Leave remainder under root", "Combine like surds only"]
       },
       {
-        heading: "Rationalising Denominators",
-        content: "Single surd: multiply by √a/√a. Example: 1/√2 = 1/√2 × √2/√2 = √2/2. Binomial: multiply by conjugate. Example: 1/(2+√3) = (2-√3)/((2+√3)(2-√3)) = (2-√3)/(4-3) = 2-√3.",
+        heading: "Rationalising Denominators", content: "Single surd: multiply by √a/√a. Example: 1/√2 = 1/√2 × √2/√2 = √2/2. Binomial: multiply by conjugate. Example: 1/(2+√3) = (2-√3)/((2+√3)(2-√3)) = (2-√3)/(4-3) = 2-√3.", interactive_type: "none", animation_type: "none",
         diagram_description: "Step by step shown: 1/√2 → multiply by √2/√2 → √2/2 with denominators highlighted. Binomial example with (a+b)(a-b) = a² - b² law shown.",
         key_points: ["Multiply by 1 (in form of √a/√a or conjugate/conjugate)", "(a+b)(a-b) = a² - b² removes surds", "Result has rational denominator"]
       }
@@ -140,14 +138,12 @@ export const SEED_MATHS_EXTENDED_2: Topic[] = [
     },
     section_2_detailed_explanations: [
       {
-        heading: "Exponential Functions & Growth",
-        content: "y = Aeᵏˣ: A is initial value, k determines growth rate. If k > 0, exponential growth (curve goes up). If k < 0, exponential decay (curve goes down, approaches 0). Horizontal asymptote at y = 0. Base e ≈ 2.718 is special; eˣ has derivative = itself. Compound interest: A = P(1+r)ⁿ uses exponential growth.",
+        heading: "Exponential Functions & Growth", content: "y = Aeᵏˣ: A is initial value, k determines growth rate. If k > 0, exponential growth (curve goes up). If k < 0, exponential decay (curve goes down, approaches 0). Horizontal asymptote at y = 0. Base e ≈ 2.718 is special; eˣ has derivative = itself. Compound interest: A = P(1+r)ⁿ uses exponential growth.", animation_type: "reveal",
         diagram_description: "Two curves: one growing exponentially (k>0), one decaying (k<0), both approaching asymptote. Labeled with A (y-intercept) and asymptote y=0. Real-world examples: bacteria count over hours, radioactive material half-life.",
         key_points: ["A is initial amount", "k > 0 = growth, k < 0 = decay", "y = 0 is horizontal asymptote", "Compound interest is exponential"]
       },
       {
-        heading: "Logarithms & Solving Exponentials",
-        content: "If 2ˣ = 8, then x = log₂(8) = 3. Natural log: if eˣ = 5, then x = ln(5). Log laws: log(ab) = log(a) + log(b), log(aⁿ) = n·log(a), log(a/b) = log(a) - log(b). Change of base: logₐ(b) = ln(b)/ln(a).",
+        heading: "Logarithms & Solving Exponentials", content: "If 2ˣ = 8, then x = log₂(8) = 3. Natural log: if eˣ = 5, then x = ln(5). Log laws: log(ab) = log(a) + log(b), log(aⁿ) = n·log(a), log(a/b) = log(a) - log(b). Change of base: logₐ(b) = ln(b)/ln(a).", interactive_type: "none", animation_type: "none",
         diagram_description: "Exponential and logarithmic curves shown as reflections across y=x line. Log laws with color-coded examples. Calculator showing ln and log₁₀ keys.",
         key_points: ["Logarithm is inverse of exponential", "aˣ = b ⟹ x = logₐ(b)", "Use ln for natural logarithm", "Log laws simplify complex expressions"]
       }
@@ -246,14 +242,12 @@ export const SEED_MATHS_EXTENDED_2: Topic[] = [
     },
     section_2_detailed_explanations: [
       {
-        heading: "Congruence Tests & Proof",
-        content: "SSS (side-side-side): all three sides match → congruent. SAS (side-angle-side): two sides and included angle match → congruent. ASA (angle-side-angle): two angles and included side match → congruent. RHS (right-angle-hyp-side): right angle, hypotenuse, and one other side match (for right triangles) → congruent. AAS also works.",
+        heading: "Congruence Tests & Proof", content: "SSS (side-side-side): all three sides match → congruent. SAS (side-angle-side): two sides and included angle match → congruent. ASA (angle-side-angle): two angles and included side match → congruent. RHS (right-angle-hyp-side): right angle, hypotenuse, and one other side match (for right triangles) → congruent. AAS also works.", animation_type: "reveal",
         diagram_description: "Four side-by-side sets of triangles showing SSS, SAS, ASA, RHS tests with matching parts highlighted in color. Statement and conclusion for each.",
         key_points: ["SSS, SAS, ASA, RHS are sufficient to prove congruence", "AAA and ASS are NOT sufficient", "for right triangles, RHS is quickest", "Used for rigorous geometric proofs"]
       },
       {
-        heading: "Similarity & Scale Factors",
-        content: "Similar triangles: corresponding angles equal, corresponding sides in same ratio (scale factor). If scale factor is k, then all lengths scale by k, areas scale by k², volumes scale by k³. Example: if scale factor 2, then twice as long, four times area.",
+        heading: "Similarity & Scale Factors", content: "Similar triangles: corresponding angles equal, corresponding sides in same ratio (scale factor). If scale factor is k, then all lengths scale by k, areas scale by k², volumes scale by k³. Example: if scale factor 2, then twice as long, four times area.", animation_type: "reveal",
         diagram_description: "Two similar triangles with ratios marked. Side a matches side 2a (scale factor 2). Area changes from A to 4A. Separate volume example if relevant.",
         key_points: ["Corresponding angles equal", "Corresponding sides in constant ratio k", "Area ratio = k²", "Volume ratio = k³"]
       }
@@ -359,14 +353,12 @@ export const SEED_MATHS_EXTENDED_2: Topic[] = [
     },
     section_2_detailed_explanations: [
       {
-        heading: "Angle Classification & Relationships",
-        content: "Angles on straight line sum to 180°. Angles at a point sum to 360°. Angles in triangle sum to 180°. Angles in quadrilateral sum to 360°. Vertically opposite angles are equal. These are the foundation relationships.",
+        heading: "Angle Classification & Relationships", content: "Angles on straight line sum to 180°. Angles at a point sum to 360°. Angles in triangle sum to 180°. Angles in quadrilateral sum to 360°. Vertically opposite angles are equal. These are the foundation relationships.", interactive_type: "geometry", animation_type: "graph-draw",
         diagram_description: "Visual showing angle types (acute, right, obtuse, reflex) with examples. Straight line showing angles summing to 180°. Point showing angles summing to 360°. Triangle and quad angle sums marked.",
         key_points: ["Straight line = 180°", "Full turn = 360°", "Triangle = 180°", "Quadrilateral = 360°"]
       },
       {
-        heading: "Parallel Lines & Transversals",
-        content: "When transversal crosses parallel lines: Corresponding angles equal (same position at each intersection). Alternate angles equal (opposite sides of transversal, between parallels). Co-interior angles sum to 180° (same side of transversal, between parallels). Converse also true: if angles match, lines are parallel.",
+        heading: "Parallel Lines & Transversals", content: "When transversal crosses parallel lines: Corresponding angles equal (same position at each intersection). Alternate angles equal (opposite sides of transversal, between parallels). Co-interior angles sum to 180° (same side of transversal, between parallels). Converse also true: if angles match, lines are parallel.", animation_type: "reveal",
         diagram_description: "Ramp showing two parallel lines crossed by transversal. All corresponding angles marked same color (equal). All alternate angles marked different color (also equal). Co-interior angles sum to 180° shown.",
         key_points: [
           "Corresponding: same position → equal",
