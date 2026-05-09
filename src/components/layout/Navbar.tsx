@@ -45,6 +45,7 @@ export function Navbar() {
                 {/* Desktop Nav */}
                 <nav className="hidden md:flex items-center gap-6 text-sm font-medium" style={{ color: "var(--text-muted)" }}>
                     <Link href="/subjects" className="hover:text-[var(--primary)] transition-colors">Subjects</Link>
+                    <Link href="/guides" className="hover:text-[var(--primary)] transition-colors">Guides</Link>
                     <Link href="/quiz" className="hover:text-[var(--primary)] transition-colors">Quizzes</Link>
                     <Link href="/exams" className="hover:text-[var(--primary)] transition-colors">Exams</Link>
                     <Link href="/leaderboard" className="hover:text-[var(--primary)] transition-colors">Leaderboard</Link>
@@ -115,6 +116,13 @@ export function Navbar() {
                             className="py-2 px-3 rounded-lg hover:bg-[var(--border)] transition-colors font-medium"
                         >
                             📚 Subjects
+                        </Link>
+                        <Link
+                            href="/guides"
+                            onClick={() => setMobileOpen(false)}
+                            className="py-2 px-3 rounded-lg hover:bg-[var(--border)] transition-colors font-medium"
+                        >
+                            📖 Guides
                         </Link>
                         <Link
                             href="/quiz"

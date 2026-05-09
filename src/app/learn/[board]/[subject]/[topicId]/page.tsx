@@ -122,6 +122,16 @@ export default function TopicPage() {
 
                 <AdSlot slot="topic_top" />
 
+                {/* Long-form Content for SEO/Value */}
+                {topic.revision_notes_long && (
+                    <div className="glass-card p-8 mb-8 prose prose-invert max-w-none">
+                        <h2 className="text-2xl font-bold mb-4 gradient-text">Comprehensive Revision Notes</h2>
+                        <div className="opacity-80 leading-relaxed whitespace-pre-wrap">
+                            {topic.revision_notes_long}
+                        </div>
+                    </div>
+                )}
+
                 {/* 7 Sections */}
                 <div className="space-y-3">
                     {SECTION_LABELS.map(({ num, label, icon }) => (
@@ -151,6 +161,25 @@ export default function TopicPage() {
                     </button>
                 </div>
             </div>
+
+            {/* Expert Tips Sidebar/Section */}
+            {topic.expert_tips_detailed && topic.expert_tips_detailed.length > 0 && (
+                <div className="container max-w-4xl mt-12">
+                    <div className="bg-[var(--primary)]/10 border-l-4 border-[var(--primary)] p-6 rounded-r-2xl">
+                        <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
+                            <span>💡</span> Expert Study Tips
+                        </h3>
+                        <ul className="space-y-3">
+                            {topic.expert_tips_detailed.map((tip, i) => (
+                                <li key={i} className="text-sm opacity-80 flex items-start gap-2">
+                                    <span className="text-[var(--primary)] mt-1">•</span>
+                                    {tip}
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>
+            )}
 
             {/* Virtual Tutor */}
             <VirtualTutor topic={topic} />

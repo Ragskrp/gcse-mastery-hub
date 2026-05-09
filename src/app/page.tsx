@@ -247,6 +247,50 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ===== FAQ SECTION ===== */}
+      <section className="py-16 bg-[var(--bg-card)]/30">
+        <div className="container max-w-4xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4">Frequently Asked <span className="gradient-text">Questions</span></h2>
+            <p className="opacity-70">Everything you need to know about GCSE Mastery Hub</p>
+          </div>
+
+          <div className="space-y-4">
+            {[
+              {
+                q: "Is GCSE Mastery Hub really free?",
+                a: "Yes, 100%. Our mission is to make high-quality GCSE revision accessible to everyone. We monetize through non-intrusive advertisements to keep the lights on, but we will never charge students for our core educational content."
+              },
+              {
+                q: "Which exam boards do you cover?",
+                a: "Currently, we provide comprehensive coverage for AQA and Edexcel, which are the most common boards in the UK. Our content is mapped specifically to their 2024 specifications."
+              },
+              {
+                q: "Can I use this on my phone?",
+                a: "Absolutely. GCSE Mastery Hub is a Progressive Web App (PWA). You can 'Add to Home Screen' on your iPhone or Android device, and it will function just like a native app, including offline access to many features."
+              },
+              {
+                q: "Do I need to create an account to learn?",
+                a: "No, you can browse all our topics and guides without an account. However, creating a free account allows you to save your progress, earn XP, climb the leaderboard, and unlock special achievements."
+              },
+              {
+                q: "How often is the content updated?",
+                a: "Our team of educators and examiners reviews and updates the content every term to ensure it reflects the latest examiner reports and curriculum changes."
+              }
+            ].map((faq, i) => (
+              <div key={i} className="glass-card p-6">
+                <h3 className="font-bold text-lg mb-2 flex items-center gap-2">
+                  <span className="text-[var(--primary)]">Q:</span> {faq.q}
+                </h3>
+                <p className="opacity-70 text-sm leading-relaxed">
+                  <span className="font-bold text-[var(--primary)]">A:</span> {faq.a}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ===== FEATURES SECTION ===== */}
       <section className="py-16 md:py-24">
         <div className="container">

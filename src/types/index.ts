@@ -129,6 +129,11 @@ export interface Topic {
   section_5_exam_guidance: ExamGuidance;
   section_6_additional_resources: Section6AdditionalResources;
   section_7_assessment_answers: Section7AssessmentAnswers;
+  // Professional Content Additions for AdSense / High Value
+  revision_notes_long?: string;
+  expert_tips_detailed?: string[];
+  scientific_context?: string;
+  historical_significance?: string;
   view_count?: number;
   avg_score?: number;
   completion_rate?: number;
